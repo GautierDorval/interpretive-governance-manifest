@@ -1,5 +1,7 @@
 {
   "standard": "Interpretive Governance Manifest",
+  "canonical_manifest": "https://interpretive-governance.org/interpretive-governance.manifest.json",
+  "validator": "https://interpretive-governance.org/VALIDATOR.md",
   "version": "0.1.0",
   "conformance_levels": [
     {
