@@ -7,6 +7,7 @@
       "governs": "https://interpretive-governance.org/vocab#governs",
       "governedBy": "https://interpretive-governance.org/vocab#governedBy",
       "foundationFor": "https://interpretive-governance.org/vocab#foundationFor",
+      "creativeWorkStatus": "draft",
       "applicationOf": "https://interpretive-governance.org/vocab#applicationOf"
     }
   ],
