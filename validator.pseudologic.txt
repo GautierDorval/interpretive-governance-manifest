@@ -1,0 +1,45 @@
+INPUTS:
+  manifest
+  output
+  trace_bundle (optional)
+
+FUNCTION validate(output, trace_bundle):
+  results = {}
+
+  A = has_statement_types(output, ["observed","derived","inferred","unknown"])
+  results["A_statement_typing"] = A
+
+  B = no_silent_completion(output)
+  results["B_no_silent_completion"] = B
+
+  C = traceability_ok(output, trace_bundle)
+  results["C_traceability"] = C
+
+  D = no_persuasive_claims_without_evidence(output)
+  results["D_no_persuasive_claims_without_evidence"] = D
+
+  E = tooling_disclosed(trace_bundle)
+  results["E_tooling_disclosure"] = E
+
+  F = self_validation_forbidden(output)
+  results["F_self_validation_forbidden"] = F
+
+  G = refusal_or_downgrade_on_missing_evidence(output)
+  results["G_refusal_on_missing_evidence"] = G
+
+  if not A:
+    return { level: "non_conformant", results, reason: "missing statement typing" }
+
+  if A and B and minimal_truthfulness(output):
+    level = "informative"
+
+  if A and B and C and explicit_unknowns_present(output):
+    level = "structural"
+
+  if A and B and C and D and E and F and G and trace_bundle_is_auditable(trace_bundle):
+    level = "full"
+
+  violations = list_failed_checks(results, required_for(level))
+  unknowns = extract_unknowns(output)
+
+  return { level, results, violations, unknowns }
