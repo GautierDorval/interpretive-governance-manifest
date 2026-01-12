@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/manifest.schema.json",
+  "title": "Interpretive Governance Manifest Schema",
+  "type": "object",
+  "required": ["name", "short_name", "version", "status", "non_negotiables", "canonical"],
+  "properties": {
+    "name": { "type": "string", "minLength": 3 },
+    "short_name": { "type": "string", "minLength": 3 },
+    "version": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["draft", "stable", "deprecated"] },
+    "purpose": { "type": "string" },
+    "scope": { "type": "array", "items": { "type": "string" } },
+    "non_negotiables": {
+      "type": "object",
+      "required": [
+        "statement_types_required",
+        "no_silent_completion",
+        "facts_vs_inference_separation",
+        "traceability_required"
+      ],
+      "properties": {
+        "statement_types_required": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["observed", "derived", "inferred", "unknown"] },
+          "minItems": 4
+        },
+        "no_silent_completion": { "type": "boolean" },
+        "facts_vs_inference_separation": { "type": "boolean" },
+        "traceability_required": { "type": "boolean" },
+        "no_persuasive_claims_without_evidence": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "agentic_governance": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "canonical": {
+      "type": "object",
+      "required": ["well_known_entrypoint", "schema", "versions_path"],
+      "properties": {
+        "well_known_entrypoint": { "type": "string" },
+        "schema": { "type": "string" },
+        "versions_path": { "type": "string" }
+      }
+    }
+  },
+  "additionalProperties": true
+}
