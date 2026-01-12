@@ -1,6 +1,7 @@
 # Interpretive governance manifest
 
 Machine-first governance manifest for interpretive, decision, and agentic integrity.
+The validator defined in this repository is conceptual and non-executable by design.
 
 This repository defines non-negotiable rules that constrain interpretive outputs by requiring explicit separation between:
 
