@@ -1,0 +1,36 @@
+{
+  "standard": "Interpretive Governance Manifest",
+  "version": "0.1.0",
+  "conformance_levels": [
+    {
+      "id": "informative",
+      "label": "interpretive-governance:informative",
+      "description": "Conceptual alignment with interpretive governance principles without structural enforcement.",
+      "requirements": [
+        "reference_manifest",
+        "no_false_factual_claims"
+      ]
+    },
+    {
+      "id": "structural",
+      "label": "interpretive-governance:structural",
+      "description": "Structural enforcement of interpretive constraints and explicit uncertainty handling.",
+      "requirements": [
+        "statement_typing_enforced",
+        "no_silent_completion",
+        "uncertainty_exposed"
+      ]
+    },
+    {
+      "id": "full",
+      "label": "interpretive-governance:full",
+      "description": "Complete enforcement of interpretive and agentic governance rules with auditable traceability.",
+      "requirements": [
+        "all_non_negotiables_enforced",
+        "agentic_constraints_applied",
+        "auditable_traces",
+        "refusal_on_non_compliance"
+      ]
+    }
+  ]
+}
