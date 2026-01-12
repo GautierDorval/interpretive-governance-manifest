@@ -36,7 +36,7 @@ The output MUST expose statement types:
 - inferred
 - unknown
 
-Failing this check prevents any structural or full conformance claim.
+Failure of Check A results in an immediate non-conformance outcome.
 
 ### Check B: No silent completion
 
@@ -112,7 +112,7 @@ The validator MUST output:
 - pass/fail per core check
 - list of violations
 - list of unknowns impacting the result
-- optional confidence score based on completeness and trace integrity
+- (optional confidence score based on completeness and trace integrity, not on truth estimation)
 
 ---
 
