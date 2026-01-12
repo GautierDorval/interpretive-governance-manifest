@@ -26,6 +26,8 @@ Partial implementation does not imply full conformance.
 ## 2. Levels of conformance
 
 Conformance is defined across three non-hierarchical levels.
+Each level defines a distinct mode of alignment.  
+Higher levels do not imply superiority, but increased enforcement and auditability.
 
 ### 2.1 Informative alignment
 
@@ -99,3 +101,20 @@ Misrepresentation of conformance is considered a misuse of the standard.
 This document is normative and complements the manifest.
 
 In case of ambiguity, the manifest takes precedence.
+
+---
+
+## 6. Conceptual validator
+
+Conformance assessment is expected to be performed using the **Interpretive Governance conceptual validator**.
+
+The validator defines:
+- required checks per conformance level;
+- failure conditions;
+- downgrade and refusal logic.
+
+Canonical reference:
+https://interpretive-governance.org/VALIDATOR.md
+
+The validator is normative for conformance assessment but does not constitute certification.
+
