@@ -22,6 +22,8 @@
     "refusal_on_missing_evidence": true,
     "outputs_must_include_unknowns": true
   },
+  "authority_graph": "/authority-graph.jsonld"
+  },
   "conformance": {
   "human_readable": "/CONFORMANCE.md",
   "machine_readable": "/conformance-levels.json"
