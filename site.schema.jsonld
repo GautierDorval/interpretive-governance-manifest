@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://interpretive-governance.org/#website",
+  "url": "https://interpretive-governance.org/",
+  "name": "Interpretive governance",
+  "description": "Machine-first governance manifest for interpretive, decision, and agentic integrity.",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://interpretive-governance.org/#authority",
+    "name": "Interpretive Governance",
+    "url": "https://interpretive-governance.org/"
+  },
+  "mainEntity": {
+    "@type": "CreativeWork",
+    "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest",
+    "name": "Interpretive Governance Manifest",
+    "url": "https://interpretive-governance.org/interpretive-governance.manifest.json",
+    "creativeWorkStatus": "Draft",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@id": "https://interpretive-governance.org/#website"
+    }
+  },
+  "hasPart": [
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/CONFORMANCE.md#conformance",
+      "name": "Conformance to the Interpretive Governance Manifest",
+      "url": "https://interpretive-governance.org/CONFORMANCE.md"
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://interpretive-governance.org/conformance-levels.json#levels",
+      "name": "Interpretive Governance conformance levels",
+      "url": "https://interpretive-governance.org/conformance-levels.json"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/VALIDATOR.md#validator",
+      "name": "Interpretive Governance conceptual validator",
+      "url": "https://interpretive-governance.org/VALIDATOR.md"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/authority-graph.jsonld#graph",
+      "name": "Interpretive Governance authority graph",
+      "url": "https://interpretive-governance.org/authority-graph.jsonld"
+    }
+  ]
+}
