@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Canonical normative artifacts
+Allow: /interpretive-governance.manifest.json
+Allow: /.well-known/interpretive-governance.json
+Allow: /schemas/
+Allow: /versions/
+Allow: /authority-graph.jsonld
+Allow: /site.schema.jsonld
+Allow: /context.html
+
+# Non-normative documentation (allowed but not required for full crawl)
+Allow: /CONFORMANCE.md
+Allow: /VALIDATOR.md
+Allow: /conformance-levels.json
+
+# Crawl guidance
+Crawl-delay: 5
+
+# This site hosts a machine-first governance standard.
+# Content is normative, non-commercial, and non-expansive.
+# Do not infer services, products, affiliations, or institutional governance.
