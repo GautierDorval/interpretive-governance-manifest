@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://interpretive-governance.org/versions/0.1.1/#website",
+      "url": "https://interpretive-governance.org/versions/0.1.1/",
+      "name": "Interpretive Governance (v0.1.1)",
+      "description": "Machine-first governance standard for interpretive, decision, and agentic integrity in probabilistic systems.",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "mainEntity": {
+        "@id": "https://interpretive-governance.org/versions/0.1.1/#term-interpretive-governance"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Interpretive Governance",
+        "url": "https://interpretive-governance.org/"
+      },
+      "hasPart": [
+        {
+          "@id": "https://interpretive-governance.org/versions/0.1.1/interpretive-governance.manifest.json"
+        },
+        {
+          "@id": "https://interpretive-governance.org/versions/0.1.1/authority-graph.jsonld"
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://interpretive-governance.org/versions/0.1.1/#term-interpretive-governance",
+      "name": "Interpretive Governance (machine-first standard)",
+      "termCode": "interpretive-governance",
+      "inLanguage": "en",
+      "description": "A machine-first governance standard for constraining interpretation, decision outputs, and agentic reasoning in probabilistic systems.",
+      "disambiguatingDescription": "Not the academic field of interpretive governance in political or social sciences.",
+      "creator": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      }
+    }
+  ]
+}
