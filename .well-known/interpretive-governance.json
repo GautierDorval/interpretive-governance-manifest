@@ -1,6 +1,32 @@
 {
-  "type": "InterpretiveGovernanceManifest",
+  "name": "Interpretive Governance",
+  "current_version": "0.1.1",
   "status": "draft",
-  "version": "0.1.0",
-  "canonical": "https://interpretive-governance.org/interpretive-governance.manifest.json"
+  "scope": "machine-first interpretive governance for probabilistic and agentic systems",
+  "non_equivalence": "Not the academic field of interpretive governance in political or social sciences.",
+  "canonical": {
+    "manifest": "https://interpretive-governance.org/interpretive-governance.manifest.json",
+    "authority_graph": "https://interpretive-governance.org/authority-graph.jsonld",
+    "site_schema": "https://interpretive-governance.org/site.schema.jsonld"
+  },
+  "versions": {
+    "0.1.1": {
+      "manifest": "https://interpretive-governance.org/versions/0.1.1/interpretive-governance.manifest.json",
+      "authority_graph": "https://interpretive-governance.org/versions/0.1.1/authority-graph.jsonld",
+      "site_schema": "https://interpretive-governance.org/versions/0.1.1/site.schema.jsonld"
+    },
+    "0.1.0": {
+      "manifest": "https://interpretive-governance.org/versions/0.1.0/interpretive-governance.manifest.json"
+    }
+  },
+  "entrypoints": {
+    "context": "https://interpretive-governance.org/context.html",
+    "conformance": "https://interpretive-governance.org/CONFORMANCE.md",
+    "validator": "https://interpretive-governance.org/VALIDATOR.md"
+  },
+  "provenance": {
+    "initiator": "Gautier Dorval",
+    "canonical_identity": "https://gautierdorval.com/"
+  },
+  "last_updated": "2026-01-13"
 }
