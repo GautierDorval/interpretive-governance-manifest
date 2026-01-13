@@ -7,17 +7,90 @@
       "governs": "https://interpretive-governance.org/vocab#governs",
       "governedBy": "https://interpretive-governance.org/vocab#governedBy",
       "foundationFor": "https://interpretive-governance.org/vocab#foundationFor",
-      "creativeWorkStatus": "draft",
       "applicationOf": "https://interpretive-governance.org/vocab#applicationOf"
     }
   ],
   "@graph": [
     {
+      "@type": "Person",
+      "@id": "https://gautierdorval.com/entite/#person",
+      "name": "Gautier Dorval",
+      "url": "https://gautierdorval.com/",
+      "mainEntityOfPage": "https://gautierdorval.com/entite/",
+      "sameAs": [
+        "https://github.com/GautierDorval/gautierdorval-identity"
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://interpretive-governance.org/#term-interpretive-governance",
+      "name": "Interpretive Governance (machine-first standard)",
+      "inLanguage": "en",
+      "termCode": "interpretive-governance",
+      "description": "A machine-first governance standard for constraining interpretation, decision outputs, and agentic reasoning in probabilistic systems by enforcing explicit statement typing and traceability.",
+      "disambiguatingDescription": "Not the academic field of interpretive governance in political or social sciences.",
+      "url": "https://interpretive-governance.org/",
+      "sameAs": [
+        "https://interpretive-governance.org/"
+      ],
+      "creator": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/#standard",
+      "name": "Interpretive Governance Standard",
+      "url": "https://interpretive-governance.org/",
+      "inLanguage": "en",
+      "version": "0.1.1",
+      "creativeWorkStatus": "draft",
+      "about": [
+        {
+          "@id": "https://interpretive-governance.org/#term-interpretive-governance"
+        }
+      ],
+      "creator": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      },
+      "publisher": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "disambiguatingDescription": "This standard is not the academic field usage of 'interpretive governance' in political or social sciences.",
+      "hasPart": [
+        {
+          "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+        },
+        {
+          "@id": "https://interpretive-governance.org/authority-graph.jsonld#graph"
+        },
+        {
+          "@id": "https://interpretive-governance.org/CONFORMANCE.md#conformance"
+        },
+        {
+          "@id": "https://interpretive-governance.org/conformance-levels.json#levels"
+        }
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "nonEquivalence",
+          "value": "Not the academic field of interpretive governance in political or social sciences."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "scopeBoundary",
+          "value": "Applies to machine interpretation, probabilistic reasoning systems, and agentic decision outputs."
+        }
+      ]
+    },
+    {
       "@type": "Organization",
       "@id": "https://interpretive-governance.org/#authority",
       "name": "Interpretive Governance",
       "url": "https://interpretive-governance.org/",
-      "authorityRole": "normative_authority"
+      "authorityRole": "normative_authority",
+      "description": "Normative publishing authority for the Interpretive Governance Standard. This authority refers to the standard itself, not to a human institution."
     },
     {
       "@type": "CreativeWork",
@@ -25,28 +98,26 @@
       "name": "Interpretive Governance Manifest",
       "url": "https://interpretive-governance.org/interpretive-governance.manifest.json",
       "inLanguage": "en",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "creativeWorkStatus": "draft",
-      "publisher": { "@id": "https://interpretive-governance.org/#authority" },
-      "isPartOf": { "@id": "https://interpretive-governance.org/#standard" },
-      "governs": [
-        { "@id": "https://github.com/GautierDorval/interpretive-seo#repo" },
-        { "@id": "https://github.com/GautierDorval/ssa-e-a2-doctrine#repo" }
+      "publisher": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "about": [
+        {
+          "@id": "https://interpretive-governance.org/#term-interpretive-governance"
+        }
       ],
-      "subjectOf": [
-        { "@id": "https://interpretive-governance.org/CONFORMANCE.md#conformance" },
-        { "@id": "https://interpretive-governance.org/conformance-levels.json#levels" }
-      ]
-    },
-    {
-      "@type": "CreativeWork",
-      "@id": "https://interpretive-governance.org/#standard",
-      "name": "Interpretive Governance Standard",
-      "url": "https://interpretive-governance.org/",
-      "publisher": { "@id": "https://interpretive-governance.org/#authority" },
-      "hasPart": [
-        { "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest" },
-        { "@id": "https://interpretive-governance.org/authority-graph.jsonld#graph" }
+      "governs": [
+        {
+          "@id": "https://github.com/GautierDorval/interpretive-seo#repo"
+        },
+        {
+          "@id": "https://github.com/GautierDorval/ssa-e-a2-doctrine#repo"
+        }
       ]
     },
     {
@@ -55,9 +126,16 @@
       "name": "Interpretive Governance Authority Graph",
       "url": "https://interpretive-governance.org/authority-graph.jsonld",
       "inLanguage": "en",
-      "publisher": { "@id": "https://interpretive-governance.org/#authority" },
+      "publisher": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
       "about": [
-        { "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest" }
+        {
+          "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+        }
       ]
     },
     {
@@ -65,16 +143,24 @@
       "@id": "https://interpretive-governance.org/CONFORMANCE.md#conformance",
       "name": "Conformance to the Interpretive Governance Manifest",
       "url": "https://interpretive-governance.org/CONFORMANCE.md",
-      "publisher": { "@id": "https://interpretive-governance.org/#authority" },
-      "isBasedOn": { "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest" }
+      "publisher": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isBasedOn": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      }
     },
     {
       "@type": "Dataset",
       "@id": "https://interpretive-governance.org/conformance-levels.json#levels",
       "name": "Interpretive Governance conformance levels",
       "url": "https://interpretive-governance.org/conformance-levels.json",
-      "creator": { "@id": "https://interpretive-governance.org/#authority" },
-      "isBasedOn": { "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest" }
+      "creator": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isBasedOn": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      }
     },
     {
       "@type": "SoftwareSourceCode",
@@ -82,8 +168,12 @@
       "name": "SSA-E + A2 + Dual Web doctrine",
       "codeRepository": "https://github.com/GautierDorval/ssa-e-a2-doctrine",
       "authorityRole": "doctrinal_foundation",
-      "foundationFor": { "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest" },
-      "governedBy": { "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest" }
+      "foundationFor": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      },
+      "governedBy": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      }
     },
     {
       "@type": "SoftwareSourceCode",
@@ -91,8 +181,12 @@
       "name": "Interpretive SEO",
       "codeRepository": "https://github.com/GautierDorval/interpretive-seo",
       "authorityRole": "application_layer",
-      "applicationOf": { "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest" },
-      "governedBy": { "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest" }
+      "applicationOf": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      },
+      "governedBy": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      }
     }
   ]
 }
