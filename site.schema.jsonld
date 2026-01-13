@@ -1,53 +1,153 @@
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": "https://interpretive-governance.org/#website",
-  "url": "https://interpretive-governance.org/",
-  "name": "Interpretive governance",
-  "description": "Machine-first governance manifest for interpretive, decision, and agentic integrity.",
-  "inLanguage": "en",
-  "isAccessibleForFree": true,
-  "publisher": {
-    "@type": "Organization",
-    "@id": "https://interpretive-governance.org/#authority",
-    "name": "Interpretive Governance",
-    "url": "https://interpretive-governance.org/"
-  },
-  "mainEntity": {
-    "@type": "CreativeWork",
-    "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest",
-    "name": "Interpretive Governance Manifest",
-    "url": "https://interpretive-governance.org/interpretive-governance.manifest.json",
-    "creativeWorkStatus": "Draft",
-    "inLanguage": "en",
-    "isPartOf": {
-      "@id": "https://interpretive-governance.org/#website"
-    }
-  },
-  "hasPart": [
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://interpretive-governance.org/#website",
+      "url": "https://interpretive-governance.org/",
+      "name": "Interpretive Governance",
+      "description": "Machine-first governance standard for interpretive, decision, and agentic integrity in probabilistic systems.",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://interpretive-governance.org/#authority",
+        "name": "Interpretive Governance",
+        "url": "https://interpretive-governance.org/",
+        "description": "Normative publishing authority for the Interpretive Governance machine-first standard. This refers to the standard itself, not to an academic institution."
+      },
+      "mainEntity": {
+        "@id": "https://interpretive-governance.org/#term-interpretive-governance"
+      },
+      "hasPart": [
+        {
+          "@id": "https://interpretive-governance.org/#standard"
+        },
+        {
+          "@id": "https://interpretive-governance.org/authority-graph.jsonld#graph"
+        },
+        {
+          "@id": "https://interpretive-governance.org/CONFORMANCE.md#conformance"
+        },
+        {
+          "@id": "https://interpretive-governance.org/conformance-levels.json#levels"
+        },
+        {
+          "@id": "https://interpretive-governance.org/VALIDATOR.md#validator"
+        },
+        {
+          "@id": "https://interpretive-governance.org/context.html#context"
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://interpretive-governance.org/#term-interpretive-governance",
+      "name": "Interpretive Governance (machine-first standard)",
+      "termCode": "interpretive-governance",
+      "inLanguage": "en",
+      "description": "A machine-first governance standard for constraining interpretation, decision outputs, and agentic reasoning in probabilistic systems.",
+      "disambiguatingDescription": "Not the academic field of interpretive governance in political or social sciences.",
+      "url": "https://interpretive-governance.org/",
+      "creator": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      },
+      "sameAs": [
+        "https://interpretive-governance.org/"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/#standard",
+      "name": "Interpretive Governance Standard",
+      "url": "https://interpretive-governance.org/",
+      "inLanguage": "en",
+      "version": "0.1.1",
+      "creativeWorkStatus": "Draft",
+      "about": [
+        {
+          "@id": "https://interpretive-governance.org/#term-interpretive-governance"
+        }
+      ],
+      "creator": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      },
+      "publisher": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "disambiguatingDescription": "This standard is not the academic field usage of interpretive governance in political or social sciences.",
+      "hasPart": [
+        {
+          "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+        },
+        {
+          "@id": "https://interpretive-governance.org/authority-graph.jsonld#graph"
+        }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest",
+      "name": "Interpretive Governance Manifest",
+      "url": "https://interpretive-governance.org/interpretive-governance.manifest.json",
+      "inLanguage": "en",
+      "version": "0.1.1",
+      "creativeWorkStatus": "Draft",
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "about": [
+        {
+          "@id": "https://interpretive-governance.org/#term-interpretive-governance"
+        }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/context.html#context",
+      "name": "Context and provenance — Interpretive Governance",
+      "url": "https://interpretive-governance.org/context.html",
+      "inLanguage": "en",
+      "about": [
+        {
+          "@id": "https://interpretive-governance.org/#term-interpretive-governance"
+        }
+      ],
+      "creativeWorkStatus": "NonNormative"
+    },
     {
       "@type": "CreativeWork",
       "@id": "https://interpretive-governance.org/CONFORMANCE.md#conformance",
       "name": "Conformance to the Interpretive Governance Manifest",
-      "url": "https://interpretive-governance.org/CONFORMANCE.md"
+      "url": "https://interpretive-governance.org/CONFORMANCE.md",
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      }
     },
     {
       "@type": "Dataset",
       "@id": "https://interpretive-governance.org/conformance-levels.json#levels",
       "name": "Interpretive Governance conformance levels",
-      "url": "https://interpretive-governance.org/conformance-levels.json"
+      "url": "https://interpretive-governance.org/conformance-levels.json",
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      }
     },
     {
       "@type": "CreativeWork",
       "@id": "https://interpretive-governance.org/VALIDATOR.md#validator",
       "name": "Interpretive Governance conceptual validator",
-      "url": "https://interpretive-governance.org/VALIDATOR.md"
+      "url": "https://interpretive-governance.org/VALIDATOR.md",
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      }
     },
     {
-      "@type": "CreativeWork",
-      "@id": "https://interpretive-governance.org/authority-graph.jsonld#graph",
-      "name": "Interpretive Governance authority graph",
-      "url": "https://interpretive-governance.org/authority-graph.jsonld"
+      "@type": "Organization",
+      "@id": "https://interpretive-governance.org/#authority",
+      "name": "Interpretive Governance",
+      "url": "https://interpretive-governance.org/",
+      "description": "Normative authority representing the Interpretive Governance standard itself. This is not an academic, governmental, or institutional body."
     }
   ]
 }
