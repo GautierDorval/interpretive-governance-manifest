@@ -1,0 +1,56 @@
+{
+  "name": "Interpretive Governance",
+  "short_name": "interpretive-governance",
+  "version": "0.1.2",
+  "status": "draft",
+  "purpose": "Define machine-first governance rules that constrain interpretive outputs by enforcing explicit statement typing, traceability, and agentic constraints.",
+  "scope": [
+    "representation_governance",
+    "decision_governance",
+    "agentic_governance"
+  ],
+  "scope_boundary": {
+    "applies_to": [
+      "machine interpretation",
+      "probabilistic reasoning systems",
+      "agentic decision outputs"
+    ],
+    "does_not_apply_to": [
+      "political science",
+      "social science",
+      "public policy governance",
+      "organizational or institutional governance"
+    ]
+  },
+  "non_equivalence": {
+    "academic_field": "This standard is not the academic field of interpretive governance in political or social sciences."
+  },
+  "non_negotiables": {
+    "statement_types_required": ["observed", "derived", "inferred", "unknown"],
+    "no_silent_completion": true,
+    "facts_vs_inference_separation": true,
+    "traceability_required": true,
+    "no_persuasive_claims_without_evidence": true
+  },
+  "agentic_governance": {
+    "tooling_disclosure_required": true,
+    "self_validation_forbidden": true,
+    "refusal_on_missing_evidence": true,
+    "outputs_must_include_unknowns": true
+  },
+  "response_legitimacy": {
+    "response_authorization_required": true,
+    "legitimate_non_response": true,
+    "note": "When interpretive conditions are missing, conflicting, or insufficient, a system may request clarification or produce a legitimate non-response instead of defaulting to plausible completion. This is compatible with the Q-Layer (response authorization) formalized in SSA-E + A2 doctrine v1.2.0."
+  },
+  "authority_graph": "/authority-graph.jsonld",
+  "conformance": {
+    "human_readable": "/CONFORMANCE.md",
+    "machine_readable": "/conformance-levels.json"
+  },
+  "canonical": {
+    "well_known_entrypoint": "/.well-known/interpretive-governance.json",
+    "schema": "/schemas/manifest.schema.json",
+    "versions_path": "/versions/"
+  }
+}
