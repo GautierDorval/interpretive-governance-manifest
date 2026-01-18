@@ -29,6 +29,23 @@ presenting hypotheses as facts and to make uncertainty explicit and auditable.
 
 ---
 
+## Response legitimacy (Q-Layer compatibility)
+
+Interpretive Governance constrains *what* may be asserted and how statements must be typed.
+It is compatible with an additional, transversal discipline: **response legitimacy**.
+
+When interpretive conditions are missing, conflicting, or insufficient, a system may be required to
+request clarification or produce a **legitimate non-response** instead of defaulting to plausible completion.
+
+This "response authorization" layer is formalized as the **Q-Layer** in the SSA-E + A2 doctrine
+release **v1.2.0**. It is not a replacement for Interpretive Governance; it is a compatible extension
+that governs *when* an answer is allowed.
+
+Canonical reference (conceptual, normative):
+- https://github.com/GautierDorval/ssa-e-a2-doctrine/blob/v1.2.0/layers/q-layer.md
+
+---
+
 ## Scope boundary
 
 This standard applies exclusively to:
