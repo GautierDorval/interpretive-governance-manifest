@@ -67,6 +67,14 @@ An implementation may claim **full conformance** if it:
 - provides auditable traces between claims and sources;
 - refuses to produce outputs when conditions are not met.
 
+For full conformance, refusal and non-response MUST be **interpretable and auditable**:
+- the system must be able to state which condition failed;
+- what evidence was missing or conflicting;
+- and what additional input would allow a legitimate answer.
+
+Implementations MAY formalize this requirement as a distinct response-authorization layer
+(e.g., a "Q-Layer"), but must not treat naming as certification.
+
 **Label:**  
 `interpretive-governance:full`
 
