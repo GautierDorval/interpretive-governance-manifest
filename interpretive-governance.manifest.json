@@ -1,7 +1,7 @@
 {
   "name": "Interpretive Governance",
   "short_name": "interpretive-governance",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "status": "draft",
   "purpose": "Define machine-first governance rules that constrain interpretive outputs by enforcing explicit statement typing, traceability, and agentic constraints.",
   "scope": [
@@ -37,6 +37,11 @@
     "self_validation_forbidden": true,
     "refusal_on_missing_evidence": true,
     "outputs_must_include_unknowns": true
+  },
+  "response_legitimacy": {
+    "response_authorization_required": true,
+    "legitimate_non_response": true,
+    "note": "When interpretive conditions are missing, conflicting, or insufficient, a system may request clarification or produce a legitimate non-response instead of defaulting to plausible completion. This is compatible with the Q-Layer (response authorization) formalized in SSA-E + A2 doctrine v1.2.0."
   },
   "authority_graph": "/authority-graph.jsonld",
   "conformance": {
