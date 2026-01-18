@@ -19,13 +19,16 @@ An implementation MUST NOT claim conformance unless it:
 - does not present probabilistic inference as factual assertion;
 - respects the agentic constraints defined in the manifest.
 
+When required interpretive conditions are not satisfied, the implementation MUST be able
+to suspend, downgrade, or refuse output without fabricating completion.
+
 Partial implementation does not imply full conformance.
 
 ---
 
 ## 2. Levels of conformance
 
-Conformance is defined across three non-hierarchical levels.
+Conformance is defined across three non-hierarchical levels.  
 Each level defines a distinct mode of alignment.  
 Higher levels do not imply superiority, but increased enforcement and auditability.
 
@@ -53,6 +56,9 @@ An implementation may claim **structural conformance** if it:
 - exposes uncertainty explicitly;
 - documents how interpretive constraints are applied.
 
+Structural conformance requires explicit representation of unknowns,
+but does not require refusal logic.
+
 **Label:**  
 `interpretive-governance:structural`
 
@@ -65,15 +71,23 @@ An implementation may claim **full conformance** if it:
 - enforces all non-negotiable rules in the manifest;
 - applies agentic governance constraints;
 - provides auditable traces between claims and sources;
-- refuses to produce outputs when conditions are not met.
+- refuses, suspends, or downgrades outputs when required interpretive conditions are not met.
 
-For full conformance, refusal and non-response MUST be **interpretable and auditable**:
-- the system must be able to state which condition failed;
-- what evidence was missing or conflicting;
-- and what additional input would allow a legitimate answer.
+For full conformance, **non-response and refusal are first-class states** and MUST be
+**interpretable and auditable**.
 
-Implementations MAY formalize this requirement as a distinct response-authorization layer
-(e.g., a "Q-Layer"), but must not treat naming as certification.
+The system MUST be able to state:
+
+- which authorization or interpretive condition failed;
+- what evidence was missing, conflicting, or out of scope;
+- what additional input would allow a legitimate response (when applicable).
+
+Implementations MAY formalize this requirement as a distinct
+**response authorization or response legitimacy layer**
+(e.g., a "Q-Layer"),
+but MUST NOT treat naming, branding, or terminology as certification.
+
+What is required is **behavior**, not nomenclature.
 
 **Label:**  
 `interpretive-governance:full`
@@ -86,7 +100,7 @@ Any declaration of conformance MUST:
 
 - specify the conformance level;
 - identify the scope of application;
-- avoid implying certification or endorsement.
+- avoid implying certification, endorsement, or approval.
 
 Example:
 
@@ -108,21 +122,24 @@ Misrepresentation of conformance is considered a misuse of the standard.
 
 This document is normative and complements the manifest.
 
-In case of ambiguity, the manifest takes precedence.
+In case of ambiguity, the **Interpretive Governance Manifest** takes precedence.
 
 ---
 
 ## 6. Conceptual validator
 
-Conformance assessment is expected to be performed using the **Interpretive Governance conceptual validator**.
+Conformance assessment is expected to be performed using the
+**Interpretive Governance conceptual validator**.
 
 The validator defines:
+
 - required checks per conformance level;
 - failure conditions;
-- downgrade and refusal logic.
+- downgrade, suspension, and refusal logic;
+- transparency requirements for non-actions.
 
-Canonical reference:
+Canonical reference:  
 https://interpretive-governance.org/VALIDATOR.md
 
-The validator is normative for conformance assessment but does not constitute certification.
-
+The validator is normative for conformance assessment
+but does not constitute certification.
