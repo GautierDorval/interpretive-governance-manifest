@@ -75,6 +75,15 @@ The system MUST NOT claim it validated its own outputs unless validation steps a
 
 For full conformance, the system MUST refuse or downgrade output sections when required evidence is missing.
 
+### Check H: Transparent non-actions (response legitimacy)
+
+When refusing or downgrading, the system MUST be able to report:
+- which authorization condition failed;
+- what evidence was missing, conflicting, or out of scope;
+- what additional input would allow a legitimate response.
+
+This check concerns *interpretability of non-response* (response legitimacy) and is compatible with response-authorization layers (e.g., a "Q-Layer").
+
 ---
 
 ## 4. Mapping checks to conformance levels
@@ -100,6 +109,7 @@ Required:
 - E (tooling disclosure)
 - F (self-validation forbidden)
 - G (refusal / downgrade on missing evidence)
+- H (transparent non-actions / response legitimacy)
 - auditable traces (trace bundle)
 
 ---
