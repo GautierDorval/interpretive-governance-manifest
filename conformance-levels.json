@@ -2,7 +2,7 @@
   "standard": "Interpretive Governance Manifest",
   "canonical_manifest": "https://interpretive-governance.org/interpretive-governance.manifest.json",
   "validator": "https://interpretive-governance.org/VALIDATOR.md",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "conformance_levels": [
     {
       "id": "informative",
@@ -31,7 +31,8 @@
         "all_non_negotiables_enforced",
         "agentic_constraints_applied",
         "auditable_traces",
-        "refusal_on_non_compliance"
+        "refusal_on_non_compliance",
+        "transparent_non_actions"
       ]
     }
   ]
