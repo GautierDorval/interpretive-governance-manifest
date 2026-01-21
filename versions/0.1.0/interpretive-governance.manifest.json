@@ -1,27 +1,36 @@
 {
-  "name": "Interpretive Governance Manifest",
+  "name": "Interpretive Governance",
   "short_name": "interpretive-governance",
   "version": "0.1.0",
   "status": "draft",
-  "purpose": "Define machine-first governance rules that constrain interpretive outputs by enforcing explicit statement typing, traceability, and agentic constraints.",
+
+  "purpose": "Define initial machine-first governance rules that constrain interpretive outputs by enforcing explicit statement typing and traceability.",
+
   "scope": [
     "representation_governance",
     "decision_governance",
     "agentic_governance"
   ],
+
   "non_negotiables": {
-    "statement_types_required": ["observed", "derived", "inferred", "unknown"],
+    "statement_types_required": [
+      "observed",
+      "derived",
+      "inferred",
+      "unknown"
+    ],
     "no_silent_completion": true,
     "facts_vs_inference_separation": true,
-    "traceability_required": true,
-    "no_persuasive_claims_without_evidence": true
+    "traceability_required": true
   },
+
   "agentic_governance": {
     "tooling_disclosure_required": true,
     "self_validation_forbidden": true,
     "refusal_on_missing_evidence": true,
     "outputs_must_include_unknowns": true
   },
+
   "canonical": {
     "well_known_entrypoint": "/.well-known/interpretive-governance.json",
     "schema": "/schemas/manifest.schema.json",
