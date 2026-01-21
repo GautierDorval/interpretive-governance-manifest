@@ -73,6 +73,27 @@ Status: **draft**.
 
 ---
 
+## Canonical references
+
+Interpretive Governance is the **normative governance layer** of a broader interpretive architecture.
+
+Authoritative human-readable references:
+- https://gautierdorval.com/doctrine/
+- https://gautierdorval.com/doctrine/gouvernance-exogene/
+
+Machine-first canonical endpoints:
+- https://interpretive-governance.org/
+- https://interpretive-governance.org/interpretive-governance.manifest.json
+- https://interpretive-governance.org/authority-graph.jsonld
+
+Related but non-equivalent architectures:
+- SSA-E + A2 + Dual Web (implementation architecture)
+  https://github.com/GautierDorval/ssa-e-a2-doctrine
+- Interpretive SEO (application domain)
+  https://github.com/GautierDorval/interpretive-seo
+
+---
+
 ## Provenance
 
 Interpretive Governance was initiated and architected by **Gautier Dorval**
@@ -84,3 +105,11 @@ https://gautierdorval.com/
 
 This provenance is informative only and does not introduce personal authority
 into the normative definition of the standard.
+
+---
+
+This repository does not redefine SEO practices, web architecture,
+or domain-specific applications.
+Such applications must explicitly reference Interpretive Governance
+without redefining its normative core.
+
