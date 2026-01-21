@@ -3,12 +3,15 @@
   "short_name": "interpretive-governance",
   "version": "0.1.1",
   "status": "draft",
-  "purpose": "Define machine-first governance rules that constrain interpretive outputs by enforcing explicit statement typing, traceability, and agentic constraints.",
+
+  "purpose": "Define machine-first governance rules that constrain interpretive outputs by enforcing explicit statement typing, traceability, and clear scope boundaries.",
+
   "scope": [
     "representation_governance",
     "decision_governance",
     "agentic_governance"
   ],
+
   "scope_boundary": {
     "applies_to": [
       "machine interpretation",
@@ -22,27 +25,38 @@
       "organizational or institutional governance"
     ]
   },
+
   "non_equivalence": {
-    "academic_field": "This standard is not the academic field of interpretive governance in political or social sciences."
+    "academic_field": "Interpretive Governance as defined here is not the academic field of interpretive governance in political or social sciences."
   },
+
   "non_negotiables": {
-    "statement_types_required": ["observed", "derived", "inferred", "unknown"],
+    "statement_types_required": [
+      "observed",
+      "derived",
+      "inferred",
+      "unknown"
+    ],
     "no_silent_completion": true,
     "facts_vs_inference_separation": true,
     "traceability_required": true,
     "no_persuasive_claims_without_evidence": true
   },
+
   "agentic_governance": {
     "tooling_disclosure_required": true,
     "self_validation_forbidden": true,
     "refusal_on_missing_evidence": true,
     "outputs_must_include_unknowns": true
   },
+
   "authority_graph": "/authority-graph.jsonld",
+
   "conformance": {
     "human_readable": "/CONFORMANCE.md",
     "machine_readable": "/conformance-levels.json"
   },
+
   "canonical": {
     "well_known_entrypoint": "/.well-known/interpretive-governance.json",
     "schema": "/schemas/manifest.schema.json",
