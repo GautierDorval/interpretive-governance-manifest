@@ -3,54 +3,124 @@
   "short_name": "interpretive-governance",
   "version": "0.1.2",
   "status": "draft",
-  "purpose": "Define machine-first governance rules that constrain interpretive outputs by enforcing explicit statement typing, traceability, and agentic constraints.",
+
+  "purpose": "Define a machine-first governance standard that constrains interpretation, decision-making, and agentic outputs in probabilistic systems by enforcing explicit statement typing, traceability, and legitimate refusal conditions.",
+
   "scope": [
     "representation_governance",
+    "interpretation_governance",
     "decision_governance",
     "agentic_governance"
   ],
+
   "scope_boundary": {
     "applies_to": [
-      "machine interpretation",
+      "machine interpretation of content and entities",
       "probabilistic reasoning systems",
-      "agentic decision outputs"
+      "automated or agentic decision outputs",
+      "summarization, synthesis, and response generation"
     ],
     "does_not_apply_to": [
       "political science",
       "social science",
       "public policy governance",
-      "organizational or institutional governance"
+      "organizational or institutional governance",
+      "marketing strategy",
+      "performance optimization",
+      "legal or regulatory compliance advice"
     ]
   },
+
   "non_equivalence": {
-    "academic_field": "This standard is not the academic field of interpretive governance in political or social sciences."
+    "academic_field": "Interpretive Governance as defined here is not the academic field of interpretive governance in political or social sciences.",
+    "prompting_frameworks": "This standard is not a prompting technique or a prompt engineering framework.",
+    "safety_layers": "This standard does not replace model safety layers or content moderation systems."
   },
+
+  "core_principles": {
+    "explicit_statement_typing": true,
+    "facts_and_inference_separation": true,
+    "traceability_over_plausibility": true,
+    "bounded_interpretation": true,
+    "legitimate_non_response": true
+  },
+
+  "statement_types": {
+    "required": [
+      "observed",
+      "derived",
+      "inferred",
+      "unknown"
+    ],
+    "definitions": {
+      "observed": "Directly sourced or verifiable information.",
+      "derived": "Values computed or transformed from observed information.",
+      "inferred": "Probabilistic hypotheses not directly supported by evidence.",
+      "unknown": "Missing, undefined, or unverifiable information."
+    }
+  },
+
   "non_negotiables": {
-    "statement_types_required": ["observed", "derived", "inferred", "unknown"],
     "no_silent_completion": true,
-    "facts_vs_inference_separation": true,
+    "no_facts_from_inference": true,
     "traceability_required": true,
-    "no_persuasive_claims_without_evidence": true
+    "no_persuasive_claims_without_evidence": true,
+    "unknowns_must_be_explicit": true
   },
+
   "agentic_governance": {
     "tooling_disclosure_required": true,
     "self_validation_forbidden": true,
     "refusal_on_missing_evidence": true,
-    "outputs_must_include_unknowns": true
+    "outputs_must_preserve_unknowns": true,
+    "no_implicit_goal_completion": true
   },
+
   "response_legitimacy": {
     "response_authorization_required": true,
     "legitimate_non_response": true,
-    "note": "When interpretive conditions are missing, conflicting, or insufficient, a system may request clarification or produce a legitimate non-response instead of defaulting to plausible completion. This is compatible with the Q-Layer (response authorization) formalized in SSA-E + A2 doctrine v1.2.0."
+    "allowed_outcomes": [
+      "authorized_response",
+      "request_for_clarification",
+      "referral_to_canonical_source",
+      "legitimate_non_response"
+    ],
+    "note": "When interpretive conditions are insufficient, ambiguous, or in conflict, the system must prefer clarification, referral, or legitimate non-response over plausible completion. This mechanism is compatible with, but not dependent on, the Q-Layer formalized in the SSA-E + A2 doctrine."
   },
-  "authority_graph": "/authority-graph.jsonld",
-  "conformance": {
-    "human_readable": "/CONFORMANCE.md",
-    "machine_readable": "/conformance-levels.json"
+
+  "relationships": {
+    "normative_layer": "Interpretive Governance",
+    "compatible_extensions": [
+      "Q-Layer (response legitimacy discipline)"
+    ],
+    "implementation_architectures": [
+      "SSA-E + A2 + Dual Web"
+    ],
+    "application_domains": [
+      "Interpretive SEO",
+      "entity disambiguation",
+      "machine-readable documentation",
+      "agentic pipelines"
+    ]
   },
+
+  "artifacts": {
+    "authority_graph": "https://interpretive-governance.org/authority-graph.jsonld",
+    "schema": "https://interpretive-governance.org/schemas/manifest.schema.json",
+    "conformance": "https://interpretive-governance.org/CONFORMANCE.md",
+    "validator": "https://interpretive-governance.org/VALIDATOR.md"
+  },
+
   "canonical": {
-    "well_known_entrypoint": "/.well-known/interpretive-governance.json",
-    "schema": "/schemas/manifest.schema.json",
-    "versions_path": "/versions/"
+    "website": "https://interpretive-governance.org/",
+    "manifest": "https://interpretive-governance.org/interpretive-governance.manifest.json",
+    "well_known_entrypoint": "https://interpretive-governance.org/.well-known/interpretive-governance.json",
+    "versions_path": "https://interpretive-governance.org/versions/"
+  },
+
+  "provenance": {
+    "initiator": "Gautier Dorval",
+    "canonical_identity": "https://gautierdorval.com/",
+    "note": "Provenance is informative only and does not introduce personal authority into the normative definition of the standard."
   }
 }
