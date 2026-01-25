@@ -46,6 +46,23 @@ Canonical reference (conceptual, normative):
 
 ---
 
+## Observability and response legitimacy
+
+Interpretive Governance defines **what may be asserted** and **how claims must be typed**.
+
+It does not mandate runtime observability.
+However, implementations may publish **non-normative observability surfaces**
+to make declared constraints auditable after the fact.
+
+Such surfaces:
+- do not certify correctness,
+- do not validate conformance,
+- do not replace the manifest.
+
+They exist to make influence detectable and non-actions interpretable.
+
+---
+
 ## Scope boundary
 
 This standard applies exclusively to:
