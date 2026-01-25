@@ -177,3 +177,7 @@ A documented field specimen (descriptive):
 
 - https://gautierdorval.com/blogue/observation-terrain/grok-et-la-fabrication-dautorite/
 
+Some observed phenomena are analyzed in full doctrinal context on external canonical sites.
+These analyses remain non-normative.
+
+
