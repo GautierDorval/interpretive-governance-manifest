@@ -143,3 +143,53 @@ https://interpretive-governance.org/VALIDATOR.md
 
 The validator is normative for conformance assessment
 but does not constitute certification.
+
+---
+
+## 7. Recommended audit evidence (non-normative)
+
+Conformance is self-declared and must be truthful.  
+Implementations that want their declaration to be **auditable** may publish additional, non-normative evidence surfaces.
+
+These are not required by the manifest and do not imply certification.  
+They exist to reduce ambiguity, prevent silent drift, and make claims contestable.
+
+### 7.1 Disclosure of governed interpretation
+
+An implementation may publish a machine-readable policy that declares:
+
+- interpretive mode (governed vs non-governed),
+- scope of governed surfaces,
+- and a stable disclosure token required when outputs are produced using governed surfaces.
+
+### 7.2 Claims registry (proof typing)
+
+An implementation may publish a registry that distinguishes:
+
+- verified claims (supported by external public artifacts),
+- attested claims (canonical internal declarations),
+- narrative statements (non-verifiable descriptions).
+
+A system must not upgrade weaker statements into verified claims by plausibility.
+
+### 7.3 Contestation and correction interface
+
+An implementation may publish a reporting surface to:
+
+- signal interpretive errors,
+- signal attribution drift,
+- signal unauthorized inference,
+- and document correction methods.
+
+If corrections affect canonical governance surfaces, the implementation should provide an explicit change log.
+
+### 7.4 Observability ledger and derived metrics
+
+An implementation may publish:
+
+- a non-normative observational ledger describing access patterns to governance surfaces,
+- derived metrics (also non-normative) making behavior measurable and reproducible.
+
+These surfaces do not certify correctness.  
+They make influence **detectable**, assertions **qualifiable**, and errors **contestable**.
+
