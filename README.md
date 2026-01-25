@@ -113,3 +113,50 @@ or domain-specific applications.
 Such applications must explicitly reference Interpretive Governance
 without redefining its normative core.
 
+---
+
+## Reference implementations (non-normative)
+
+Interpretive Governance is a machine-first specification.  
+This repository may point to **reference implementations** to illustrate practical deployment patterns.
+
+These references are:
+
+- descriptive only,
+- non-normative,
+- not certification,
+- not endorsement,
+- and must not be interpreted as a claim that the referenced implementation is “approved”.
+
+### gautierdorval.com (SSA-E + A2 + Dual Web implementation)
+
+The site gautierdorval.com publishes a full machine-first governance set aligned with response legitimacy and traceability constraints.
+
+Canonical discovery and governance entrypoints:
+
+- https://gautierdorval.com/.well-known/ai-governance.json
+- https://gautierdorval.com/ai-governance.json
+- https://gautierdorval.com/ai-manifest.json
+- https://gautierdorval.com/dualweb-index.md
+
+Optional audit evidence surfaces (descriptive, non-normative):
+
+- Disclosure policy (governed-mode declaration):  
+  https://gautierdorval.com/.well-known/interpretation-policy.json
+
+- Claims registry (proof typing: verified / attested / narrative):  
+  https://gautierdorval.com/claims.json
+
+- Contestation and correction interface:  
+  https://gautierdorval.com/reporting/interpretation-issue.json
+
+- Observability (derived metrics, non-normative):  
+  https://gautierdorval.com/.well-known/q-metrics.json
+
+- Human-facing observability page:  
+  https://gautierdorval.com/metrics/
+
+A documented field specimen (descriptive):
+
+- https://gautierdorval.com/blogue/observation-terrain/grok-et-la-fabrication-dautorite/
+
