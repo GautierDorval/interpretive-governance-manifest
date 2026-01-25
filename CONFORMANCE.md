@@ -146,6 +146,23 @@ but does not constitute certification.
 
 ---
 
+## 7. Observability evidence (non-normative)
+
+Conformance does not require observability.
+
+However, implementations may publish descriptive evidence surfaces to support
+truthful and auditable self-declarations.
+
+Examples include:
+- disclosure policies,
+- typed claims registries,
+- contestation and correction interfaces,
+- non-normative observational ledgers and derived metrics.
+
+These surfaces must never be interpreted as certification or compliance.
+
+---
+
 ## 7. Recommended audit evidence (non-normative)
 
 Conformance is self-declared and must be truthful.  
