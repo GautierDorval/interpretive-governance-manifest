@@ -1,22 +1,22 @@
 # Constraintive Governance — levers (runtime)
 
-This document lists **runtime levers**.
-They are enforced by configuration and system architecture, not by prompting.
+This document lists runtime levers used to enforce constraintive governance.
+They are enforced by configuration and orchestration, **not by prompting**.
 
 ## 1) Inference parameters (bounded variability)
 
 Examples:
 
-- temperature (low variability)
+- temperature (low variability regimes)
 - top_p (bounded sampling)
 - max_tokens (bounded completion length)
-- penalties (bounded repetition / drift)
+- presence_penalty / frequency_penalty (bounded drift and repetition)
 
-These values must be set in the orchestrator or API wrapper, not via instruction text.
+These values must be set in the orchestrator or API wrapper.
 
-## 2) Output constraints (format and structure)
+## 2) Output constraints (format enforcement)
 
-- strict JSON output
+- strict JSON outputs
 - JSON Schema validation
 - required fields and types
 - refusal on invalid schema
@@ -33,22 +33,33 @@ Abstention is a **system decision**, triggered when:
 - evidence is missing,
 - sources conflict,
 - scope is violated,
+- schema is invalid,
 - confidence thresholds are not met.
 
-Abstention is enforced by policy and routing, not by “asking the model to abstain”.
+Abstention must be enforced by routing and policy, not by “asking the model to abstain”.
 
 ## 4) Retrieval boundaries (RAG boundedness)
 
 - allowlist of sources
-- denylist of sources
+- deny-by-default retrieval
 - canonical priority ordering
 - scope-limited retrieval per request type
-- refusal when retrieval is outside boundary
+- refusal when retrieval falls outside boundary
 
 ## 5) Orchestration constraints (multi-step systems)
 
-- fixed routing rules
+- fixed routing rules and roles
 - role separation (generator vs checker vs router)
 - no self-validation by the same role
-- controlled retry strategy (limited attempts)
+- limited retry strategy (bounded attempts)
 - audit logging of each step and decision
+
+## 6) Observability (non-normative)
+
+Implementations may expose descriptive observability surfaces, such as:
+
+- runtime configuration disclosures (what was fixed),
+- rejection reasons (schema invalid, scope violation),
+- abstention statistics.
+
+These are descriptive only and do not certify correctness or conformance.
