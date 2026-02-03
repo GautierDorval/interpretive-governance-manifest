@@ -5,7 +5,7 @@ exclusively in **agentic-closed** environments.
 
 It is best understood as:
 
-> a normative configuration of execution that bounds what the system is permitted to compute and emit.
+> a normative configuration of execution that bounds what a system is permitted to compute and emit.
 
 It is:
 
@@ -16,26 +16,73 @@ It is:
 
 ## What it governs
 
-Constraintive Governance governs:
+Constraintive Governance governs three domains:
 
 1. **Input space**  
-   what the system is allowed to see (retrieval scope, source allowlists, exclusions)
+   What the system is allowed to see:
+   - retrieval scope,
+   - source allowlists,
+   - exclusions and deny-by-default boundaries.
 
 2. **Output space**  
-   what the system is allowed to emit (formats, schemas, prohibitions, bounded variability)
+   What the system is allowed to emit:
+   - formats,
+   - schemas,
+   - prohibited content classes,
+   - bounded variability.
 
 3. **Execution conditions**  
-   parameters, validation, retry rules, abstention thresholds, orchestration routing
+   How the system executes:
+   - inference parameters (temperature, top_p, max tokens),
+   - validation and rejection logic,
+   - retry limits,
+   - abstention thresholds,
+   - routing and orchestration constraints.
 
 ## Why it exists
 
-Because models do not self-stabilize, runtime coherence must be external.
-Constraintive Governance is the practical mechanism that enforces that external coherence
-in controlled environments.
+Models do not self-stabilize.
+Therefore, coherence, safety, and non-extrapolation must be imposed externally.
+
+Constraintive Governance is the **runtime enforcement substrate** that makes those external constraints real
+in environments where execution can be controlled.
 
 ## Relationship to Interpretive Governance
 
-- Interpretive Governance governs *claim typing, traceability, and legitimacy conditions*.
-- Constraintive Governance governs *execution bounds*.
+- **Interpretive Governance (layer 1)** governs claim legitimacy and typing:
+  - observed / derived / inferred / unknown,
+  - traceability over plausibility,
+  - legitimate non-response when conditions are missing.
 
-In agentic-closed systems, layer 2 is the **technical substrate** that allows layer 1 to be enforced reliably.
+- **Constraintive Governance (layer 2)** governs execution bounds:
+  - what may be retrieved,
+  - how inference is configured,
+  - what formats are accepted,
+  - when abstention is triggered.
+
+Layer 2 does not replace layer 1.
+In **agentic-closed** systems, layer 2 becomes the **technical substrate** that enables layer 1 enforcement at runtime.
+
+## Regime boundary (canonical)
+
+- **Web-open**: layer 2 is inapplicable (no control over runtime).  
+  Only layer 1 can govern surfaces and interpretation conditions.
+
+- **Agentic-closed**: layer 2 is applicable and supports layer 1  
+  by adding control of execution to control of surfaces.
+
+## Reference implementations (non-normative)
+
+This repository is a specification.
+Reference implementations may exist in separate repositories.
+
+These references are:
+
+- descriptive only,
+- non-normative,
+- not certification,
+- not endorsement,
+- and must not be interpreted as conformance claims.
+
+Reference:
+- https://github.com/GautierDorval/interpretive-agentic-reference
