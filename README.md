@@ -130,6 +130,9 @@ See also:
 - `/glossary.md`
 - `/references.md`
 
+![Architecture of regimes](assets/regimes-architecture.svg)
+Diagram note: structural illustration only; does not define conformance for any specific implementation.
+
 ---
 
 ## Canonical references
@@ -218,8 +221,6 @@ Optional audit evidence surfaces (descriptive, non-normative):
 A documented field specimen (descriptive):
 
 - https://gautierdorval.com/blogue/observation-terrain/grok-et-la-fabrication-dautorite/
-
-![Architecture of regimes](assets/regimes-architecture.svg)
 
 Some observed phenomena are analyzed in full doctrinal context on external canonical sites.
 These analyses remain non-normative.
