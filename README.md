@@ -90,6 +90,29 @@ Status: **draft**.
 
 ---
 
+## Layered model (ontology → interpretive → constraintive)
+
+This repository distinguishes three layers:
+
+- **Layer 0 (Ontology)** — clarifies what LLM systems are (and are not)  
+  See: `/ontology/human-llm-ontology.md`
+
+- **Layer 1 (Interpretive Governance)** — governs what may be asserted and how claims must be typed  
+  See: `/interpretive-governance/definition.md`
+
+- **Layer 2 (Constraintive Governance)** — runtime-only execution constraints (agentic-closed only)  
+  See: `/constraintive-governance/definition.md`
+
+**Regime boundary:**
+- In **web-open** environments, layer 2 is inapplicable; layer 1 governs surfaces only.
+- In **agentic-closed** environments, layer 2 becomes the technical substrate enabling layer 1 at runtime.
+
+See also:
+- `/glossary.md`
+- `/references.md`
+
+---
+
 ## Canonical references
 
 Interpretive Governance is the **normative governance layer** of a broader interpretive architecture.
