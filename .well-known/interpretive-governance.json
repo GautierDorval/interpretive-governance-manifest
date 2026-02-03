@@ -30,6 +30,11 @@
     "context": "https://interpretive-governance.org/context.html",
     "conformance": "https://interpretive-governance.org/CONFORMANCE.md",
     "validator": "https://interpretive-governance.org/VALIDATOR.md",
+    "ontology_layer": "https://interpretive-governance.org/ontology/human-llm-ontology.md",
+    "interpretive_layer": "https://interpretive-governance.org/interpretive-governance/definition.md",
+    "constraintive_layer": "https://interpretive-governance.org/constraintive-governance/definition.md",
+    "glossary": "https://interpretive-governance.org/glossary.md",
+    "references": "https://interpretive-governance.org/references.md",
     "manifest_schema": "https://interpretive-governance.org/schemas/manifest.schema.json"
   },
   "related_doctrine": {
@@ -49,5 +54,5 @@
     "canonical_identity": "https://gautierdorval.com/",
     "note": "Provenance is informative only and does not affect normative conformance."
   },
-  "last_updated": "2026-01-21"
+  "last_updated": "2026-02-02"
 }
