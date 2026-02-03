@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Architecture of regimes: web-open versus agentic-closed">
+  <defs>
+    <style>
+      text { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #111; }
+      .title { font-size: 22px; font-weight: 700; }
+      .subtitle { font-size: 14px; }
+      .section { font-size: 18px; font-weight: 700; }
+      .label { font-size: 13px; }
+      .small { font-size: 12px; }
+      .box { fill: #fff; stroke: #111; stroke-width: 2; rx: 14; ry: 14; }
+      .muted { fill: #f6f6f6; stroke: #111; stroke-width: 2; rx: 14; ry: 14; }
+      .arrow { stroke: #111; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
+      .dash { stroke-dasharray: 6 6; }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0,0 12,4 0,8" fill="#111"/>
+    </marker>
+  </defs>
+
+  <!-- Header -->
+  <text x="40" y="52" class="title">Architecture of regimes: web-open vs agentic-closed</text>
+  <text x="40" y="78" class="subtitle">Interpretive Governance (layer 1) governs surfaces and claim legitimacy; Constraintive Governance (layer 2) governs runtime only when execution is controlled.</text>
+
+  <!-- Columns -->
+  <rect x="40" y="110" width="540" height="540" class="muted"/>
+  <rect x="620" y="110" width="540" height="540" class="muted"/>
+
+  <text x="60" y="150" class="section">Regime A — web-open</text>
+  <text x="640" y="150" class="section">Regime B — agentic-closed</text>
+
+  <!-- Layer 0 (shared) -->
+  <rect x="220" y="175" width="760" height="90" class="box"/>
+  <text x="240" y="205" class="label"><tspan font-weight="700">Layer 0 — Ontology (shared)</tspan></text>
+  <text x="240" y="228" class="small">Human cognition ≠ LLM calculation; no internal intention or lived memory; governance must be external.</text>
+  <text x="240" y="250" class="small">Stabilizes conceptual ground; non-operational.</text>
+
+  <!-- Web-open stack -->
+  <rect x="70" y="300" width="480" height="115" class="box"/>
+  <text x="90" y="332" class="label"><tspan font-weight="700">Layer 1 — Interpretive Governance</tspan> (surfaces only)</text>
+  <text x="90" y="356" class="small">Canonical surfaces, explicit negations, entity graphs, clarification indexes.</text>
+  <text x="90" y="378" class="small">Claim typing: observed / derived / inferred / unknown.</text>
+  <text x="90" y="400" class="small">Legitimate non-response when interpretive conditions are missing.</text>
+
+  <rect x="70" y="440" width="480" height="95" class="box"/>
+  <text x="90" y="470" class="label"><tspan font-weight="700">Structural limitation</tspan></text>
+  <text x="90" y="494" class="small">No control over runtime parameters, orchestration, validation, or abstention enforcement.</text>
+  <text x="90" y="516" class="small">Therefore: layer 2 is inapplicable.</text>
+
+  <!-- Agentic-closed stack -->
+  <rect x="650" y="300" width="480" height="125" class="box"/>
+  <text x="670" y="332" class="label"><tspan font-weight="700">Layer 1 — Interpretive Governance</tspan> (surfaces + claim legitimacy)</text>
+  <text x="670" y="356" class="small">Same interpretive constraints as web-open (surfaces + typed claims).</text>
+  <text x="670" y="378" class="small">Used inside the system to govern what may be asserted and what must remain unknown.</text>
+  <text x="670" y="402" class="small">Remains central; does not become a runtime mechanism.</text>
+
+  <rect x="650" y="445" width="480" height="140" class="box"/>
+  <text x="670" y="477" class="label"><tspan font-weight="700">Layer 2 — Constraintive Governance</tspan> (runtime substrate)</text>
+  <text x="670" y="501" class="small">Bounded retrieval (allowlist), fixed inference parameters, schema validation, enforced abstention.</text>
+  <text x="670" y="523" class="small">Controls execution conditions: what may be retrieved, computed, emitted, retried, or refused.</text>
+  <text x="670" y="545" class="small">Enables reliable enforcement of layer 1 constraints at runtime.</text>
+
+  <!-- Pipeline box for agentic-closed -->
+  <rect x="650" y="605" width="480" height="35" class="box"/>
+  <text x="670" y="628" class="small"><tspan font-weight="700">Pipeline:</tspan> typed request → bounded retrieval → LLM call (fixed config) → schema validation → accept / abstain</text>
+
+  <!-- Arrows -->
+  <!-- From ontology to each regime -->
+  <path d="M 420 265 L 310 300" class="arrow"/>
+  <path d="M 800 265 L 890 300" class="arrow"/>
+
+  <!-- Web-open arrow down -->
+  <path d="M 310 415 L 310 440" class="arrow"/>
+
+  <!-- Agentic-closed arrow from layer1 to layer2 -->
+  <path d="M 890 425 L 890 445" class="arrow"/>
+
+  <!-- Dashed boundary emphasis -->
+  <path d="M 560 110 L 560 650" class="arrow dash" marker-end="none"/>
+
+  <!-- Footer note -->
+  <text x="40" y="680" class="small">Key boundary: web-open governs surfaces only; agentic-closed adds runtime constraint enforcement as a separate layer.</text>
+</svg>
