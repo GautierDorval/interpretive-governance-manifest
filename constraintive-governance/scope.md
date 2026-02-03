@@ -1,29 +1,42 @@
 # Constraintive Governance — scope
 
+This document defines where Constraintive Governance can and cannot apply.
+
 ## Applicable contexts (agentic-closed)
 
 Constraintive Governance is applicable when an organization controls:
 
 - the orchestrator / wrapper calling the model,
-- retrieval and source boundaries,
+- retrieval scope and source boundaries,
 - validation and rejection logic,
-- retry and abstention rules,
-- logging and audit surfaces.
+- retry policies and abstention thresholds,
+- logging surfaces and audit trails.
 
-Typical examples:
+Examples:
 
 - internal agent systems,
-- enterprise RAG stacks with strict source policies,
-- multi-step pipelines with enforced formats and validators,
-- automated decision support where outputs must preserve unknowns.
+- enterprise RAG stacks with strict source allowlists,
+- multi-step pipelines with enforced output schemas,
+- automated decision support requiring explicit unknowns,
+- systems where “legitimate non-response” must be enforced.
 
 ## Inapplicable contexts (web-open)
 
-Constraintive Governance is **inapplicable** when the execution environment is external:
+Constraintive Governance is **inapplicable** when execution is external:
 
-- public LLMs operated by third parties,
+- public LLM interfaces operated by third parties,
 - search engines and AI answer engines,
 - external crawlers and summarizers,
-- any environment where parameters, orchestration, and validators are not under your control.
+- any environment where temperature, routing, validation, and refusal logic are not under your authority.
 
 In those contexts, only **Interpretive Governance of surfaces** (layer 1) is available.
+
+## Non-goals
+
+Constraintive Governance does not:
+
+- guarantee correctness,
+- certify compliance,
+- provide safety claims,
+- replace interpretive constraints (layer 1),
+- define any specific vendor implementation.
