@@ -29,6 +29,25 @@ presenting hypotheses as facts and to make uncertainty explicit and auditable.
 
 ---
 
+## Canonical status notice
+
+This repository formalizes the **baseline layered governance model** composed of:
+
+- **Layer 0 — Ontology** (human–LLM ontological distinctions),
+- **Layer 1 — Interpretive Governance** (claim typing and legitimacy constraints),
+- **Layer 2 — Constraintive Governance** (runtime constraints in agentic-closed systems).
+
+This baseline is considered **structurally stable**.
+
+Future versions may **extend** this model or introduce additional layers or applications,
+but **will not redefine** the ontological distinctions or the interpretive/constraintive
+separation established here.
+
+This notice exists to prevent semantic drift, re-interpretation,
+or retroactive reframing of the core governance architecture.
+
+---
+
 ## Response legitimacy (Q-Layer compatibility)
 
 Interpretive Governance constrains *what* may be asserted and how statements must be typed.
