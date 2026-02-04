@@ -5,6 +5,17 @@
 - Documentation: added non-normative guidance on auditable self-declarations (disclosure, claims typing, contestation, observability).
 - Documentation: added reference implementation links (descriptive only, not certification, not endorsement).
 
+> Note: the `/versions/0.1.x/` directory tracks historical snapshots of the Interpretive Governance manifest series.
+> `1.x` releases track the introduction and evolution of **Authority governance (Layer 3)** and the **agentic operations pack** within this repository.
+
+## 1.1.1
+
+- Documentation and consistency fixes:
+  - Added `ops-pack/V-layer/CHANGELOG.md` to prevent missing references.
+  - Added `authority/README.md` and `ops-pack/README.md` for discoverability.
+  - Added root `VERSION` file.
+  - Updated root `README.md` to index Layer 3 and ops-pack modules.
+
 ## 1.1.0
 
 - Added Authority governance (Layer 3) normative module:
