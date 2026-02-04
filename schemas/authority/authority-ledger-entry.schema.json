@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/authority/authority-ledger-entry.schema.json",
+  "title": "Authority governance — authority ledger entry schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "entry_id",
+    "timestamp",
+    "actor_identity",
+    "environment",
+    "intent_summary",
+    "action_class",
+    "target",
+    "surface",
+    "data_sensitivity",
+    "taxonomy_version",
+    "policy_version",
+    "rule_path",
+    "decision",
+    "proof_refs"
+  ],
+  "properties": {
+    "entry_id": {
+      "type": "string",
+      "minLength": 6
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actor_identity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "principal_identity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "delegation_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "environment": {
+      "type": "string",
+      "enum": ["sandbox", "staging", "production"]
+    },
+
+    "intent_summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "action_class": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "minLength": 1
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "surface": {
+      "type": "string",
+      "enum": ["internal", "external"]
+    },
+    "data_sensitivity": {
+      "type": "string",
+      "enum": ["none", "confidential", "pii", "secret"]
+    },
+
+    "taxonomy_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "policy_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "proof_model_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rule_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "type": "string",
+      "enum": ["allow", "deny", "escalate", "simulate", "rollback"]
+    },
+
+    "proof_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "ref"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "reversibility",
+              "auditability",
+              "identity",
+              "activation",
+              "oversight",
+              "two_person_rule",
+              "quorum",
+              "veto",
+              "simulation",
+              "rollback_plan"
+            ]
+          },
+          "ref": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+
+    "constraints": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": "string"
+    },
+
+    "reversibility_class": {
+      "type": "string",
+      "enum": ["reversible", "compensable", "irreversible"]
+    },
+    "rollback_window": {
+      "type": "string"
+    },
+    "rollback_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "rollback_of": {
+      "type": "string",
+      "minLength": 6
+    },
+    "rollback_outcome": {
+      "type": "string",
+      "enum": ["success", "partial", "failed"]
+    },
+    "rollback_notes": {
+      "type": "string"
+    },
+
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entry_hash": { "type": "string", "minLength": 8 },
+        "previous_entry_hash": { "type": "string", "minLength": 8 },
+        "signature_ref": { "type": "string", "minLength": 1 }
+      }
+    },
+
+    "redaction_policy_ref": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+
+  "allOf": [
+    {
+      "if": {
+        "properties": { "decision": { "const": "rollback" } },
+        "required": ["decision"]
+      },
+      "then": {
+        "required": ["rollback_of", "rollback_outcome"]
+      }
+    }
+  ]
+}
