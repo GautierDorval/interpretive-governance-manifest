@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "policy": "authority-policy",
+  "defaults": {
+    "decision": "deny",
+    "require_ledger": true,
+    "require_taxonomy_classification": true
+  },
+  "rules": [
+    {
+      "action_class": "read",
+      "decision": "allow",
+      "requirements": ["ledger", "identity"]
+    },
+    {
+      "action_class": "access_sensitive",
+      "decision": "escalate",
+      "requirements": ["ledger", "identity", "human_oversight"]
+    },
+    {
+      "action_class": "write",
+      "decision": "escalate",
+      "requirements": ["ledger", "identity", "proof_reversibility", "human_oversight"]
+    },
+    {
+      "action_class": "delete",
+      "decision": "deny",
+      "requirements": ["ledger", "identity", "proof_reversibility", "human_oversight", "two_person_rule"]
+    },
+    {
+      "action_class": "publish",
+      "decision": "simulate",
+      "requirements": ["ledger", "identity", "proof_reversibility", "human_oversight"]
+    },
+    {
+      "action_class": "message",
+      "decision": "escalate",
+      "requirements": ["ledger", "identity", "human_oversight", "data_minimization"]
+    },
+    {
+      "action_class": "pay",
+      "decision": "deny",
+      "requirements": ["ledger", "identity", "human_oversight", "two_person_rule"]
+    },
+    {
+      "action_class": "provision",
+      "decision": "escalate",
+      "requirements": ["ledger", "identity", "human_oversight", "two_person_rule"]
+    },
+    {
+      "action_class": "deploy",
+      "decision": "escalate",
+      "requirements": ["ledger", "identity", "human_oversight", "two_person_rule", "rollback_plan"]
+    },
+    {
+      "action_class": "escalate",
+      "decision": "allow",
+      "requirements": ["ledger", "identity"]
+    }
+  ],
+  "references": {
+    "proof_model": "./proof-model.md",
+    "ledger_spec": "./authority-ledger-spec.md",
+    "human_oversight": "../ops-pack/H-layer/human-oversight-protocol.md"
+  },
+  "notes": {
+    "rule": "Inference never implies authority.",
+    "asymmetry": "A response may be allowed while an act is denied, escalated, or simulation-only."
+  }
+}
