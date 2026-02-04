@@ -91,7 +91,8 @@
   "relationships": {
     "normative_layer": "Interpretive Governance",
     "compatible_extensions": [
-      "Q-Layer (response legitimacy discipline)"
+      "Q-Layer (response legitimacy discipline)",
+      "Authority governance (Layer 3 — executable authority boundary)"
     ],
     "implementation_architectures": [
       "SSA-E + A2 + Dual Web"
@@ -102,6 +103,47 @@
       "machine-readable documentation",
       "agentic pipelines"
     ]
+  },
+
+  "extensions": {
+    "note": "Extensions are additive modules that build upon the core Interpretive Governance standard. They do not redefine statement typing, ontology distinctions, or interpretive/constraintive separation. They provide additional normative constraints for executable authority and operational primitives for agentic environments.",
+    "versioning": {
+      "core_manifest_version": "0.1.2",
+      "extensions_series": "1.x",
+      "pinned_reference": "v1.1.0",
+      "pinning_rule": "Prefer pinned raw URLs for extensions to prevent drift."
+    },
+    "authority_governance_layer_3": {
+      "name": "Authority governance (Layer 3)",
+      "role": "Normative governance of executable authority. Defines the separation between inference and authority, action taxonomy, proof model, authority policy, authority ledger specification, role topology, incentive integrity, and explicit non-objectives. Non-executable by design.",
+      "pinned_version": "v1.1.0",
+      "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
+      "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/",
+      "artifacts": {
+        "boundary": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/inference-vs-authority.md",
+        "taxonomy": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/action-taxonomy.json",
+        "proof_model": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/proof-model.md",
+        "policy": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/authority-policy.json",
+        "ledger_spec": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/authority-ledger-spec.md",
+        "role_topology": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/role-topology.md",
+        "incentive_integrity": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/incentive-integrity.md",
+        "non_objectives": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/non-objectives.md"
+      }
+    },
+    "agentic_operations_pack_minimal": {
+      "name": "Agentic operations pack (minimal)",
+      "role": "Operational primitives supporting production-grade authority governance: human oversight, privacy & data lineage, versioning & drift change control, security & abuse resistance, incident response. Non-prescriptive, non-executable by design.",
+      "pinned_version": "v1.1.0",
+      "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
+      "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/",
+      "artifacts": {
+        "H_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/H-layer/human-oversight-protocol.md",
+        "P_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/P-layer/privacy-data-lineage.md",
+        "V_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/V-layer/versioning-drift-change-control.md",
+        "S_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/S-layer/security-abuse-resistance.md",
+        "IR_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/IR-layer/incident-response.md"
+      }
+    }
   },
 
   "artifacts": {
