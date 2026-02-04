@@ -1,9 +1,9 @@
-# Agentic operations pack (minimal)
+# Agentic operations pack
 
-This directory defines **operational extensions** required to support production-grade authority governance.
+This directory defines operational extensions supporting production-grade authority governance.
 
 This pack does not redefine doctrine.
-It provides runtime-facing primitives that make authority governance maintainable and defensible in real environments.
+It provides runtime-facing primitives required in real environments.
 
 ## Minimal pack modules
 
@@ -12,6 +12,12 @@ It provides runtime-facing primitives that make authority governance maintainabl
 - V-Layer: `V-layer/versioning-drift-change-control.md`
 - S-Layer: `S-layer/security-abuse-resistance.md`
 - IR-Layer: `IR-layer/incident-response.md`
+
+## Complete pack modules (extensions)
+
+- E-Layer: `E-layer/evaluation-assurance.md`
+- M-Layer: `M-layer/multi-agent-coordination.md`
+- C-Layer: `C-layer/cost-profiles.md`
 
 ## Non-goals
 
