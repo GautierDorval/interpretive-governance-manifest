@@ -113,9 +113,10 @@
       "pinned_reference": "v1.1.0",
       "pinning_rule": "Prefer pinned raw URLs for extensions to prevent drift."
     },
+
     "authority_governance_layer_3": {
       "name": "Authority governance (Layer 3)",
-      "role": "Normative governance of executable authority. Defines the separation between inference and authority, action taxonomy, proof model, authority policy, authority ledger specification, role topology, incentive integrity, and explicit non-objectives. Non-executable by design.",
+      "role": "Normative governance of executable authority. Defines the separation between inference and authority, action taxonomy, proof model, authority policy, authority ledger specification, role topology, incentive integrity, explicit non-objectives, and validation schemas. Non-executable by design.",
       "pinned_version": "v1.1.0",
       "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
       "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/",
@@ -127,21 +128,48 @@
         "ledger_spec": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/authority-ledger-spec.md",
         "role_topology": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/role-topology.md",
         "incentive_integrity": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/incentive-integrity.md",
-        "non_objectives": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/non-objectives.md"
+        "non_objectives": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/non-objectives.md",
+        "schemas": {
+          "readme": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/schemas/authority/README.md",
+          "action_taxonomy_schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/schemas/authority/action-taxonomy.schema.json",
+          "authority_policy_schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/schemas/authority/authority-policy.schema.json",
+          "authority_ledger_entry_schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/schemas/authority/authority-ledger-entry.schema.json"
+        }
       }
     },
-    "agentic_operations_pack_minimal": {
-      "name": "Agentic operations pack (minimal)",
-      "role": "Operational primitives supporting production-grade authority governance: human oversight, privacy & data lineage, versioning & drift change control, security & abuse resistance, incident response. Non-prescriptive, non-executable by design.",
-      "pinned_version": "v1.1.0",
-      "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
-      "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/",
-      "artifacts": {
-        "H_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/H-layer/human-oversight-protocol.md",
-        "P_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/P-layer/privacy-data-lineage.md",
-        "V_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/V-layer/versioning-drift-change-control.md",
-        "S_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/S-layer/security-abuse-resistance.md",
-        "IR_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/IR-layer/incident-response.md"
+
+    "agentic_operations_pack": {
+      "note": "The ops-pack is structured as a minimal, pinned baseline. Additional layers may exist but are not required for minimal agentic operations.",
+      "minimal": {
+        "name": "Agentic operations pack (minimal)",
+        "role": "Operational primitives supporting production-grade authority governance: human oversight, privacy & data lineage, versioning & drift change control, security & abuse resistance, incident response. Non-prescriptive, non-executable by design.",
+        "pinned_version": "v1.1.0",
+        "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
+        "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/",
+        "artifacts": {
+          "H_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/H-layer/human-oversight-protocol.md",
+          "P_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/P-layer/privacy-data-lineage.md",
+          "V_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/V-layer/versioning-drift-change-control.md",
+          "S_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/S-layer/security-abuse-resistance.md",
+          "IR_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/IR-layer/incident-response.md"
+        }
+      },
+      "available_layers": {
+        "E_layer": {
+          "name": "E-Layer (evaluation and assurance)",
+          "status": "not_pinned_in_v1.1.0",
+          "note": "This layer is part of the complete ops-pack concept but is not declared as pinned under v1.1.0 in this manifest."
+        },
+        "M_layer": {
+          "name": "M-Layer (multi-agent coordination)",
+          "status": "not_pinned_in_v1.1.0",
+          "note": "This layer is part of the complete ops-pack concept but is not declared as pinned under v1.1.0 in this manifest."
+        },
+        "C_layer": {
+          "name": "C-Layer (cost and scalability profiles)",
+          "status": "not_pinned_in_v1.1.0",
+          "note": "This layer is part of the complete ops-pack concept but is not declared as pinned under v1.1.0 in this manifest."
+        }
       }
     }
   },
