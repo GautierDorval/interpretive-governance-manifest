@@ -19,10 +19,10 @@ The validator defined in this repository is **conceptual and non-executable by d
 Interpretive Governance defines non-negotiable constraints that require
 explicit separation between:
 
-- **observed** — directly sourced facts
-- **derived** — values computed from observed facts
-- **inferred** — probabilistic hypotheses
-- **unknown** — missing or unverifiable information
+- **observed** — directly sourced facts  
+- **derived** — values computed from observed facts  
+- **inferred** — probabilistic hypotheses  
+- **unknown** — missing or unverifiable information  
 
 The objective is not to eliminate error, but to prevent systems from
 presenting hypotheses as facts and to make uncertainty explicit and auditable.
@@ -33,8 +33,8 @@ presenting hypotheses as facts and to make uncertainty explicit and auditable.
 
 This repository formalizes the **baseline layered governance model** composed of:
 
-- **Layer 0 — Ontology** (human–LLM ontological distinctions),
-- **Layer 1 — Interpretive Governance** (claim typing and legitimacy constraints),
+- **Layer 0 — Ontology** (human–LLM ontological distinctions),  
+- **Layer 1 — Interpretive Governance** (claim typing and legitimacy constraints),  
 - **Layer 2 — Constraintive Governance** (runtime constraints in agentic-closed systems).
 
 This baseline is considered **structurally stable**.
@@ -45,6 +45,22 @@ separation established here.
 
 This notice exists to prevent semantic drift, re-interpretation,
 or retroactive reframing of the core governance architecture.
+
+---
+
+## Authority governance (extension)
+
+This repository also includes an explicit extension:
+
+- **Layer 3 — Authority governance**
+
+Authority governance defines constraints on **executable authority**:
+what actions may be requested or performed, under which conditions,
+and with which proofs, roles, and audit requirements.
+
+This layer does **not** redefine interpretive governance.
+It governs **acts and effects**, independently of interpretive correctness,
+and enforces a strict boundary between inference and execution.
 
 ---
 
@@ -74,9 +90,9 @@ However, implementations may publish **non-normative observability surfaces**
 to make declared constraints auditable after the fact.
 
 Such surfaces:
-- do not certify correctness,
-- do not validate conformance,
-- do not replace the manifest.
+- do not certify correctness,  
+- do not validate conformance,  
+- do not replace the manifest.  
 
 They exist to make influence detectable and non-actions interpretable.
 
@@ -86,15 +102,18 @@ They exist to make influence detectable and non-actions interpretable.
 
 This standard applies exclusively to:
 
-- interpretive governance of representations,
-- decision outputs in probabilistic systems,
-- agentic reasoning and delegation chains.
+- interpretive governance of representations,  
+- decision outputs in probabilistic systems,  
+- agentic reasoning and delegation chains.  
 
 It does **not** define:
-- public policy frameworks,
-- institutional governance models,
-- social or political theory,
-- human organizational governance.
+- public policy frameworks,  
+- institutional governance models,  
+- social or political theory,  
+- human organizational governance.  
+
+Authority governance likewise does not define organizational authority.
+It governs machine-executed or machine-requested acts only.
 
 ---
 
@@ -104,14 +123,16 @@ It does **not** define:
 - `/.well-known/interpretive-governance.json` — stable entrypoint  
 - `/schemas/manifest.schema.json` — JSON Schema  
 - `/versions/` — immutable version snapshots  
+- `/authority/` — Authority governance (Layer 3)  
+- `/ops-pack/` — Agentic operations pack (minimal)  
 
 Status: **draft**.
 
 ---
 
-## Layered model (ontology → interpretive → constraintive)
+## Layered model (ontology → interpretive → constraintive → authority)
 
-This repository distinguishes three layers:
+This repository distinguishes four layers:
 
 - **Layer 0 (Ontology)** — clarifies what LLM systems are (and are not)  
   See: `/ontology/human-llm-ontology.md`
@@ -122,13 +143,16 @@ This repository distinguishes three layers:
 - **Layer 2 (Constraintive Governance)** — runtime-only execution constraints (agentic-closed only)  
   See: `/constraintive-governance/definition.md`
 
+- **Layer 3 (Authority Governance)** — executable authority constraints (acts, permissions, auditability)  
+  See: `/authority/inference-vs-authority.md`
+
 **Regime boundary:**
-- In **web-open** environments, layer 2 is inapplicable; layer 1 governs surfaces only.
-- In **agentic-closed** environments, layer 2 becomes the technical substrate enabling layer 1 at runtime.
+- In **web-open** environments, layers 2 and 3 are inapplicable; layer 1 governs surfaces only.  
+- In **agentic-closed** environments, layers 2 and 3 govern runtime behavior and executable authority.
 
 See also:
-- `/glossary.md`
-- `/references.md`
+- `/glossary.md`  
+- `/references.md`  
 
 ![Architecture of regimes](assets/regimes-architecture.svg)
 Diagram note: structural illustration only; does not define conformance for any specific implementation.
@@ -149,9 +173,9 @@ Machine-first canonical endpoints:
 - https://interpretive-governance.org/authority-graph.jsonld
 
 Related but non-equivalent architectures:
-- SSA-E + A2 + Dual Web (implementation architecture)
+- SSA-E + A2 + Dual Web (implementation architecture)  
   https://github.com/GautierDorval/ssa-e-a2-doctrine
-- Interpretive SEO (application domain)
+- Interpretive SEO (application domain)  
   https://github.com/GautierDorval/interpretive-seo
 
 ---
@@ -184,10 +208,10 @@ This repository may point to **reference implementations** to illustrate practic
 
 These references are:
 
-- descriptive only,
-- non-normative,
-- not certification,
-- not endorsement,
+- descriptive only,  
+- non-normative,  
+- not certification,  
+- not endorsement,  
 - and must not be interpreted as a claim that the referenced implementation is “approved”.
 
 ### gautierdorval.com (SSA-E + A2 + Dual Web implementation)
@@ -196,10 +220,10 @@ The site gautierdorval.com publishes a full machine-first governance set aligned
 
 Canonical discovery and governance entrypoints:
 
-- https://gautierdorval.com/.well-known/ai-governance.json
-- https://gautierdorval.com/ai-governance.json
-- https://gautierdorval.com/ai-manifest.json
-- https://gautierdorval.com/dualweb-index.md
+- https://gautierdorval.com/.well-known/ai-governance.json  
+- https://gautierdorval.com/ai-governance.json  
+- https://gautierdorval.com/ai-manifest.json  
+- https://gautierdorval.com/dualweb-index.md  
 
 Optional audit evidence surfaces (descriptive, non-normative):
 
@@ -224,5 +248,3 @@ A documented field specimen (descriptive):
 
 Some observed phenomena are analyzed in full doctrinal context on external canonical sites.
 These analyses remain non-normative.
-
-
