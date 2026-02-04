@@ -10,6 +10,11 @@
 > `1.x` releases track the stabilization and extension of the layered governance
 > architecture beyond the core manifest.
 
+- Added ops-pack complete modules:
+  - E-Layer (evaluation and assurance)
+  - M-Layer (multi-agent coordination)
+  - C-Layer (cost and scalability profiles)
+
 ---
 
 ## 1.1.0 — Authority governance (Layer 3) + ops pack (minimal)
