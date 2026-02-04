@@ -2,21 +2,19 @@
 
 ## Unreleased
 
-- Documentation and consistency fixes:
-  - Added `ops-pack/V-layer/CHANGELOG.md` to prevent missing references.
-  - Added `authority/README.md` and `ops-pack/README.md` for discoverability.
-  - Added root `VERSION` file.
-  - Updated root `README.md` to index Layer 3 and ops-pack modules.
+- Documentation and consistency improvements under discussion.
+- No functional or normative changes released yet.
 
-> Note: the `/versions/0.1.x/` directory tracks historical snapshots of the Interpretive Governance manifest series.
-> `1.x` releases track the introduction and evolution of **Authority governance (Layer 3)**
-> and the **agentic operations pack** within this repository.
+> Note: the `/versions/0.1.x/` directory tracks historical snapshots of the
+> Interpretive Governance manifest (core standard).
+> `1.x` releases track the stabilization and extension of the layered governance
+> architecture beyond the core manifest.
 
 ---
 
-## 1.1.0
+## 1.1.0 — Authority governance (Layer 3) + ops pack (minimal)
 
-- Added Authority governance (Layer 3) normative module:
+- Introduced **Authority governance (Layer 3)**:
   - `authority/inference-vs-authority.md`
   - `authority/action-taxonomy.json`
   - `authority/proof-model.md`
@@ -26,32 +24,37 @@
   - `authority/incentive-integrity.md`
   - `authority/non-objectives.md`
 
-- Added Agentic operations pack (minimal):
+- Introduced **Agentic operations pack (minimal)**:
   - `ops-pack/H-layer/human-oversight-protocol.md`
   - `ops-pack/P-layer/privacy-data-lineage.md`
   - `ops-pack/V-layer/versioning-drift-change-control.md`
   - `ops-pack/S-layer/security-abuse-resistance.md`
   - `ops-pack/IR-layer/incident-response.md`
 
----
-
-## 1.0.0
-
-- Introduced the 1.x release series for this repository.
-- Established the separation between:
-  - Interpretive Governance core (0.1.x series),
-  - Future normative and operational extensions.
-- No functional changes compared to 0.1.2; this release exists to mark
-  the semantic and versioning boundary between core manifest snapshots
-  and extension-based releases.
+This release formally separates **interpretation** from **executable authority**
+and introduces the minimal operational primitives required for real-world
+agentic systems, without redefining the interpretive core.
 
 ---
 
-## 0.1.2
+## 1.0.0 — Ontology locked — layered governance baseline
 
-- Introduced a **response legitimacy** section in the manifest to make response authorization explicit.
-- Clarified compatibility with the SSA-E + A2 **Q-Layer** (response authorization) introduced in doctrine v1.2.0.
-- Published immutable version snapshot under `/versions/0.1.2/`.
+- Formalized and locked the layered governance baseline:
+  - Layer 0 — Ontology
+  - Layer 1 — Interpretive Governance
+  - Layer 2 — Constraintive Governance
+
+- No new functional modules introduced.
+- This release exists to mark a **semantic and architectural stabilization point**
+prior to the introduction of executable authority governance.
+
+---
+
+## 0.1.2 — Response legitimacy compatibility (Q-Layer)
+
+- Introduced explicit response legitimacy concepts in the manifest.
+- Clarified compatibility with the SSA-E + A2 **Q-Layer** (response authorization).
+- Published immutable snapshot under `/versions/0.1.2/`.
 
 ---
 
@@ -60,11 +63,10 @@
 - Added explicit non-equivalence with the academic field of interpretive governance.
 - Introduced formal scope boundaries for machine-first usage.
 - Clarified provenance and non-normative context separation.
-- Published immutable version snapshot under `/versions/0.1.1/`.
-- Minor structural corrections to the manifest.
+- Published immutable snapshot under `/versions/0.1.1/`.
 
 ---
 
 ## 0.1.0
 
-- Initial publication of the Interpretive Governance Manifest.
+- Initial publication of the Interpretive Governance manifest.
