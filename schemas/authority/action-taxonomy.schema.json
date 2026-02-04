@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/authority/action-taxonomy.schema.json",
+  "title": "Authority governance — action taxonomy schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "taxonomy", "definitions", "action_classes", "notes"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "taxonomy": {
+      "type": "string",
+      "const": "action-taxonomy"
+    },
+    "definitions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reversibility_class", "criticality", "surface", "data_sensitivity"],
+      "properties": {
+        "reversibility_class": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["reversible", "compensable", "irreversible"] },
+          "minItems": 3,
+          "uniqueItems": true
+        },
+        "criticality": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+          "minItems": 4,
+          "uniqueItems": true
+        },
+        "surface": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["internal", "external"] },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "data_sensitivity": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["none", "confidential", "pii", "secret"] },
+          "minItems": 4,
+          "uniqueItems": true
+        }
+      }
+    },
+    "action_classes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "surface", "reversibility_class", "criticality", "data_sensitivity"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "surface": {
+            "type": "string",
+            "enum": ["internal", "external"]
+          },
+          "reversibility_class": {
+            "type": "string",
+            "enum": ["reversible", "compensable", "irreversible"]
+          },
+          "criticality": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "critical"]
+          },
+          "data_sensitivity": {
+            "type": "string",
+            "enum": ["none", "confidential", "pii", "secret"]
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["principle", "rule"],
+      "properties": {
+        "principle": { "type": "string", "minLength": 1 },
+        "rule": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
