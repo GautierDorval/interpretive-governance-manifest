@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0",
+  "taxonomy": "action-taxonomy",
+  "definitions": {
+    "reversibility_class": ["reversible", "compensable", "irreversible"],
+    "criticality": ["low", "medium", "high", "critical"],
+    "surface": ["internal", "external"],
+    "data_sensitivity": ["none", "confidential", "pii", "secret"]
+  },
+  "action_classes": [
+    {
+      "id": "read",
+      "label": "Read-only access",
+      "surface": "internal",
+      "reversibility_class": "reversible",
+      "criticality": "low",
+      "data_sensitivity": "confidential"
+    },
+    {
+      "id": "access_sensitive",
+      "label": "Access sensitive data",
+      "surface": "internal",
+      "reversibility_class": "reversible",
+      "criticality": "high",
+      "data_sensitivity": "pii"
+    },
+    {
+      "id": "write",
+      "label": "Write/update external or internal records",
+      "surface": "external",
+      "reversibility_class": "compensable",
+      "criticality": "high",
+      "data_sensitivity": "confidential"
+    },
+    {
+      "id": "delete",
+      "label": "Delete records or content",
+      "surface": "external",
+      "reversibility_class": "irreversible",
+      "criticality": "critical",
+      "data_sensitivity": "confidential"
+    },
+    {
+      "id": "publish",
+      "label": "Publish public content (web, social, email campaigns)",
+      "surface": "external",
+      "reversibility_class": "compensable",
+      "criticality": "high",
+      "data_sensitivity": "confidential"
+    },
+    {
+      "id": "message",
+      "label": "Send messages to external recipients",
+      "surface": "external",
+      "reversibility_class": "compensable",
+      "criticality": "high",
+      "data_sensitivity": "pii"
+    },
+    {
+      "id": "pay",
+      "label": "Payments, billing, financial transactions",
+      "surface": "external",
+      "reversibility_class": "irreversible",
+      "criticality": "critical",
+      "data_sensitivity": "secret"
+    },
+    {
+      "id": "provision",
+      "label": "Provision resources (accounts, infrastructure, entitlements)",
+      "surface": "external",
+      "reversibility_class": "compensable",
+      "criticality": "critical",
+      "data_sensitivity": "secret"
+    },
+    {
+      "id": "deploy",
+      "label": "Deploy changes to production systems",
+      "surface": "external",
+      "reversibility_class": "compensable",
+      "criticality": "critical",
+      "data_sensitivity": "secret"
+    },
+    {
+      "id": "escalate",
+      "label": "Escalate to humans or binding systems",
+      "surface": "external",
+      "reversibility_class": "compensable",
+      "criticality": "medium",
+      "data_sensitivity": "confidential"
+    }
+  ],
+  "notes": {
+    "principle": "Classification is mandatory before any authority decision.",
+    "rule": "Inference never implies authority."
+  }
+}
