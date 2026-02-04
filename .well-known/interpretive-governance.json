@@ -26,6 +26,43 @@
       "manifest": "https://interpretive-governance.org/versions/0.1.0/interpretive-governance.manifest.json"
     }
   },
+  "extensions": {
+    "note": "Extensions are additive modules that build upon the core Interpretive Governance manifest. They do not redefine statement typing, ontology distinctions, or interpretive/constraintive separation. They are referenced via immutable Git tags and raw endpoints.",
+    "core_series": "0.1.x",
+    "extensions_series": "1.x",
+    "pinned_reference": "v1.1.0",
+    "authority_governance_layer_3": {
+      "name": "Authority governance (Layer 3)",
+      "role": "Executable authority boundary: permissions, proofs, audit trails, reversibility, activation, separation of duties, veto, and explicit non-objectives. Non-executable by design.",
+      "pinned_version": "v1.1.0",
+      "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
+      "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/",
+      "artifacts": {
+        "boundary": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/inference-vs-authority.md",
+        "taxonomy": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/action-taxonomy.json",
+        "proof_model": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/proof-model.md",
+        "policy": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/authority-policy.json",
+        "ledger_spec": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/authority-ledger-spec.md",
+        "role_topology": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/role-topology.md",
+        "incentive_integrity": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/incentive-integrity.md",
+        "non_objectives": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/non-objectives.md"
+      }
+    },
+    "agentic_operations_pack_minimal": {
+      "name": "Agentic operations pack (minimal)",
+      "role": "Operational primitives supporting production-grade authority governance: human oversight, privacy & data lineage, versioning & drift control, security & abuse resistance, incident response. Non-executable by design.",
+      "pinned_version": "v1.1.0",
+      "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
+      "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/",
+      "artifacts": {
+        "H_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/H-layer/human-oversight-protocol.md",
+        "P_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/P-layer/privacy-data-lineage.md",
+        "V_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/V-layer/versioning-drift-change-control.md",
+        "S_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/S-layer/security-abuse-resistance.md",
+        "IR_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/IR-layer/incident-response.md"
+      }
+    }
+  },
   "entrypoints": {
     "context": "https://interpretive-governance.org/context.html",
     "conformance": "https://interpretive-governance.org/CONFORMANCE.md",
@@ -47,12 +84,12 @@
     "canonical_identity_repo": "https://github.com/GautierDorval/gautierdorval-identity"
   },
   "integrity": {
-    "version_snapshots": "Snapshots under /versions/ are intended to be immutable references. The latest canonical endpoints may evolve while preserving backward referenceability."
+    "version_snapshots": "Snapshots under /versions/ are intended to be immutable references for the core manifest (0.1.x). Extensions (1.x) are pinned via Git tags and raw endpoints to prevent drift."
   },
   "provenance": {
     "initiator": "Gautier Dorval",
     "canonical_identity": "https://gautierdorval.com/",
     "note": "Provenance is informative only and does not affect normative conformance."
   },
-  "last_updated": "2026-02-02"
+  "last_updated": "2026-02-04"
 }
