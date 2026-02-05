@@ -35,32 +35,75 @@
       in political or social sciences.
     </p>
 
-    <h2>Canonical files</h2>
+    <h2>Canonical files (core manifest)</h2>
 
     <ul>
       <li><a href="/interpretive-governance.manifest.json">interpretive-governance.manifest.json</a> (canonical manifest)</li>
       <li><a href="/.well-known/interpretive-governance.json">.well-known/interpretive-governance.json</a> (stable entrypoint)</li>
       <li><a href="/schemas/manifest.schema.json">schemas/manifest.schema.json</a> (JSON Schema)</li>
       <li><a href="/authority-graph.jsonld">authority-graph.jsonld</a> (authority graph)</li>
-<li>
-  <a href="/versions/0.1.2/interpretive-governance.manifest.json">
-    versions/0.1.2/interpretive-governance.manifest.json
-  </a>
-  (immutable version snapshot)
-</li>
+      <li>
+        <a href="/versions/0.1.2/interpretive-governance.manifest.json">
+          versions/0.1.2/interpretive-governance.manifest.json
+        </a>
+        (immutable core snapshot)
+      </li>
     </ul>
 
-    <p style="font-size: 0.85em; color: #666;">
-  Informative human-readable doctrine:
-  <a href="https://gautierdorval.com/doctrine/" rel="nofollow">
-    gautierdorval.com/doctrine
-  </a>
-</p>
+    <h2>Extensions (Layer 3 + ops pack)</h2>
+
     <p>
-  Interpretive Governance defines the normative layer.
-  Implementation architectures and application domains must reference
-  this standard without redefining it.
-</p>
+      Interpretive Governance is the normative core (0.1.x). The following extensions (1.x) are additive:
+      they do not redefine claim typing, ontology distinctions, or interpretive/constraintive separation.
+    </p>
+
+    <p style="font-size: 0.95em; color: #444;">
+      Core snapshots live under <code>/versions/0.1.x/</code>. Extensions are pinned via Git tags (immutable raw endpoints).
+    </p>
+
+    <h3>Authority governance (Layer 3) — pinned v1.1.0</h3>
+
+    <ul>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/inference-vs-authority.md">inference-vs-authority.md</a> (boundary: inference never implies authority)</li>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/action-taxonomy.json">action-taxonomy.json</a> (action taxonomy)</li>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/proof-model.md">proof-model.md</a> (proof primitives)</li>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/authority-policy.json">authority-policy.json</a> (authorization policy)</li>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/authority-ledger-spec.md">authority-ledger-spec.md</a> (ledger specification)</li>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/role-topology.md">role-topology.md</a> (roles, veto, separation of duties)</li>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/incentive-integrity.md">incentive-integrity.md</a> (anti proxy hacking constraints)</li>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/non-objectives.md">non-objectives.md</a> (no recipes, no bypasses)</li>
+    </ul>
+
+    <h3>Agentic operations pack (minimal) — pinned v1.1.0</h3>
+
+    <ul>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/H-layer/human-oversight-protocol.md">H-layer: human-oversight-protocol.md</a></li>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/P-layer/privacy-data-lineage.md">P-layer: privacy-data-lineage.md</a></li>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/V-layer/versioning-drift-change-control.md">V-layer: versioning-drift-change-control.md</a></li>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/S-layer/security-abuse-resistance.md">S-layer: security-abuse-resistance.md</a></li>
+      <li><a href="https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/IR-layer/incident-response.md">IR-layer: incident-response.md</a></li>
+    </ul>
+
+    <p style="font-size: 0.85em; color: #666; margin-top: 16px;">
+      Extension source repository (normative, no recipes):
+      <a href="https://github.com/GautierDorval/interpretive-governance-manifest" rel="nofollow">
+        github.com/GautierDorval/interpretive-governance-manifest
+      </a>
+    </p>
+
+    <p style="font-size: 0.85em; color: #666; margin-top: 32px;">
+      Informative human-readable doctrine:
+      <a href="https://gautierdorval.com/doctrine/" rel="nofollow">
+        gautierdorval.com/doctrine
+      </a>
+    </p>
+
+    <p>
+      Interpretive Governance defines the normative core layer.
+      Implementation architectures and application domains must reference
+      this standard without redefining it.
+    </p>
+
     <p>Status: <strong>draft</strong>.</p>
 
     <p style="font-size: 0.85em; color: #666; margin-top: 32px;">
