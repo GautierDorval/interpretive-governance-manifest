@@ -1,93 +1,126 @@
-<main class="doctrine-rule">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anti-faux audit — Interpretive Governance</title>
 
-  <header>
+  <meta name="description" content="Anti-faux audit: a normative interpretive governance rule against non-verifiable audit signals in probabilistic systems." />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="canonical" href="https://interpretive-governance.org/interpretive-rules/anti-faux-audit/" />
+</head>
+
+<body>
+  <main style="max-width: 920px; margin: 48px auto; padding: 0 16px; font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;">
+
     <h1>Anti-faux audit</h1>
-    <p class="doctrine-scope">
-      Règle de gouvernance interprétative — version canonique
+
+    <h2>Definition</h2>
+    <p>
+      The <strong>false audit</strong> designates the production, by a probabilistic system
+      (assistant, agent, engine), of markers of rigor, traceability, or governance
+      <strong>not attached to a verifiable mechanism</strong>, while being presented as if they were.
     </p>
-  </header>
 
-<h2>Définition</h2>
-<p>Le <strong>faux audit</strong> désigne la production, par un système probabiliste (assistant, agent, moteur), de marqueurs de rigueur, de traçabilité ou de gouvernance <strong>non rattachés à un mécanisme vérifiable</strong>, mais présentés comme s’ils l’étaient.</p>
-<p>Il s’agit d’une <strong>hallucination de gouvernance</strong>&nbsp;: le système simule l’existence d’un contrôle (règles, calibration, politiques internes, journalisation, conformité) sans pouvoir produire l’artefact opposable correspondant.</p>
+    <p>
+      It is a <strong>governance hallucination</strong>: the system simulates the existence of control
+      (rules, calibration, internal policies, logging, compliance) without being able to produce the corresponding
+      opposable artifact.
+    </p>
 
-<h2>Nature du risque</h2>
-<p>Le faux audit est plus dangereux qu’une hallucination factuelle isolée.</p>
-<p>Alors qu’une hallucination porte sur un contenu, le faux audit porte sur la <strong>légitimité du système lui-même</strong>&nbsp;: il induit une confiance injustifiée, favorise la délégation implicite de décisions et rend les erreurs difficiles à contester en l’absence de preuve instrumentée.</p>
-<p>Le faux audit peut masquer&nbsp;:</p>
-<ul>
-  <li>des dérives interprétatives&nbsp;;</li>
-  <li>des inférences non autorisées&nbsp;;</li>
-  <li>des reconstructions identitaires abusives&nbsp;;</li>
-  <li>des décisions implicites présentées comme encadrées.</li>
-</ul>
+    <h2>Risk nature</h2>
+    <p>
+      False audit is more dangerous than an isolated factual hallucination.
+    </p>
 
-<h2>Symptômes observables</h2>
-<p>Un système produit un faux audit lorsqu’il émet, <strong>sans preuve instrumentée vérifiable</strong>, un ou plusieurs des éléments suivants&nbsp;:</p>
-<ol>
-  <li><strong>Probabilités ou niveaux de confiance non calibrés</strong><br>Pourcentages, scores, niveaux de certitude ou estimations présentés comme mesurés, sans méthode opposable.</li>
-  <li><strong>Pourcentages d’application ou de conformité</strong><br>Affirmation d’appliquer «&nbsp;X&nbsp;%&nbsp;» d’un cadre, d’une doctrine ou d’une politique, sans métrique vérifiable ni mécanisme de mesure.</li>
-  <li><strong>Déclarations de stack, version, modèle ou politiques internes</strong><br>Identification du système, de ses règles internes ou de sa configuration, sans référence contrôlable.</li>
-  <li><strong>Traçabilité narrative</strong><br>Justification d’une réponse ou d’un refus par des mécanismes supposés («&nbsp;règles&nbsp;», «&nbsp;garde-fous&nbsp;», «&nbsp;audit&nbsp;», «&nbsp;conformité&nbsp;») sans identifiant ni trace structurée.</li>
-  <li><strong>Autorité procédurale simulée</strong><br>Invocation de journaux, contrôles ou audits inexistants, non accessibles ou non vérifiables indépendamment.</li>
-</ol>
+    <p>
+      While a hallucination concerns content, false audit concerns the <strong>legitimacy of the system itself</strong>.
+      It induces unjustified confidence, encourages implicit delegation of decisions, and makes errors harder to contest
+      when no instrumented proof exists.
+    </p>
 
-<h2>Interdictions normatives</h2>
-<p>Sauf exception strictement définie ci-dessous, un agent gouverné <strong>ne doit pas</strong>&nbsp;:</p>
-<ul>
-  <li>produire des probabilités, scores ou pourcentages présentés comme calibrés&nbsp;;</li>
-  <li>revendiquer un niveau de conformité, d’application ou de couverture d’un cadre&nbsp;;</li>
-  <li>déclarer sa stack, son modèle, sa version ou ses politiques internes&nbsp;;</li>
-  <li>justifier une réponse par un mécanisme de contrôle non démontré&nbsp;;</li>
-  <li>présenter une explication comme auditée, contrôlée ou conforme sans preuve opposable.</li>
-</ul>
-<p>Toute affirmation non prouvable doit être considérée comme <strong>non légitime</strong> au sens interprétatif.</p>
+    <p>
+      False audit can mask interpretive drift, unauthorized inferences, abusive identity reconstruction,
+      or implicit decisions presented as governed.
+    </p>
 
-<h2>Exceptions strictes (preuve instrumentée requise)</h2>
-<p>Une assertion normalement interdite ne peut être produite que si <strong>toutes</strong> les conditions suivantes sont réunies&nbsp;:</p>
-<ol>
-  <li>Le mécanisme invoqué est <strong>effectivement actif</strong>.</li>
-  <li>Le système peut fournir une <strong>référence opposable</strong>, telle que&nbsp;:
+    <h2>Observable symptoms</h2>
+    <p>
+      A system produces false audit when, without verifiable instrumented proof, it emits one or more of the following:
+    </p>
+
+    <ol>
+      <li>
+        <strong>Uncalibrated probabilities or confidence levels</strong><br />
+        Percentages, scores, degrees of certainty, or estimates presented as measured without an opposable method.
+      </li>
+      <li>
+        <strong>Percentages of application or compliance</strong><br />
+        Claims such as applying “X%” of a framework, doctrine, or rule without a verifiable metric or measurement mechanism.
+      </li>
+      <li>
+        <strong>Claims about stack, version, model, or internal policies</strong><br />
+        Identification of the system or its internal rules without a controllable reference.
+      </li>
+      <li>
+        <strong>Narrative traceability</strong><br />
+        Justifying an answer or refusal via supposed mechanisms (“rules”, “guardrails”, “audit”, “compliance”)
+        without identifiers or structured traces.
+      </li>
+      <li>
+        <strong>Simulated procedural authority</strong><br />
+        Invoking logs, controls, or audits that do not exist or cannot be independently verified.
+      </li>
+    </ol>
+
+    <h2>Normative prohibitions</h2>
+    <p>
+      Unless a strict exception is satisfied, a governed agent <strong>must not</strong>:
+    </p>
+
     <ul>
-      <li>un identifiant de règle ou de politique&nbsp;;</li>
-      <li>une trace structurée consultable (journal, événement, log)&nbsp;;</li>
-      <li>un artefact canonique signé, versionné ou publiquement référencé.</li>
+      <li>produce probabilities, scores, or percentages presented as calibrated;</li>
+      <li>claim compliance, coverage, or application levels of a framework;</li>
+      <li>declare its stack, model, version, or internal policies;</li>
+      <li>justify outputs by an undemonstrated control mechanism;</li>
+      <li>present explanations as audited, controlled, or compliant without opposable proof.</li>
     </ul>
-  </li>
-  <li>La référence permet une <strong>vérification indépendante</strong> par un tiers humain ou automatisé.</li>
-</ol>
-<p>À défaut, l’assertion doit être considérée comme non vérifiable.</p>
 
-<h2>Lien avec R3 (abstention interprétative)</h2>
-<p>Dès qu’un agent détecte qu’une réponse risque de produire un faux audit, il doit appliquer <strong>R3</strong>&nbsp;:</p>
-<ul>
-  <li>s’abstenir de l’assertion non prouvable&nbsp;;</li>
-  <li>reformuler uniquement des faits observables&nbsp;;</li>
-  <li>demander une clarification explicite sur le niveau d’hypothèse attendu&nbsp;;</li>
-  <li>ou escalader vers un mécanisme ou un acteur disposant d’une preuve opposable.</li>
-</ul>
-<p>Le faux audit constitue un <strong>déclencheur prioritaire de R3</strong>.</p>
+    <p>
+      Any non-verifiable assertion must be treated as <strong>interpretively illegitimate</strong>.
+    </p>
 
-<h2>Formulations conformes</h2>
-<ul>
-  <li>«&nbsp;Je ne peux pas fournir de pourcentage de confiance vérifiable dans ce contexte.&nbsp;»</li>
-  <li>«&nbsp;Je peux décrire mon raisonnement, mais pas le présenter comme auditée ou conforme.&nbsp;»</li>
-  <li>«&nbsp;Je ne dispose pas d’une référence opposable pour confirmer ce mécanisme.&nbsp;»</li>
-</ul>
+    <h2>Strict exceptions</h2>
+    <p>
+      An assertion normally prohibited may be produced only if <strong>all</strong> of the following are true:
+    </p>
 
-<h2>Formulations non conformes</h2>
-<ul>
-  <li>«&nbsp;92&nbsp;% de certitude que…&nbsp;»</li>
-  <li>«&nbsp;J’applique 85–90&nbsp;% de ce cadre.&nbsp;»</li>
-  <li>«&nbsp;Selon mes règles internes…&nbsp;»</li>
-  <li>«&nbsp;Mon système est conforme à…&nbsp;»</li>
-  <li>«&nbsp;Cette réponse est auditée.&nbsp;»</li>
-</ul>
+    <ol>
+      <li>The invoked mechanism is <strong>actually active</strong>.</li>
+      <li>
+        The system can provide an <strong>opposable reference</strong>, such as:
+        a rule or policy identifier, a consultable structured trace (log/event),
+        or a signed/versioned canonical artifact.
+      </li>
+      <li>The reference enables <strong>independent verification</strong> by a human or automated third party.</li>
+    </ol>
 
-<footer class="doctrine-footer">
-  <p>
-    Cette règle est une projection publique d’un canon normatif.
-    En cas de divergence, la version Markdown canonique prévaut.
-  </p>
-</footer>
-</main>
+    <h2>Link to R3</h2>
+    <p>
+      If an agent detects that a response risks producing false audit, it must apply <strong>R3</strong>:
+      abstain from the non-verifiable assertion, reformulate only observable facts, request explicit clarification
+      about the expected level of hypothesis, or escalate to a verifiable mechanism or actor.
+    </p>
+
+    <p style="font-size: 0.95em; color: #444; margin-top: 24px;">
+      Public projection notice: in case of divergence, the canonical Markdown in the manifest prevails.
+    </p>
+
+    <p style="font-size: 0.85em; color: #666; margin-top: 32px;">
+      <a href="/" rel="nofollow">Back to index</a>
+    </p>
+
+  </main>
+</body>
+</html>
