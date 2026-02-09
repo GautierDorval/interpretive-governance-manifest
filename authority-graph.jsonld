@@ -150,6 +150,46 @@
 
     {
       "@type": "DefinedTerm",
+      "@id": "https://interpretive-governance.org/interpretive-rules/r3/#term",
+      "name": "R3 — Interpretive abstention",
+      "inLanguage": "en",
+      "termCode": "r3-interpretive-abstention",
+      "description": "Normative interpretive abstention rule requiring abstention, clarification, or escalation when non-verifiable assertions, illegitimate inferences, or non-provable authority would otherwise be produced.",
+      "url": "https://interpretive-governance.org/interpretive-rules/r3/",
+      "creator": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "isBasedOn": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/interpretive-rules/r3/#rule",
+      "name": "R3 — Interpretive abstention",
+      "url": "https://interpretive-governance.org/interpretive-rules/r3/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "about": [
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/r3/#term"
+        }
+      ],
+      "isBasedOn": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      }
+    },
+
+    {
+      "@type": "DefinedTerm",
       "@id": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term",
       "name": "Anti-faux audit",
       "inLanguage": "en",
