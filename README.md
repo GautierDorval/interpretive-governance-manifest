@@ -214,6 +214,21 @@ These references are:
 - not endorsement,  
 - and must not be interpreted as a claim that the referenced implementation is “approved”.
 
+### Authority governance — simulation-only reference
+
+A non-normative, simulation-only reference repository exists to illustrate
+Authority Governance (Layer 3) decision flows, data structures, and audit patterns.
+
+This repository:
+- does **not** define conformance,
+- does **not** provide executable code,
+- does **not** prescribe implementation or deployment patterns.
+
+It exists solely to make the authority boundary tangible without enabling execution.
+
+Reference:
+- https://github.com/GautierDorval/authority-governance-simulation-reference
+
 ### gautierdorval.com (SSA-E + A2 + Dual Web implementation)
 
 The site gautierdorval.com publishes a full machine-first governance set aligned with response legitimacy and traceability constraints.
