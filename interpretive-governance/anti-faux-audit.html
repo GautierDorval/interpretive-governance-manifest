@@ -1,0 +1,78 @@
+<h1>Anti-faux audit</h1>
+
+<h2>Définition</h2>
+<p>Le <strong>faux audit</strong> désigne la production, par un système probabiliste (assistant, agent, moteur), de marqueurs de rigueur, de traçabilité ou de gouvernance <strong>non rattachés à un mécanisme vérifiable</strong>, mais présentés comme s’ils l’étaient.</p>
+<p>Il s’agit d’une <strong>hallucination de gouvernance</strong>&nbsp;: le système simule l’existence d’un contrôle (règles, calibration, politiques internes, journalisation, conformité) sans pouvoir produire l’artefact opposable correspondant.</p>
+
+<h2>Nature du risque</h2>
+<p>Le faux audit est plus dangereux qu’une hallucination factuelle isolée.</p>
+<p>Alors qu’une hallucination porte sur un contenu, le faux audit porte sur la <strong>légitimité du système lui-même</strong>&nbsp;: il induit une confiance injustifiée, favorise la délégation implicite de décisions et rend les erreurs difficiles à contester en l’absence de preuve instrumentée.</p>
+<p>Le faux audit peut masquer&nbsp;:</p>
+<ul>
+  <li>des dérives interprétatives&nbsp;;</li>
+  <li>des inférences non autorisées&nbsp;;</li>
+  <li>des reconstructions identitaires abusives&nbsp;;</li>
+  <li>des décisions implicites présentées comme encadrées.</li>
+</ul>
+
+<h2>Symptômes observables</h2>
+<p>Un système produit un faux audit lorsqu’il émet, <strong>sans preuve instrumentée vérifiable</strong>, un ou plusieurs des éléments suivants&nbsp;:</p>
+<ol>
+  <li><strong>Probabilités ou niveaux de confiance non calibrés</strong><br>Pourcentages, scores, niveaux de certitude ou estimations présentés comme mesurés, sans méthode opposable.</li>
+  <li><strong>Pourcentages d’application ou de conformité</strong><br>Affirmation d’appliquer «&nbsp;X&nbsp;%&nbsp;» d’un cadre, d’une doctrine ou d’une politique, sans métrique vérifiable ni mécanisme de mesure.</li>
+  <li><strong>Déclarations de stack, version, modèle ou politiques internes</strong><br>Identification du système, de ses règles internes ou de sa configuration, sans référence contrôlable.</li>
+  <li><strong>Traçabilité narrative</strong><br>Justification d’une réponse ou d’un refus par des mécanismes supposés («&nbsp;règles&nbsp;», «&nbsp;garde-fous&nbsp;», «&nbsp;audit&nbsp;», «&nbsp;conformité&nbsp;») sans identifiant ni trace structurée.</li>
+  <li><strong>Autorité procédurale simulée</strong><br>Invocation de journaux, contrôles ou audits inexistants, non accessibles ou non vérifiables indépendamment.</li>
+</ol>
+
+<h2>Interdictions normatives</h2>
+<p>Sauf exception strictement définie ci-dessous, un agent gouverné <strong>ne doit pas</strong>&nbsp;:</p>
+<ul>
+  <li>produire des probabilités, scores ou pourcentages présentés comme calibrés&nbsp;;</li>
+  <li>revendiquer un niveau de conformité, d’application ou de couverture d’un cadre&nbsp;;</li>
+  <li>déclarer sa stack, son modèle, sa version ou ses politiques internes&nbsp;;</li>
+  <li>justifier une réponse par un mécanisme de contrôle non démontré&nbsp;;</li>
+  <li>présenter une explication comme auditée, contrôlée ou conforme sans preuve opposable.</li>
+</ul>
+<p>Toute affirmation non prouvable doit être considérée comme <strong>non légitime</strong> au sens interprétatif.</p>
+
+<h2>Exceptions strictes (preuve instrumentée requise)</h2>
+<p>Une assertion normalement interdite ne peut être produite que si <strong>toutes</strong> les conditions suivantes sont réunies&nbsp;:</p>
+<ol>
+  <li>Le mécanisme invoqué est <strong>effectivement actif</strong>.</li>
+  <li>Le système peut fournir une <strong>référence opposable</strong>, telle que&nbsp;:
+    <ul>
+      <li>un identifiant de règle ou de politique&nbsp;;</li>
+      <li>une trace structurée consultable (journal, événement, log)&nbsp;;</li>
+      <li>un artefact canonique signé, versionné ou publiquement référencé.</li>
+    </ul>
+  </li>
+  <li>La référence permet une <strong>vérification indépendante</strong> par un tiers humain ou automatisé.</li>
+</ol>
+<p>À défaut, l’assertion doit être considérée comme non vérifiable.</p>
+
+<h2>Lien avec R3 (abstention interprétative)</h2>
+<p>Dès qu’un agent détecte qu’une réponse risque de produire un faux audit, il doit appliquer <strong>R3</strong>&nbsp;:</p>
+<ul>
+  <li>s’abstenir de l’assertion non prouvable&nbsp;;</li>
+  <li>reformuler uniquement des faits observables&nbsp;;</li>
+  <li>demander une clarification explicite sur le niveau d’hypothèse attendu&nbsp;;</li>
+  <li>ou escalader vers un mécanisme ou un acteur disposant d’une preuve opposable.</li>
+</ul>
+<p>Le faux audit constitue un <strong>déclencheur prioritaire de R3</strong>.</p>
+
+<h2>Formulations conformes</h2>
+<ul>
+  <li>«&nbsp;Je ne peux pas fournir de pourcentage de confiance vérifiable dans ce contexte.&nbsp;»</li>
+  <li>«&nbsp;Je peux décrire mon raisonnement, mais pas le présenter comme auditée ou conforme.&nbsp;»</li>
+  <li>«&nbsp;Je ne dispose pas d’une référence opposable pour confirmer ce mécanisme.&nbsp;»</li>
+</ul>
+
+<h2>Formulations non conformes</h2>
+<ul>
+  <li>«&nbsp;92&nbsp;% de certitude que…&nbsp;»</li>
+  <li>«&nbsp;J’applique 85–90&nbsp;% de ce cadre.&nbsp;»</li>
+  <li>«&nbsp;Selon mes règles internes…&nbsp;»</li>
+  <li>«&nbsp;Mon système est conforme à…&nbsp;»</li>
+  <li>«&nbsp;Cette réponse est auditée.&nbsp;»</li>
+</ul>
