@@ -229,6 +229,29 @@ It exists solely to make the authority boundary tangible without enabling execut
 Reference:
 - https://github.com/GautierDorval/authority-governance-simulation-reference
 
+### Interpretive Governance Test Suite (audit instrument)
+
+A non-normative, audit-oriented repository exists to provide
+measurement instruments derived from this manifest.
+
+The Interpretive Governance Test Suite defines:
+- interpretive test catalogs,
+- anti-inference and attribution integrity checks,
+- authority boundary audit dimensions,
+- silence and variance evaluation protocols.
+
+This repository:
+- does **not** define doctrine,
+- does **not** establish conformance,
+- does **not** modify or extend the manifest,
+- does **not** imply certification or endorsement.
+
+It implements **measurement instruments only**, derived from the
+interpretive constraints and legitimacy principles defined here.
+
+Reference:
+- https://github.com/GautierDorval/interpretive-governance-test-suite
+
 ### gautierdorval.com (SSA-E + A2 + Dual Web implementation)
 
 The site gautierdorval.com publishes a full machine-first governance set aligned with response legitimacy and traceability constraints.
