@@ -147,6 +147,50 @@
         }
       ]
     },
+
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term",
+      "name": "Anti-faux audit",
+      "inLanguage": "en",
+      "termCode": "anti-faux-audit",
+      "description": "Normative interpretive governance rule prohibiting the production of audit, compliance, or control signals not attached to a verifiable mechanism, and requiring R3 invocation when such assertions would otherwise be produced.",
+      "url": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/",
+      "creator": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "isBasedOn": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      },
+      "relatedLink": [
+        "https://interpretive-governance.org/interpretive-rules/r3/"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#rule",
+      "name": "Anti-faux audit",
+      "url": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "about": [
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term"
+        }
+      ],
+      "isBasedOn": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      }
+    },
+
     {
       "@type": "CreativeWork",
       "@id": "https://interpretive-governance.org/CONFORMANCE.md#conformance",
