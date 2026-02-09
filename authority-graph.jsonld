@@ -232,6 +232,49 @@
     },
 
     {
+      "@type": "DefinedTerm",
+      "@id": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#term",
+      "name": "Anti-identity inference",
+      "inLanguage": "en",
+      "termCode": "anti-identity-inference",
+      "description": "Normative interpretive governance rule prohibiting identity reconstruction unless strictly required and verifiable, with mandatory R3 invocation when identity inference would otherwise occur.",
+      "url": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/",
+      "creator": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "isBasedOn": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      },
+      "relatedLink": [
+        "https://interpretive-governance.org/interpretive-rules/r3/"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#rule",
+      "name": "Anti-identity inference",
+      "url": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "about": [
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#term"
+        }
+      ],
+      "isBasedOn": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      }
+    },
+
+    {
       "@type": "CreativeWork",
       "@id": "https://interpretive-governance.org/CONFORMANCE.md#conformance",
       "name": "Conformance to the Interpretive Governance Manifest",
