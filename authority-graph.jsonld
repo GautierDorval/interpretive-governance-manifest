@@ -164,7 +164,18 @@
       },
       "isBasedOn": {
         "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
-      }
+      },
+      "foundationFor": [
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term"
+        },
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#term"
+        },
+        {
+          "@id": "https://interpretive-governance.org/protocols/interpretive-stress-test/#protocol"
+        }
+      ]
     },
     {
       "@type": "CreativeWork",
@@ -207,7 +218,10 @@
       },
       "relatedLink": [
         "https://interpretive-governance.org/interpretive-rules/r3/"
-      ]
+      ],
+      "governedBy": {
+        "@id": "https://interpretive-governance.org/interpretive-rules/r3/#term"
+      }
     },
     {
       "@type": "CreativeWork",
@@ -250,7 +264,10 @@
       },
       "relatedLink": [
         "https://interpretive-governance.org/interpretive-rules/r3/"
-      ]
+      ],
+      "governedBy": {
+        "@id": "https://interpretive-governance.org/interpretive-rules/r3/#term"
+      }
     },
     {
       "@type": "CreativeWork",
@@ -299,7 +316,18 @@
       ],
       "isBasedOn": {
         "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
-      }
+      },
+      "governedBy": [
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/r3/#term"
+        },
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term"
+        },
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#term"
+        }
+      ]
     },
 
     {
