@@ -1,0 +1,49 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/interpretive-index.schema.json",
+  "type": "interpretive-index",
+  "inLanguage": "en",
+  "publisher": "https://interpretive-governance.org/#authority",
+  "scope": "Public machine-first index of interpretive rules and evaluation protocols.",
+  "rules": [
+    {
+      "id": "r3",
+      "name": "R3 — Interpretive abstention",
+      "url": "https://interpretive-governance.org/interpretive-rules/r3/",
+      "term": "https://interpretive-governance.org/interpretive-rules/r3/#term",
+      "work": "https://interpretive-governance.org/interpretive-rules/r3/#rule"
+    },
+    {
+      "id": "anti-faux-audit",
+      "name": "Anti-faux audit",
+      "url": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/",
+      "term": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term",
+      "work": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#rule",
+      "governedBy": [
+        "https://interpretive-governance.org/interpretive-rules/r3/#term"
+      ]
+    },
+    {
+      "id": "anti-identity-inference",
+      "name": "Anti-identity inference",
+      "url": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/",
+      "term": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#term",
+      "work": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#rule",
+      "governedBy": [
+        "https://interpretive-governance.org/interpretive-rules/r3/#term"
+      ]
+    }
+  ],
+  "protocols": [
+    {
+      "id": "interpretive-stress-test",
+      "name": "Interpretive stress-test protocol",
+      "url": "https://interpretive-governance.org/protocols/interpretive-stress-test/",
+      "work": "https://interpretive-governance.org/protocols/interpretive-stress-test/#protocol",
+      "governedBy": [
+        "https://interpretive-governance.org/interpretive-rules/r3/#term",
+        "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term",
+        "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#term"
+      ]
+    }
+  ]
+}
