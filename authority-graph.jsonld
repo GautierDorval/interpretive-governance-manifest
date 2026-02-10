@@ -149,6 +149,39 @@
     },
 
     {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/interpretive-index.json#index",
+      "name": "Interpretive Governance — Machine-first index",
+      "url": "https://interpretive-governance.org/interpretive-index.json",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "about": [
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/r3/#term"
+        },
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term"
+        },
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#term"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "https://interpretive-governance.org/protocols/interpretive-stress-test/#protocol"
+        }
+      ],
+      "isBasedOn": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      }
+    },
+
+    {
       "@type": "DefinedTerm",
       "@id": "https://interpretive-governance.org/interpretive-rules/r3/#term",
       "name": "R3 — Interpretive abstention",
