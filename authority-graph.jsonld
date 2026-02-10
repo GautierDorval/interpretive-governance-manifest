@@ -365,6 +365,37 @@
 
     {
       "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/protocols/integrity-checklist/#protocol",
+      "name": "Integrity and anti-drift checklist",
+      "url": "https://interpretive-governance.org/protocols/integrity-checklist/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://interpretive-governance.org/#authority"
+      },
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "about": [
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/r3/#term"
+        },
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term"
+        },
+        {
+          "@id": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#term"
+        },
+        {
+          "@id": "https://interpretive-governance.org/interpretive-index.json#index"
+        }
+      ],
+      "isBasedOn": {
+        "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      }
+    },
+
+    {
+      "@type": "CreativeWork",
       "@id": "https://interpretive-governance.org/CONFORMANCE.md#conformance",
       "name": "Conformance to the Interpretive Governance Manifest",
       "url": "https://interpretive-governance.org/CONFORMANCE.md",
