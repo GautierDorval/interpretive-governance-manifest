@@ -178,7 +178,9 @@
     "authority_graph": "https://interpretive-governance.org/authority-graph.jsonld",
     "schema": "https://interpretive-governance.org/schemas/manifest.schema.json",
     "conformance": "https://interpretive-governance.org/CONFORMANCE.md",
-    "validator": "https://interpretive-governance.org/VALIDATOR.md"
+    "validator": "https://interpretive-governance.org/VALIDATOR.md",
+    "interpretive_index": "https://interpretive-governance.org/interpretive-index.json",
+    "interpretive_index_schema": "https://interpretive-governance.org/schemas/interpretive-index.schema.json"
   },
 
   "canonical": {
