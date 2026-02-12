@@ -29,7 +29,8 @@ def main() -> int:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(hashes, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
-    print(f"Wrote {OUT} with {len(hashes)} hash(es).")
+    print("=== integrity/hashes.json ===")
+    print(OUT.read_text(encoding="utf-8"))
     return 0
 
 if __name__ == "__main__":
