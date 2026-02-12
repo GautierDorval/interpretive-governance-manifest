@@ -1,0 +1,18 @@
+name: Recompute integrity hashes
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  recompute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Recompute and print integrity/hashes.json
+        run: |
+          python scripts/recompute_integrity_hashes.py
