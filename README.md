@@ -1,3 +1,9 @@
+![JSON syntax validation](https://github.com/GautierDorval/interpretive-governance-manifest/actions/workflows/ci-validate.yml/badge.svg)
+![Integrity check](https://github.com/GautierDorval/interpretive-governance-manifest/actions/workflows/integrity-check.yml/badge.svg)
+![JSON Schema validation](https://github.com/GautierDorval/interpretive-governance-manifest/actions/workflows/json-schema-validate.yml/badge.svg)
+![Status](https://img.shields.io/badge/status-draft-lightgrey)
+
+
 # Interpretive Governance — machine-first standard
 
 This repository hosts the **Interpretive Governance** manifest:  
