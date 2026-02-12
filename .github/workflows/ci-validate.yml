@@ -1,0 +1,61 @@
+name: JSON Syntax Validate
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JSON and JSON-LD syntax (tracked files only)
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          import sys
+
+          required = {
+              "interpretive-governance.manifest.json",
+              "interpretive-index.json",
+              "authority-graph.jsonld",
+              "site.schema.jsonld",
+              "conformance-levels.json",
+          }
+
+          files = subprocess.check_output(
+              ["git", "ls-files", "*.json", "*.jsonld"],
+              text=True
+          ).splitlines()
+
+          files = [f for f in files if f.strip()]
+
+          missing = sorted(required - set(files))
+          if missing:
+              print("Missing required files from validation set:")
+              for m in missing:
+                  print(f" - {m}")
+              sys.exit(1)
+
+          errors = []
+          for path in files:
+              try:
+                  with open(path, "r", encoding="utf-8") as fh:
+                      json.load(fh)
+              except Exception as exc:
+                  errors.append((path, str(exc)))
+
+          if errors:
+              print("JSON/JSON-LD syntax validation failed:")
+              for path, err in errors:
+                  print(f" - {path}: {err}")
+              sys.exit(1)
+
+          print(f"Validated {len(files)} JSON/JSON-LD file(s).")
+          PY
