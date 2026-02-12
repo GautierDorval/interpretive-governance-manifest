@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Detect critical file changes and enforce trace updates
+      - name: Enforce trace updates on critical changes
         shell: bash
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
@@ -61,7 +61,7 @@ jobs:
             fi
             if [ "$hashes_changed" -ne 1 ]; then
               echo "ERROR: Critical files changed, but integrity/hashes.json was not updated."
-              echo "Hint: run: python scripts/recompute_integrity_hashes.py"
+              echo "Hint: run the workflow 'Recompute integrity hashes' (manual) or update hashes.json accordingly."
               exit 1
             fi
           fi
