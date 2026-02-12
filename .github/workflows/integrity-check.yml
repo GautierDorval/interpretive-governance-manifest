@@ -1,0 +1,69 @@
+name: Integrity Check
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect critical file changes and enforce trace updates
+        shell: bash
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+
+          if [ ! -f integrity/critical-files.txt ]; then
+            echo "ERROR: integrity/critical-files.txt is missing."
+            exit 1
+          fi
+
+          changed_files="$(git diff --name-only "$BASE_SHA" "$HEAD_SHA" || true)"
+
+          echo "Changed files in PR:"
+          echo "$changed_files"
+
+          critical_changed=0
+          while IFS= read -r critical; do
+            critical="$(echo "$critical" | sed 's/[[:space:]]*$//')"
+            [ -z "$critical" ] && continue
+            case "$critical" in \#*) continue ;; esac
+            if echo "$changed_files" | grep -Fxq "$critical"; then
+              echo "Critical file changed: $critical"
+              critical_changed=1
+            fi
+          done < integrity/critical-files.txt
+
+          changelog_changed=0
+          if echo "$changed_files" | grep -Fxq "CHANGELOG.md"; then
+            changelog_changed=1
+          fi
+
+          hashes_changed=0
+          if echo "$changed_files" | grep -Fxq "integrity/hashes.json"; then
+            hashes_changed=1
+          fi
+
+          if [ "$critical_changed" -eq 1 ]; then
+            if [ "$changelog_changed" -ne 1 ]; then
+              echo "ERROR: Critical files changed, but CHANGELOG.md was not updated."
+              exit 1
+            fi
+            if [ "$hashes_changed" -ne 1 ]; then
+              echo "ERROR: Critical files changed, but integrity/hashes.json was not updated."
+              echo "Hint: run: python scripts/recompute_integrity_hashes.py"
+              exit 1
+            fi
+          fi
+
+          echo "Integrity policy check passed."
