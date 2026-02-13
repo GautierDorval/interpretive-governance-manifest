@@ -3,17 +3,24 @@
 ## Unreleased
 
 - Documentation and consistency improvements under discussion.
-- No functional or normative changes released yet.
 
 > Note: the `/versions/0.1.x/` directory tracks historical snapshots of the
 > Interpretive Governance manifest (core standard).
 > `1.x` releases track the stabilization and extension of the layered governance
 > architecture beyond the core manifest.
 
-- Added ops-pack complete modules:
-  - E-Layer (evaluation and assurance)
-  - M-Layer (multi-agent coordination)
-  - C-Layer (cost and scalability profiles)
+---
+
+## 1.2.0 — Integrity locking (V-Layer extension)
+
+- Introduced **Integrity locking (artifact hashing)** as an optional V-Layer mechanism.
+- Added `ops-pack/V-layer/integrity-locks.md`.
+- Clarified SHA-256 fingerprinting discipline for critical machine-first artifacts.
+- Defined scope boundaries: integrity hashes are drift-control signals, not authority proofs.
+- No changes to interpretive core, Q-Layer semantics, or executable authority boundaries.
+
+This release strengthens drift detection and artifact traceability
+without redefining the layered governance model.
 
 ---
 
