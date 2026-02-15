@@ -3,12 +3,12 @@
 ![JSON Schema validation](https://github.com/GautierDorval/interpretive-governance-manifest/actions/workflows/json-schema-validate.yml/badge.svg)
 ![Status](https://img.shields.io/badge/status-draft-lightgrey)
 
-
-
 # Interpretive Governance — machine-first standard
 
-This repository hosts the **Interpretive Governance** manifest:  
-a machine-first governance standard designed to constrain interpretive,
+This repository hosts the **Interpretive Governance** manifest and its canonical companion artifacts:
+authority graph, machine-first interpretive index, public rule/protocol projections, and validation schemas.
+
+Interpretive Governance is a machine-first governance standard designed to constrain interpretive,
 decision, and agentic outputs in probabilistic systems.
 
 > **Non-equivalence notice**  
@@ -124,14 +124,52 @@ It governs machine-executed or machine-requested acts only.
 
 ---
 
+## Interpretive rules and evaluation protocols
+
+Interpretive Governance publishes a public machine-first index of:
+- interpretive rules (normative constraints), and
+- evaluation protocols (reproducible methods for producing audit artifacts).
+
+This repository includes, among others:
+- **R3 — Interpretive abstention**
+- **Anti-faux audit**
+- **Anti-identity inference**
+- **Interpretive stress-test protocol**
+- **Interpretation integrity audit protocol** *(informative fr-CA label: “Audit d’intégrité interprétative”)*
+
+Evaluation protocols are **not certification** and must not be represented as compliance claims.
+They produce evidence-anchored audit artifacts under declared conditions.
+
+---
+
 ## Canonical artifacts
+
+Core + companion artifacts:
 
 - `/interpretive-governance.manifest.json` — canonical manifest  
 - `/.well-known/interpretive-governance.json` — stable entrypoint  
-- `/schemas/manifest.schema.json` — JSON Schema  
-- `/versions/` — immutable version snapshots  
+- `/schemas/manifest.schema.json` — JSON Schema (manifest)  
+- `/versions/` — immutable version snapshots (core manifest series)  
+- `/authority-graph.jsonld` — authority graph (terms, works, dependencies)  
+- `/interpretive-index.json` — machine-first index (rules + protocols)  
+- `/schemas/interpretive-index.schema.json` — JSON Schema (interpretive index)  
+
+Rules and protocol public projections:
+
+- `/interpretive-rules/` — public projections of interpretive rules  
+- `/protocols/` — public projections of evaluation protocols  
+
+Authority governance + ops pack:
+
 - `/authority/` — Authority governance (Layer 3)  
-- `/ops-pack/` — Agentic operations pack (minimal)  
+- `/ops-pack/` — Agentic operations pack (minimal)
+
+Interpretation integrity audit protocol artifacts:
+
+- `/interpretive-governance/protocols/interpretation-integrity-audit.md` — canonical protocol source (normative)  
+- `/protocols/interpretation-integrity-audit/` — public projection page  
+- `/schemas/interpretation-integrity-audit-report.schema.json` — audit report JSON Schema  
+- `/examples/interpretation-integrity-audit-report.example.json` — minimal neutral example report  
 
 Status: **draft**.
 
@@ -161,7 +199,7 @@ See also:
 - `/glossary.md`  
 - `/references.md`  
 
-![Architecture of regimes](assets/regimes-architecture.svg)
+![Architecture of regimes](assets/regimes-architecture.svg)  
 Diagram note: structural illustration only; does not define conformance for any specific implementation.
 
 ---
@@ -178,6 +216,7 @@ Machine-first canonical endpoints:
 - https://interpretive-governance.org/
 - https://interpretive-governance.org/interpretive-governance.manifest.json
 - https://interpretive-governance.org/authority-graph.jsonld
+- https://interpretive-governance.org/interpretive-index.json
 
 Related but non-equivalent architectures:
 - SSA-E + A2 + Dual Web (implementation architecture)  
