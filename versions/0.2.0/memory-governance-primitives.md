@@ -101,4 +101,4 @@ A conformance break MUST be logged as:
 ## 7. Operational guidance
 
 Operational implementation requirements live in:
-`extensions/ops-pack/M-layer/`
+`extensions/ops-pack/MEM-layer/`

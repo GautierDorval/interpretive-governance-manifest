@@ -69,7 +69,7 @@
     "profiles": [
       {
         "name": "memory-aware",
-        "description": "If the system is stateful (persists memory), memory constraints apply in addition to base L0–L4 requirements."
+        "description": "If the system is stateful (persists memory), memory constraints apply in addition to base L0\u2013L4 requirements."
       }
     ],
     "conformance_break_triggers": [
@@ -82,6 +82,6 @@
   },
   "normative_documents": [
     "versions/0.2.0/memory-governance-primitives.md",
-    "extensions/ops-pack/M-layer/memory-governance.md"
+    "extensions/ops-pack/MEM-layer/memory-governance.md"
   ]
 }

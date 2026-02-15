@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.org/schemas/memory-object.schema.json",
+  "$id": "https://interpretive-governance.org/schemas/memory-object.schema.json",
   "title": "MemoryObject",
   "type": "object",
   "required": [
@@ -14,9 +14,17 @@
     "integrity_hash"
   ],
   "properties": {
-    "id": { "type": "string", "minLength": 1 },
-    "type": { "const": "MemoryObject" },
-    "statement": { "type": "string", "minLength": 1 },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "const": "MemoryObject"
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
     "statement_type": {
       "type": "string",
       "enum": [
@@ -29,39 +37,109 @@
     },
     "verdict_type": {
       "type": "string",
-      "enum": ["Factual", "Inference", "False", "Unanswered"]
+      "enum": [
+        "Factual",
+        "Inference",
+        "False",
+        "Unanswered"
+      ]
     },
     "source_refs": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["uri"],
+        "required": [
+          "uri"
+        ],
         "properties": {
-          "uri": { "type": "string", "minLength": 1 },
-          "anchor": { "type": ["string", "null"] },
-          "retrieved_at": { "type": ["string", "null"] }
+          "uri": {
+            "type": "string",
+            "minLength": 1
+          },
+          "anchor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "retrieved_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
         },
         "additionalProperties": true
       },
       "default": []
     },
-    "timestamp": { "type": "string", "minLength": 1 },
-    "valid_from": { "type": ["string", "null"] },
-    "valid_to": { "type": ["string", "null"] },
-    "temporal_scope": {
-      "type": ["string", "null"],
-      "enum": ["unknown", "bounded", "unbounded", null]
+    "timestamp": {
+      "type": "string",
+      "minLength": 1
     },
-    "jurisdiction": { "type": ["string", "null"] },
-    "applicability_scope": { "type": ["object", "null"] },
-    "version": { "type": "string", "minLength": 1 },
+    "valid_from": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "valid_to": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "temporal_scope": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "unknown",
+        "bounded",
+        "unbounded",
+        null
+      ]
+    },
+    "jurisdiction": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "applicability_scope": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
     "integrity_hash": {
       "type": "object",
-      "required": ["algo", "digest"],
+      "required": [
+        "algo",
+        "digest"
+      ],
       "properties": {
-        "algo": { "type": "string", "enum": ["sha256"] },
-        "digest": { "type": "string", "minLength": 8 },
-        "note": { "type": ["string", "null"] }
+        "algo": {
+          "type": "string",
+          "enum": [
+            "sha256"
+          ]
+        },
+        "digest": {
+          "type": "string",
+          "minLength": 8
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       },
       "additionalProperties": false
     }

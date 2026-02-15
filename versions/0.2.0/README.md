@@ -8,7 +8,7 @@ This version introduces **memory-aware primitives** for stateful AI systems
 - Adds **memory governance** to the core scope.
 - Defines minimal primitives: MemoryObject, MemoryLog, consolidation, controlled forgetting.
 - Introduces **conformance break triggers** for stateful systems (model change, embedding rebuild, rule changes, log loss).
-- Links operational constraints to the ops-pack **M-layer**.
+- Links operational constraints to the ops-pack **MEM-layer**.
 
 ## Non-goals
 
@@ -18,4 +18,4 @@ This version introduces **memory-aware primitives** for stateful AI systems
 
 ## Operational layer
 
-See: `extensions/ops-pack/M-layer/`
+See: `extensions/ops-pack/MEM-layer/`

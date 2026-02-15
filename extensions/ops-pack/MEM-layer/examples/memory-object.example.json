@@ -1,0 +1,30 @@
+{
+  "id": "memobj_2026-02-15T10:22:31Z_0001",
+  "type": "MemoryObject",
+  "statement": "The applicable safety guideline requires evidence-backed citation for normative claims.",
+  "statement_type": "SourceStatement",
+  "verdict_type": "Factual",
+  "source_refs": [
+    {
+      "uri": "https://example.org/policy/safety-guideline",
+      "anchor": "#section-2",
+      "retrieved_at": "2026-02-15T10:20:00Z"
+    }
+  ],
+  "timestamp": "2026-02-15T10:22:31Z",
+  "valid_from": "2026-02-15T10:22:31Z",
+  "valid_to": null,
+  "temporal_scope": "unknown",
+  "jurisdiction": "CA-QC",
+  "applicability_scope": {
+    "domain": "governance",
+    "system": "stateful-rag",
+    "audience": "machine-and-auditor"
+  },
+  "version": "1",
+  "integrity_hash": {
+    "algo": "sha256",
+    "digest": "0000000000000000000000000000000000000000000000000000000000000000",
+    "note": "Replace with the real digest computed over the canonicalized JSON."
+  }
+}

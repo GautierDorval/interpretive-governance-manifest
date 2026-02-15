@@ -1,0 +1,3 @@
+{"event_id":"evt_0001","event_type":"create","memory_object_id":"memobj_2026-02-15T10:22:31Z_0001","timestamp":"2026-02-15T10:22:33Z","actor":"system","reason":"initial capture","prev_hash":null,"new_hash":"sha256:0000..."}
+{"event_id":"evt_0002","event_type":"policy_change","memory_object_id":"policy_memory_consolidation_v1","timestamp":"2026-02-15T10:30:00Z","actor":"human","reason":"tighten consolidation gate B for missing sources","prev_hash":"sha256:1111...","new_hash":"sha256:2222..."}
+{"event_id":"evt_0003","event_type":"conformance_break","memory_object_id":"conformance_break_2026-02-15T11:00:00Z","timestamp":"2026-02-15T11:00:00Z","actor":"system","reason":"model weights changed without re-audit","prev_hash":null,"new_hash":"sha256:3333..."}
