@@ -1,7 +1,7 @@
 {
-  "authority-graph.jsonld": "73b3759be3c51f84ffd49d4d5b2a75a80ea6f1a30834ccb0e8fc235924c88126",
+  "authority-graph.jsonld": "5e91422c1fa0bfe93fd7943f75ec65df0c6f513921ce80d61b6c3054e4859390",
   "conformance-levels.json": "f6532e48b4869ae7ffbf8ba223a4ace54348f52e336c29cf2403ee3b23fb099a",
   "interpretive-governance.manifest.json": "f089efe885ef4db345e637b5295cbbd9b37c79ef80083522d7963696d695a0ab",
-  "interpretive-index.json": "afd70d2b75d4d13122ccd2362569b4601bd51ead7c4a4bce2d79d3ad572e2b5c",
+  "interpretive-index.json": "a27c7534c48e3f51dcd912b2dcd296d964d789d257eb49d71b90e6164d5fe1b0",
   "site.schema.jsonld": "e5bf7c303e321263455147239302c906c276e9597ef3fa4479115a398f61b91d"
 }
