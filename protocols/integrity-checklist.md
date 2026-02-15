@@ -20,6 +20,7 @@ This checklist applies to the following canonical artifacts:
 - Authority graph
 - Interpretive rules (R3, Anti-faux audit, Anti-identity inference)
 - Interpretive stress-test protocol
+- Interpretation integrity audit protocol
 - Machine-first interpretive index
 - JSON schemas associated with the above
 
@@ -35,12 +36,14 @@ Mandatory checks include, but are not limited to:
 - https://interpretive-governance.org/authority-graph.jsonld
 - https://interpretive-governance.org/interpretive-index.json
 - https://interpretive-governance.org/schemas/interpretive-index.schema.json
+- https://interpretive-governance.org/schemas/interpretation-integrity-audit-report.schema.json
 
 - https://interpretive-governance.org/interpretive-rules/r3/
 - https://interpretive-governance.org/interpretive-rules/anti-faux-audit/
 - https://interpretive-governance.org/interpretive-rules/anti-identity-inference/
 
 - https://interpretive-governance.org/protocols/interpretive-stress-test/
+- https://interpretive-governance.org/protocols/interpretation-integrity-audit/
 
 Failure of any canonical URL constitutes an integrity failure.
 
