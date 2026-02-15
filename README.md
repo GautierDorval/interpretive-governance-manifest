@@ -260,6 +260,21 @@ These references are:
 - not endorsement,  
 - and must not be interpreted as a claim that the referenced implementation is “approved”.
 
+### IIP-Scoring Standard (restricted specification surface)
+
+A restricted, non-operational public specification surface exists for **IIP-Scoring™**
+(Interpretive Integrity Protocol measurement layer).
+
+This repository is:
+- normative reference only,
+- interface schemas + terminology,
+- intentionally non-implementable,
+- excludes calibration, thresholds, weights, heuristics, datasets, and runnable examples.
+
+Reference:
+- https://github.com/GautierDorval/iip-scoring-standard
+
+
 ### Authority governance — simulation-only reference
 
 A non-normative, simulation-only reference repository exists to illustrate
