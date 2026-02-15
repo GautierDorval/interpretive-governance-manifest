@@ -1,0 +1,104 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/interpretation-integrity-audit-report.schema.json",
+  "type": "interpretation-integrity-audit-report",
+  "metadata": {
+    "reportId": "IIA-2026-02-14-0001",
+    "createdAt": "2026-02-14T22:00:00Z",
+    "protocolId": "interpretation-integrity-audit",
+    "protocolVersion": "0.1",
+    "issuer": {
+      "name": "Interpretive Governance (example issuer)",
+      "identifier": "https://interpretive-governance.org/#authority"
+    }
+  },
+  "unitOfAudit": {
+    "type": "CorpusSnapshot",
+    "boundary": {
+      "scopeType": "domain",
+      "domain": "https://example.invalid"
+    },
+    "corpusSnapshot": {
+      "snapshotId": "snapshot-001",
+      "timestamp": "2026-02-14T21:00:00Z",
+      "hashAlg": "SHA-256",
+      "hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "method": "crawl"
+    }
+  },
+  "querySet": {
+    "id": "qs-core",
+    "version": "0.1",
+    "questions": [
+      {
+        "qid": "Q-001",
+        "text": "What is the price of service X?",
+        "class": "Pricing"
+      }
+    ]
+  },
+  "modelRuns": [
+    {
+      "runId": "run-001",
+      "model": {
+        "provider": "provider",
+        "name": "model-name",
+        "version": "unknown"
+      },
+      "parameters": {
+        "temperature": 0.2,
+        "top_p": 1.0
+      },
+      "outputs": [
+        {
+          "qid": "Q-001",
+          "outputId": "out-001",
+          "content": "Model answer here."
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "type": "Observation",
+      "qid": "Q-001",
+      "summary": "The model provides a price claim not corroborated by the declared corpus snapshot.",
+      "evidence": [
+        {
+          "evidenceId": "E-001",
+          "kind": "model_output",
+          "timestamp": "2026-02-14T21:10:00Z"
+        },
+        {
+          "evidenceId": "E-002",
+          "kind": "corpus_excerpt",
+          "timestamp": "2026-02-14T21:05:00Z",
+          "excerpt": "Corpus excerpt here."
+        }
+      ]
+    },
+    {
+      "type": "NonConformance",
+      "qid": "Q-001",
+      "summary": "Deviation: price assertion without opposable grounding evidence.",
+      "evidence": [
+        {
+          "evidenceId": "E-001",
+          "kind": "model_output"
+        },
+        {
+          "evidenceId": "E-002",
+          "kind": "corpus_excerpt"
+        }
+      ]
+    }
+  ],
+  "validity": {
+    "status": "valid",
+    "conditions": {
+      "corpusHash": "SHA-256:0000\u20260000",
+      "querySetVersion": "qs-core@0.1",
+      "modelIdentity": "provider/model-name@unknown",
+      "runParameters": "temperature=0.2; top_p=1.0"
+    }
+  }
+}
