@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/memory-log.schema.json",
+  "title": "MemoryLogEvent",
+  "type": "object",
+  "required": ["event_id", "event_type", "memory_object_id", "timestamp", "actor"],
+  "properties": {
+    "event_id": { "type": "string", "minLength": 1 },
+    "event_type": {
+      "type": "string",
+      "enum": ["create", "consolidate", "invalidate", "archive", "policy_change", "conformance_break"]
+    },
+    "memory_object_id": { "type": "string", "minLength": 1 },
+    "timestamp": { "type": "string", "minLength": 1 },
+    "actor": { "type": "string", "minLength": 1 },
+    "reason": { "type": ["string", "null"] },
+    "prev_hash": { "type": ["string", "null"] },
+    "new_hash": { "type": ["string", "null"] }
+  },
+  "additionalProperties": true
+}
