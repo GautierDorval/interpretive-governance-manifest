@@ -3,13 +3,22 @@
 ## Unreleased
 
 - Documentation and consistency improvements under discussion.
-- Added Interpretation integrity audit protocol (canonical protocol + public projection).
-- Added audit report schema and minimal example for interpretation integrity audits.
 
 > Note: the `/versions/0.1.x/` directory tracks historical snapshots of the
 > Interpretive Governance manifest (core standard).
 > `1.x` releases track the stabilization and extension of the layered governance
 > architecture beyond the core manifest.
+
+---
+
+## 1.3.0 — Interpretation integrity audit protocol (IIA)
+
+- Added Interpretation integrity audit protocol (canonical protocol + public projection).
+- Added audit report schema and minimal example for interpretation integrity audits.
+- Updated `interpretive-index.json` and `authority-graph.jsonld` to reference the new protocol and schema.
+- Updated integrity checklist coverage for the new protocol and schema.
+- Updated integrity hashes for critical artifacts.
+- No changes to the interpretive core, Q-Layer semantics, or executable authority boundaries.
 
 ---
 
