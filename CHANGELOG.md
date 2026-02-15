@@ -4,10 +4,33 @@
 
 - Documentation and consistency improvements under discussion.
 
-> Note: the `/versions/0.1.x/` directory tracks historical snapshots of the
+> Note: the `/versions/0.x/` directory tracks historical snapshots of the
 > Interpretive Governance manifest (core standard).
 > `1.x` releases track the stabilization and extension of the layered governance
 > architecture beyond the core manifest.
+
+---
+
+## 1.4.0 — Memory governance (M-layer) + core memory-aware primitives (v0.2.0)
+
+- Introduced **memory-aware core primitives** for stateful systems (RAG with persistence, agent memory, consolidation, controlled forgetting).
+- Added core snapshot `versions/0.2.0/`:
+  - `versions/0.2.0/interpretive-governance.manifest.json` (adds `memory_governance` scope and memory-aware conformance triggers)
+  - `versions/0.2.0/memory-governance-primitives.md` (normative primitives: MemoryObject, MemoryLog, consolidation, controlled forgetting, temporal integrity)
+- Added **M-layer** to the ops-pack:
+  - `extensions/ops-pack/M-layer/memory-governance.md`
+  - `extensions/ops-pack/M-layer/memory-consolidation-policy.md`
+  - `extensions/ops-pack/M-layer/temporal-integrity.md`
+  - `extensions/ops-pack/M-layer/controlled-forgetting.md`
+  - `extensions/ops-pack/M-layer/memory-logging-minimum.md`
+  - `extensions/ops-pack/M-layer/examples/` (MemoryObject, MemoryLog, conformance break scenario)
+- Added schemas:
+  - `schemas/memory-object.schema.json`
+  - `schemas/memory-log.schema.json`
+- Reserved a **non-normative** evaluation protocol scaffold for stateful drift analysis:
+  - `protocols/memory-drift-audit/` (draft; applies existing primitives, does not introduce new core primitives or scoring)
+- No breaking changes to the interpretive core semantics, Q-Layer semantics, or executable authority boundaries.
+  This release adds a memory-aware profile and operational invariants for systems that persist state over time.
 
 ---
 
