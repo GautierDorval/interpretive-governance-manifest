@@ -7,7 +7,7 @@
   "rules": [
     {
       "id": "r3",
-      "name": "R3 — Interpretive abstention",
+      "name": "R3 \u2014 Interpretive abstention",
       "url": "https://interpretive-governance.org/interpretive-rules/r3/",
       "term": "https://interpretive-governance.org/interpretive-rules/r3/#term",
       "work": "https://interpretive-governance.org/interpretive-rules/r3/#rule"
@@ -39,6 +39,17 @@
       "name": "Interpretive stress-test protocol",
       "url": "https://interpretive-governance.org/protocols/interpretive-stress-test/",
       "work": "https://interpretive-governance.org/protocols/interpretive-stress-test/#protocol",
+      "governedBy": [
+        "https://interpretive-governance.org/interpretive-rules/r3/#term",
+        "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term",
+        "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#term"
+      ]
+    },
+    {
+      "id": "interpretation-integrity-audit",
+      "name": "Interpretation integrity audit protocol",
+      "url": "https://interpretive-governance.org/protocols/interpretation-integrity-audit/",
+      "work": "https://interpretive-governance.org/protocols/interpretation-integrity-audit/#protocol",
       "governedBy": [
         "https://interpretive-governance.org/interpretive-rules/r3/#term",
         "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term",
