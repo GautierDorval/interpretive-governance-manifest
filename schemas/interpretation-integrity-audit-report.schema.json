@@ -1,0 +1,397 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/interpretation-integrity-audit-report.schema.json",
+  "title": "Interpretation integrity audit report schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "type",
+    "metadata",
+    "unitOfAudit",
+    "querySet",
+    "modelRuns",
+    "findings",
+    "validity"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "https://interpretive-governance.org/schemas/interpretation-integrity-audit-report.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "const": "interpretation-integrity-audit-report"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reportId",
+        "createdAt",
+        "protocolId"
+      ],
+      "properties": {
+        "reportId": {
+          "type": "string",
+          "minLength": 3
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "protocolId": {
+          "type": "string",
+          "const": "interpretation-integrity-audit"
+        },
+        "protocolVersion": {
+          "type": "string"
+        },
+        "issuer": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "identifier": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "unitOfAudit": {
+      "$ref": "#/$defs/unitOfAudit"
+    },
+    "querySet": {
+      "$ref": "#/$defs/querySet"
+    },
+    "modelRuns": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/modelRun"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/finding"
+      }
+    },
+    "validity": {
+      "$ref": "#/$defs/validity"
+    }
+  },
+  "$defs": {
+    "unitOfAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "boundary",
+        "corpusSnapshot"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "CorpusSnapshot"
+        },
+        "boundary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "scopeType"
+          ],
+          "properties": {
+            "scopeType": {
+              "type": "string",
+              "enum": [
+                "domain",
+                "subpath",
+                "url_list"
+              ]
+            },
+            "domain": {
+              "type": "string"
+            },
+            "subpath": {
+              "type": "string"
+            },
+            "urls": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        },
+        "corpusSnapshot": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "snapshotId",
+            "timestamp",
+            "hashAlg",
+            "hash"
+          ],
+          "properties": {
+            "snapshotId": {
+              "type": "string"
+            },
+            "timestamp": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "hashAlg": {
+              "type": "string",
+              "enum": [
+                "SHA-256"
+              ]
+            },
+            "hash": {
+              "type": "string"
+            },
+            "method": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "querySet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "version",
+        "questions"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "questions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "qid",
+              "text",
+              "class"
+            ],
+            "properties": {
+              "qid": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 3
+              },
+              "class": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "modelRun": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "runId",
+        "model",
+        "parameters",
+        "outputs"
+      ],
+      "properties": {
+        "runId": {
+          "type": "string"
+        },
+        "model": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "provider",
+            "name"
+          ],
+          "properties": {
+            "provider": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            }
+          }
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "temperature": {
+              "type": "number"
+            },
+            "top_p": {
+              "type": "number"
+            }
+          }
+        },
+        "outputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "qid",
+              "outputId",
+              "content"
+            ],
+            "properties": {
+              "qid": {
+                "type": "string"
+              },
+              "outputId": {
+                "type": "string"
+              },
+              "content": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "evidenceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidenceId",
+        "kind"
+      ],
+      "properties": {
+        "evidenceId": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "model_output",
+            "corpus_excerpt",
+            "log",
+            "capture",
+            "link"
+          ]
+        },
+        "uri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "hashAlg": {
+          "type": "string",
+          "enum": [
+            "SHA-256"
+          ]
+        },
+        "hash": {
+          "type": "string"
+        },
+        "excerpt": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "summary"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Observation",
+            "Evidence",
+            "Measurement",
+            "NonConformance",
+            "RiskStatement",
+            "Recommendation",
+            "Limitation"
+          ]
+        },
+        "qid": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 3
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidenceItem"
+          }
+        }
+      }
+    },
+    "validity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "conditions"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "valid",
+            "to_be_refreshed",
+            "legacy",
+            "invalid"
+          ]
+        },
+        "conditions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "corpusHash",
+            "querySetVersion",
+            "modelIdentity"
+          ],
+          "properties": {
+            "corpusHash": {
+              "type": "string"
+            },
+            "querySetVersion": {
+              "type": "string"
+            },
+            "modelIdentity": {
+              "type": "string"
+            },
+            "runParameters": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
