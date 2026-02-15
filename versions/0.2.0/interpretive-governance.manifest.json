@@ -1,0 +1,87 @@
+{
+  "name": "Interpretive Governance",
+  "short_name": "interpretive-governance",
+  "version": "0.2.0",
+  "status": "draft",
+  "purpose": "Define a machine-first governance standard that constrains interpretation, decision-making, and agentic outputs in probabilistic systems by enforcing explicit statement typing, traceability, legitimate refusal conditions, and (as of v0.2.0) memory-aware invariants for stateful systems.",
+  "scope": [
+    "representation_governance",
+    "interpretation_governance",
+    "decision_governance",
+    "agentic_governance",
+    "memory_governance"
+  ],
+  "scope_boundary": {
+    "applies_to": [
+      "machine interpretation of content and artifacts",
+      "generation of statements and decisions in probabilistic systems",
+      "agentic tool-use when governed by explicit policies",
+      "stateful memory persistence, consolidation, and controlled forgetting"
+    ],
+    "does_not_apply_to": [
+      "claims of factual correctness without traceable sources",
+      "guarantees of safety or harm prevention",
+      "closed, unverifiable memory systems without auditable logs"
+    ]
+  },
+  "core_principles": [
+    "Explicit statement typing is mandatory for governed outputs.",
+    "Traceability is required for high-confidence claims.",
+    "Legitimate refusal is required when evidence is missing or constraints fail.",
+    "For stateful systems, memory artifacts must be typed, versioned, traceable, and auditable over time."
+  ],
+  "artifact_types": [
+    {
+      "type": "MemoryObject",
+      "description": "A typed, versioned, traceable unit of persisted memory (statement or consolidation)."
+    },
+    {
+      "type": "MemoryLog",
+      "description": "An append-only event log capturing memory lifecycle changes (create, consolidate, invalidate)."
+    }
+  ],
+  "statement_typing": {
+    "required": true,
+    "extensions": {
+      "memory_statement_classes": [
+        "SourceStatement",
+        "UserProvidedStatement",
+        "SystemGeneratedStatement",
+        "DerivedStatement",
+        "ConsolidatedStatement"
+      ],
+      "verdict_taxonomy_minimum": [
+        "Factual",
+        "Inference",
+        "False",
+        "Unanswered"
+      ]
+    }
+  },
+  "conformance": {
+    "levels": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ],
+    "profiles": [
+      {
+        "name": "memory-aware",
+        "description": "If the system is stateful (persists memory), memory constraints apply in addition to base L0–L4 requirements."
+      }
+    ],
+    "conformance_break_triggers": [
+      "model weights or model version changed without re-audit",
+      "embedding/index rebuilt without integrity recalculation and without append-only logs",
+      "memory consolidation rules changed without versioning and audit trails",
+      "memory logs lost, truncated, or made unverifiable",
+      "normative source hierarchy changed without traceable policy updates"
+    ]
+  },
+  "normative_documents": [
+    "versions/0.2.0/memory-governance-primitives.md",
+    "extensions/ops-pack/M-layer/memory-governance.md"
+  ]
+}
