@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interpretation integrity audit protocol — Interpretive Governance</title>
+
+  <meta name="description" content="Interpretation integrity audit protocol: a reproducible method to produce an opposable audit report for interpretation integrity in probabilistic systems." />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="canonical" href="https://interpretive-governance.org/protocols/interpretation-integrity-audit/" />
+</head>
+
+<body>
+  <main style="max-width: 920px; margin: 48px auto; padding: 0 16px; font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;">
+
+    <h1>Interpretation integrity audit protocol</h1>
+
+    <h2>Purpose</h2>
+    <p>
+      This protocol defines a reproducible method for producing an opposable audit report that characterizes
+      divergence between a declared corpus snapshot, machine-generated interpretations, and a verifiable evidence chain.
+    </p>
+
+    <p>
+      It does not introduce new norms. It operationalizes existing interpretive governance constraints by requiring
+      traceability and legitimate non-response when verification is not possible.
+    </p>
+
+    <p><strong>Informative label (fr-CA)</strong>: Audit d’intégrité interprétative.</p>
+
+    <h2>Governed by</h2>
+    <p>
+      <a href="/interpretive-rules/r3/">R3</a>,
+      <a href="/interpretive-rules/anti-faux-audit/">Anti-faux audit</a>,
+      <a href="/interpretive-rules/anti-identity-inference/">Anti-identity inference</a>.
+    </p>
+
+    <h2>Output artifact</h2>
+    <ul>
+      <li><a href="/schemas/interpretation-integrity-audit-report.schema.json">Audit report JSON Schema</a></li>
+      <li><a href="/examples/interpretation-integrity-audit-report.example.json">Minimal example report</a></li>
+    </ul>
+
+    <h2>Validity</h2>
+    <p>
+      Audit validity is conditional on the stability of audit variables (snapshot hash, boundary, QuerySet version,
+      model identity, and declared run parameters). If a variable changes, the audit must be refreshed.
+    </p>
+
+    <h2>Non-objectives</h2>
+    <ul>
+      <li>No certification or compliance claim</li>
+      <li>No legal advice</li>
+      <li>No ranking of systems</li>
+      <li>No SEO performance guarantee</li>
+    </ul>
+
+    <p style="font-size: 0.95em; color: #444; margin-top: 24px;">
+      Public projection notice: in case of divergence, the canonical Markdown in the manifest prevails.
+    </p>
+
+    <p style="font-size: 0.85em; color: #666; margin-top: 32px;">
+      <a href="/" rel="nofollow">Back to index</a>
+    </p>
+
+  </main>
+</body>
+</html>
