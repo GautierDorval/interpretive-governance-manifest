@@ -3,6 +3,8 @@
 ## Unreleased
 
 - Documentation and consistency improvements under discussion.
+- Added Interpretation integrity audit protocol (canonical protocol + public projection).
+- Added audit report schema and minimal example for interpretation integrity audits.
 
 > Note: the `/versions/0.1.x/` directory tracks historical snapshots of the
 > Interpretive Governance manifest (core standard).
