@@ -1,5 +1,7 @@
-# Deprecated
-
-This file has moved to `extensions/ops-pack/MEM-layer/examples/memory-object.example.json`.
-
-This legacy path exists only to preserve links and avoid confusion with `ops-pack/M-layer/` (multi-agent coordination).
+{
+  "deprecated": true,
+  "type": "RedirectStub",
+  "moved_to": "extensions/ops-pack/MEM-layer/examples/memory-object.example.json",
+  "reason": "This legacy path exists only to preserve links and avoid confusion with ops-pack/M-layer/ (multi-agent coordination).",
+  "note": "Use the MEM-layer canonical example instead of this stub."
+}
