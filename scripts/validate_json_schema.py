@@ -8,6 +8,7 @@ REQUIRED_MAPPINGS = [
     ("interpretive-governance.manifest.json", "schemas/manifest.schema.json"),
     ("interpretive-index.json", "schemas/interpretive-index.schema.json"),
     ("authority/authority-policy.json", "schemas/authority/authority-policy.schema.json"),
+    ("examples/ctic-compliance-report.example.json", "schemas/ctic-compliance-report.schema.json"),
 ]
 
 def load_json(path: Path):

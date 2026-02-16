@@ -84,6 +84,25 @@ and enforces a strict boundary between inference and execution.
 
 ---
 
+## CTIC (extension): cross-layer transactional integrity
+
+CTIC is an Interpretive Governance extension for transaction-adjacent systems
+where dynamic market-state variables (price, stock, delivery, promotions) may be surfaced in both:
+
+- an interpretive layer (synthesis, recommendation), and
+- a transactional layer (offers, checkout).
+
+CTIC defines:
+- non-fixation rules (do not present dynamic variables as intrinsic),
+- volatility signaling (source + freshness + status),
+- invalidation rules on transactional refresh,
+- optional divergence auditing (DDI).
+
+Specification: `extensions/ctic/ctic.md`  
+Schema + example: `schemas/ctic-compliance-report.schema.json`, `examples/ctic-compliance-report.example.json`
+
+---
+
 ## Response legitimacy (Q-Layer compatibility)
 
 Interpretive Governance constrains *what* may be asserted and how statements must be typed.

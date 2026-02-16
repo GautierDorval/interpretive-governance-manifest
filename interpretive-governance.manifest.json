@@ -188,6 +188,18 @@
           "note": "This layer is part of the complete ops-pack concept but is not declared as pinned under v1.2.0 in this manifest."
         }
       }
+    },
+    "ctic": {
+      "name": "CTIC (Cross-layer transactional integrity)",
+      "role": "Normative constraints for dynamic transactional variables across interpretive and transactional layers: volatility signaling, refresh invalidation, and divergence auditing. Non-executable by design.",
+      "pinned_version": "v1.5.0",
+      "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
+      "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.5.0/",
+      "artifacts": {
+        "spec": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.5.0/extensions/ctic/ctic.md",
+        "schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.5.0/schemas/ctic-compliance-report.schema.json",
+        "example_report": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.5.0/examples/ctic-compliance-report.example.json"
+      }
     }
   },
   "artifacts": {

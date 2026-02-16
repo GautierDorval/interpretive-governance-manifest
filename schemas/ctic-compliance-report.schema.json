@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/ctic-compliance-report.schema.json",
+  "title": "CTIC compliance report schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "type",
+    "metadata",
+    "system",
+    "scope",
+    "results"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "https://interpretive-governance.org/schemas/ctic-compliance-report.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "const": "ctic-compliance-report"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reportId",
+        "createdAt",
+        "moduleId",
+        "moduleVersion"
+      ],
+      "properties": {
+        "reportId": {
+          "type": "string",
+          "minLength": 3
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "moduleId": {
+          "type": "string",
+          "const": "ctic"
+        },
+        "moduleVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "issuer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name"],
+          "properties": {
+            "name": { "type": "string" },
+            "identifier": { "type": "string" }
+          }
+        }
+      }
+    },
+    "system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "systemId"],
+      "properties": {
+        "name": { "type": "string" },
+        "systemId": { "type": "string" },
+        "owner": { "type": "string" },
+        "environment": {
+          "type": "string",
+          "enum": ["prod", "staging", "dev", "unknown"],
+          "default": "unknown"
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "domains": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "dynamicAttributes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "locale": { "type": "string" },
+        "currency": { "type": "string", "minLength": 3, "maxLength": 3 }
+      }
+    },
+    "results": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["conformanceLevel", "rules"],
+      "properties": {
+        "conformanceLevel": {
+          "type": "string",
+          "enum": [
+            "CTIC-Info",
+            "CTIC-Signal",
+            "CTIC-Sync",
+            "CTIC-Audit",
+            "Non-compliant"
+          ]
+        },
+        "rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["ruleId", "status"],
+            "properties": {
+              "ruleId": {
+                "type": "string",
+                "enum": ["CTIC-1", "CTIC-2", "CTIC-3", "CTIC-4", "CTIC-5", "CTIC-6"]
+              },
+              "status": {
+                "type": "string",
+                "enum": ["pass", "fail", "na"]
+              },
+              "notes": { "type": "string" },
+              "evidence": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        },
+        "metrics": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "divergenceFrequency": { "type": "number", "minimum": 0, "maximum": 1 },
+            "divergenceAmplitudePctMean": { "type": "number", "minimum": 0 },
+            "windowDays": { "type": "integer", "minimum": 1 }
+          }
+        }
+      }
+    }
+  }
+}

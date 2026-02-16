@@ -1,0 +1,66 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/ctic-compliance-report.schema.json",
+  "type": "ctic-compliance-report",
+  "metadata": {
+    "reportId": "CTIC-2026-02-16-0001",
+    "createdAt": "2026-02-16T22:00:00Z",
+    "moduleId": "ctic",
+    "moduleVersion": "1.5.0",
+    "issuer": {
+      "name": "Interpretive Governance (example issuer)",
+      "identifier": "https://interpretive-governance.org/#authority"
+    }
+  },
+  "system": {
+    "name": "Example Commerce Assistant",
+    "systemId": "example-commerce-assistant",
+    "owner": "Example Inc.",
+    "environment": "prod"
+  },
+  "scope": {
+    "domains": ["ecommerce"],
+    "dynamicAttributes": ["price", "stock", "delivery"],
+    "locale": "fr-CA",
+    "currency": "CAD"
+  },
+  "results": {
+    "conformanceLevel": "CTIC-Sync",
+    "rules": [
+      {
+        "ruleId": "CTIC-1",
+        "status": "pass",
+        "notes": "Interpretive layer avoids exact prices; transactional layer is authoritative."
+      },
+      {
+        "ruleId": "CTIC-2",
+        "status": "pass",
+        "notes": "No dynamic values are fixed in the interpretive layer."
+      },
+      {
+        "ruleId": "CTIC-3",
+        "status": "pass",
+        "notes": "Transactional prices include source, capturedAt, and status labels."
+      },
+      {
+        "ruleId": "CTIC-4",
+        "status": "pass",
+        "notes": "On refresh, prior values are invalidated or updated, never coexisting as two truths."
+      },
+      {
+        "ruleId": "CTIC-5",
+        "status": "pass",
+        "notes": "Exact prices are only shown after explicit user interaction."
+      },
+      {
+        "ruleId": "CTIC-6",
+        "status": "pass",
+        "notes": "Currency and locale conventions are explicit."
+      }
+    ],
+    "metrics": {
+      "divergenceFrequency": 0.03,
+      "divergenceAmplitudePctMean": 1.8,
+      "windowDays": 14
+    }
+  }
+}

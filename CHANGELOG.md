@@ -11,6 +11,23 @@
 
 ---
 
+## 1.5.0 — CTIC extension (cross-layer transactional integrity)
+
+- Added **CTIC** extension: cross-layer transactional integrity for dynamic market-state variables (price, stock, delivery, promotions).
+  - Added normative rules CTIC-1 through CTIC-6: `extensions/ctic/ctic.md`
+  - Added CTIC compliance report schema + minimal example:
+    - `schemas/ctic-compliance-report.schema.json`
+    - `examples/ctic-compliance-report.example.json`
+- Registered CTIC as a pinned extension in:
+  - `interpretive-governance.manifest.json`
+  - `/.well-known/interpretive-governance.json`
+- Updated JSON Schema validation mapping to include the CTIC example report.
+- Updated integrity hashes for modified critical artifacts.
+
+No changes to interpretive core semantics, Q-Layer semantics, or executable authority boundaries.
+
+---
+
 ## 1.4.1 — Adoption hardening (licensing + governance) + manifest/schema consistency
 
 - Added explicit licensing:
