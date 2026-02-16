@@ -14,6 +14,7 @@
 ## 1.4.0 — Memory governance (MEM-layer) + core memory-aware primitives (v0.2.0)
 
 - Introduced **memory-aware core primitives** for stateful systems (RAG with persistence, agent memory, consolidation, controlled forgetting).
+- Aligned `interpretive-governance.manifest.json` with `schemas/manifest.schema.json` requirements (non-negotiables + canonical schema URL). No semantic change.
 - Added core snapshot `versions/0.2.0/`:
   - `versions/0.2.0/interpretive-governance.manifest.json` (adds `memory_governance` scope and memory-aware conformance triggers)
   - `versions/0.2.0/memory-governance-primitives.md` (normative primitives: MemoryObject, MemoryLog, consolidation, controlled forgetting, temporal integrity)
