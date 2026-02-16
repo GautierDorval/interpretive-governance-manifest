@@ -3,16 +3,13 @@
   "short_name": "interpretive-governance",
   "version": "0.1.2",
   "status": "draft",
-
   "purpose": "Define a machine-first governance standard that constrains interpretation, decision-making, and agentic outputs in probabilistic systems by enforcing explicit statement typing, traceability, and legitimate refusal conditions.",
-
   "scope": [
     "representation_governance",
     "interpretation_governance",
     "decision_governance",
     "agentic_governance"
   ],
-
   "scope_boundary": {
     "applies_to": [
       "machine interpretation of content and entities",
@@ -30,13 +27,11 @@
       "legal or regulatory compliance advice"
     ]
   },
-
   "non_equivalence": {
     "academic_field": "Interpretive Governance as defined here is not the academic field of interpretive governance in political or social sciences.",
     "prompting_frameworks": "This standard is not a prompting technique or a prompt engineering framework.",
     "safety_layers": "This standard does not replace model safety layers or content moderation systems."
   },
-
   "core_principles": {
     "explicit_statement_typing": true,
     "facts_and_inference_separation": true,
@@ -44,7 +39,6 @@
     "bounded_interpretation": true,
     "legitimate_non_response": true
   },
-
   "statement_types": {
     "required": [
       "observed",
@@ -59,23 +53,20 @@
       "unknown": "Missing, undefined, or unverifiable information."
     }
   },
-
   "non_negotiables": {
+    "no_silent_completion": true,
+    "no_facts_from_inference": true,
+    "traceability_required": true,
+    "no_persuasive_claims_without_evidence": true,
+    "unknowns_must_be_explicit": true,
     "statement_types_required": [
       "observed",
       "derived",
       "inferred",
       "unknown"
     ],
-    "no_silent_completion": true,
-    "facts_vs_inference_separation": true,
-    "traceability_required": true,
-    "no_persuasive_claims_without_evidence": true,
-    "unknowns_must_be_explicit": true,
-
-    "no_facts_from_inference": true
+    "facts_vs_inference_separation": true
   },
-
   "agentic_governance": {
     "tooling_disclosure_required": true,
     "self_validation_forbidden": true,
@@ -83,7 +74,6 @@
     "outputs_must_preserve_unknowns": true,
     "no_implicit_goal_completion": true
   },
-
   "response_legitimacy": {
     "response_authorization_required": true,
     "legitimate_non_response": true,
@@ -95,7 +85,6 @@
     ],
     "note": "When interpretive conditions are insufficient, ambiguous, or in conflict, the system must prefer clarification, referral, or legitimate non-response over plausible completion. This mechanism is compatible with, but not dependent on, the Q-Layer formalized in the SSA-E + A2 doctrine."
   },
-
   "relationships": {
     "normative_layer": "Interpretive Governance",
     "compatible_extensions": [
@@ -112,7 +101,6 @@
       "agentic pipelines"
     ]
   },
-
   "concepts_registry": {
     "note": "Declarative registry of canonical concepts used across interpretive governance doctrine, audits, and conformance efforts. Canonical definitions may live on external canonical sites. This registry does not claim authorship of terms; it declares their normative scope and canonical reference URLs within this ecosystem.",
     "concepts": [
@@ -136,7 +124,6 @@
       }
     ]
   },
-
   "extensions": {
     "note": "Extensions are additive modules that build upon the core Interpretive Governance standard. They do not redefine statement typing, ontology distinctions, or interpretive/constraintive separation. They provide additional normative constraints for executable authority and operational primitives for agentic environments.",
     "versioning": {
@@ -145,13 +132,12 @@
       "pinned_reference": "v1.1.0",
       "pinning_rule": "Prefer pinned raw URLs for extensions to prevent drift."
     },
-
     "authority_governance_layer_3": {
       "name": "Authority governance (Layer 3)",
       "role": "Normative governance of executable authority. Defines the separation between inference and authority, action taxonomy, proof model, authority policy, authority ledger specification, role topology, incentive integrity, explicit non-objectives, and validation schemas. Non-executable by design.",
-      "pinned_version": "v1.1.0",
+      "pinned_version": "v1.4.1",
       "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
-      "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/",
+      "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/",
       "artifacts": {
         "boundary": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/authority/inference-vs-authority.md",
         "taxonomy": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/authority/action-taxonomy.json",
@@ -169,15 +155,14 @@
         }
       }
     },
-
     "agentic_operations_pack": {
       "note": "The ops-pack is structured as a minimal, pinned baseline. Additional layers may exist but are not required for minimal agentic operations.",
       "minimal": {
         "name": "Agentic operations pack (minimal)",
         "role": "Operational primitives supporting production-grade authority governance: human oversight, privacy & data lineage, versioning & drift change control, security & abuse resistance, incident response. Non-prescriptive, non-executable by design.",
-        "pinned_version": "v1.1.0",
+        "pinned_version": "v1.4.1",
         "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
-        "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/",
+        "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/",
         "artifacts": {
           "H_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/ops-pack/H-layer/human-oversight-protocol.md",
           "P_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/ops-pack/P-layer/privacy-data-lineage.md",
@@ -205,7 +190,6 @@
       }
     }
   },
-
   "artifacts": {
     "authority_graph": "https://interpretive-governance.org/authority-graph.jsonld",
     "schema": "https://interpretive-governance.org/schemas/manifest.schema.json",
@@ -214,15 +198,13 @@
     "interpretive_index": "https://interpretive-governance.org/interpretive-index.json",
     "interpretive_index_schema": "https://interpretive-governance.org/schemas/interpretive-index.schema.json"
   },
-
   "canonical": {
     "website": "https://interpretive-governance.org/",
     "manifest": "https://interpretive-governance.org/interpretive-governance.manifest.json",
     "well_known_entrypoint": "https://interpretive-governance.org/.well-known/interpretive-governance.json",
-    "schema": "https://interpretive-governance.org/schemas/manifest.schema.json",
-    "versions_path": "https://interpretive-governance.org/versions/"
+    "versions_path": "https://interpretive-governance.org/versions/",
+    "schema": "https://interpretive-governance.org/schemas/manifest.schema.json"
   },
-
   "provenance": {
     "initiator": "Gautier Dorval",
     "canonical_identity": "https://gautierdorval.com/",

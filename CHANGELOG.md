@@ -11,10 +11,31 @@
 
 ---
 
+## 1.4.1 — Adoption hardening (licensing + governance) + manifest/schema consistency
+
+- Added explicit licensing:
+  - Documentation licensed under **CC BY 4.0**
+  - Schemas and scripts licensed under **Apache-2.0**
+  See: `LICENSE`, `LICENSES/`, `NOTICE`.
+- Added governance and onboarding documents:
+  - `GOVERNANCE.md`
+  - `CONTRIBUTING.md`
+  - `GETTING-STARTED.md`
+- Fixed canonical manifest / schema consistency:
+  - Added `non_negotiables.statement_types_required`
+  - Added `non_negotiables.facts_vs_inference_separation` (compatibility alias)
+  - Added `canonical.schema`
+- Fixed pinned raw URL parity (`pinned_version` ↔ `raw_base`) for repository extensions.
+- Fixed legacy JSON redirect stubs under `extensions/ops-pack/M-layer/` to remain link-preserving
+  while keeping JSON validation green.
+- Updated integrity hashes for critical artifacts.
+
+No changes to the memory governance primitives or MEM-layer semantics introduced in `1.4.0`.
+
+---
 ## 1.4.0 — Memory governance (MEM-layer) + core memory-aware primitives (v0.2.0)
 
 - Introduced **memory-aware core primitives** for stateful systems (RAG with persistence, agent memory, consolidation, controlled forgetting).
-- Aligned `interpretive-governance.manifest.json` with `schemas/manifest.schema.json` requirements (non-negotiables + canonical schema URL). No semantic change.
 - Added core snapshot `versions/0.2.0/`:
   - `versions/0.2.0/interpretive-governance.manifest.json` (adds `memory_governance` scope and memory-aware conformance triggers)
   - `versions/0.2.0/memory-governance-primitives.md` (normative primitives: MemoryObject, MemoryLog, consolidation, controlled forgetting, temporal integrity)

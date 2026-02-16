@@ -1,1 +1,1 @@
-{"deprecated":true,"type":"RedirectStub","moved_to":"extensions/ops-pack/MEM-layer/examples/memory-log.example.ndjson","reason":"This legacy path exists only to preserve links and avoid confusion with ops-pack/M-layer/ (multi-agent coordination).","note":"Use the MEM-layer canonical example instead of this stub."}
+{"deprecated": true, "moved_to": "extensions/ops-pack/MEM-layer/examples/memory-log.example.ndjson", "note": "This legacy path exists only to preserve links and avoid confusion with ops-pack/M-layer (multi-agent coordination)."}

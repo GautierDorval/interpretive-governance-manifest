@@ -36,6 +36,19 @@ presenting hypotheses as facts and to make uncertainty explicit and auditable.
 
 ---
 
+## Start here
+
+If you are new to this repository, start with:
+
+- `GETTING-STARTED.md` — minimal onboarding (“hello governance”) and persona-based entry paths
+- `/interpretive-governance.manifest.json` — canonical manifest (machine-first)
+- `/schemas/manifest.schema.json` — manifest JSON Schema
+- `/interpretive-index.json` — machine-first rule/protocol index
+
+Governance process (change control): `GOVERNANCE.md`.
+
+---
+
 ## Canonical status notice
 
 This repository formalizes the **baseline layered governance model** composed of:
@@ -347,3 +360,17 @@ A documented field specimen (descriptive):
 
 Some observed phenomena are analyzed in full doctrinal context on external canonical sites.
 These analyses remain non-normative.
+---
+
+## Licensing
+
+This repository is dual-licensed:
+
+- **Documentation** (Markdown, HTML, diagrams, and narrative artifacts) is licensed under **CC BY 4.0**
+  (Creative Commons Attribution 4.0 International).
+- **Schemas and scripts** (JSON Schemas, Python scripts, and machine-first validation tooling) are licensed under
+  **Apache-2.0** (Apache License 2.0).
+
+See: `LICENSE` and `LICENSES/`.
+
+

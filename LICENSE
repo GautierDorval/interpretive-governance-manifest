@@ -1,0 +1,39 @@
+# License
+
+This repository is dual-licensed.
+
+## 1) Documentation — CC BY 4.0
+
+Unless otherwise noted, documentation and narrative artifacts are licensed under:
+
+- Creative Commons Attribution 4.0 International  
+  SPDX-License-Identifier: CC-BY-4.0
+
+This includes (non-exhaustive):
+- `*.md`, `*.html`
+- diagrams and assets under `assets/`
+- normative and informative prose under `authority/`, `ontology/`, `concepts/`, `constraintive-governance/`, `interpretive-governance/`, `protocols/`, `interpretive-rules/`
+
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+## 2) Schemas and scripts — Apache-2.0
+
+Unless otherwise noted, machine-readable schemas and tooling are licensed under:
+
+- Apache License 2.0  
+  SPDX-License-Identifier: Apache-2.0
+
+This includes (non-exhaustive):
+- JSON Schemas under `schemas/`
+- scripts under `scripts/`
+- GitHub workflows under `.github/workflows/`
+
+Full license text: https://www.apache.org/licenses/LICENSE-2.0.txt
+
+## 3) License texts
+
+Canonical references:
+- `LICENSES/CC-BY-4.0.txt`
+- `LICENSES/Apache-2.0.txt`
+
+If any file declares a different license header, that file governs.
