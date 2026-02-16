@@ -61,11 +61,19 @@
   },
 
   "non_negotiables": {
+    "statement_types_required": [
+      "observed",
+      "derived",
+      "inferred",
+      "unknown"
+    ],
     "no_silent_completion": true,
-    "no_facts_from_inference": true,
+    "facts_vs_inference_separation": true,
     "traceability_required": true,
     "no_persuasive_claims_without_evidence": true,
-    "unknowns_must_be_explicit": true
+    "unknowns_must_be_explicit": true,
+
+    "no_facts_from_inference": true
   },
 
   "agentic_governance": {
@@ -211,6 +219,7 @@
     "website": "https://interpretive-governance.org/",
     "manifest": "https://interpretive-governance.org/interpretive-governance.manifest.json",
     "well_known_entrypoint": "https://interpretive-governance.org/.well-known/interpretive-governance.json",
+    "schema": "https://interpretive-governance.org/schemas/manifest.schema.json",
     "versions_path": "https://interpretive-governance.org/versions/"
   },
 
