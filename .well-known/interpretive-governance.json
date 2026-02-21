@@ -72,12 +72,16 @@
     "constraintive_layer": "https://interpretive-governance.org/constraintive-governance/definition.md",
     "glossary": "https://interpretive-governance.org/glossary.md",
     "references": "https://interpretive-governance.org/references.md",
-    "manifest_schema": "https://interpretive-governance.org/schemas/manifest.schema.json"
+    "manifest_schema": "https://interpretive-governance.org/schemas/manifest.schema.json",
+    "registries": "https://interpretive-governance.org/REGISTRIES.md"
   },
   "related_doctrine": {
     "human_readable_doctrine": "https://gautierdorval.com/doctrine/",
     "exogenous_governance_module": "https://gautierdorval.com/doctrine/gouvernance-exogene/",
-    "definitions_registry": "https://gautierdorval.com/definitions/"
+    "definitions_registry": "https://gautierdorval.com/definitions/",
+    "ontological_architecture": "https://gautierdorval.com/doctrine/architecture-ontologique/",
+    "public_specification": "https://gautierdorval.com/specification-gouvernance-interpretative/",
+    "lexicon_navigation": "https://gautierdorval.com/lexique/"
   },
   "repositories": {
     "manifest_repo": "https://github.com/GautierDorval/interpretive-governance-manifest",
@@ -91,5 +95,5 @@
     "canonical_identity": "https://gautierdorval.com/",
     "note": "Provenance is informative only and does not affect normative conformance."
   },
-  "last_updated": "2026-02-04"
+  "last_updated": "2026-02-21"
 }
