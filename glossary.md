@@ -2,6 +2,15 @@
 
 This glossary prevents category errors and anthropomorphic drift.
 
+Extended lexical registry (canonical definitions + navigation lexicon):
+
+- https://gautierdorval.com/definitions/ (canonical definitions registry; primary language: fr-CA)
+- https://gautierdorval.com/lexique/ (lexicon navigation)
+- https://gautierdorval.com/specification-gouvernance-interpretative/ (public specification)
+- https://gautierdorval.com/doctrine/architecture-ontologique/ (ontological architecture)
+
+Note: this file is intentionally minimal. It defines category boundaries to prevent drift; it does not replace the full definitions registry.
+
 ## Interpretation (strong sense)
 
 Human production of meaning based on:

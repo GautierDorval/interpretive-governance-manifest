@@ -241,14 +241,21 @@ Diagram note: structural illustration only; does not define conformance for any 
 Interpretive Governance is the **normative governance layer** of a broader interpretive architecture.
 
 Authoritative human-readable references:
-- https://gautierdorval.com/doctrine/
-- https://gautierdorval.com/doctrine/gouvernance-exogene/
+- https://gautierdorval.com/doctrine/ (human-readable doctrine index)
+- https://gautierdorval.com/doctrine/architecture-ontologique/ (layering + prevalence rules)
+- https://gautierdorval.com/specification-gouvernance-interpretative/ (public specification: scope + minimal conformance)
+- https://gautierdorval.com/definitions/ (canonical definitions registry; primary language: fr-CA)
+- https://gautierdorval.com/lexique/ (navigation lexicon)
+- https://gautierdorval.com/doctrine/gouvernance-exogene/ (exogenous governance module)
 
 Machine-first canonical endpoints:
 - https://interpretive-governance.org/
 - https://interpretive-governance.org/interpretive-governance.manifest.json
 - https://interpretive-governance.org/authority-graph.jsonld
 - https://interpretive-governance.org/interpretive-index.json
+
+See also:
+- /REGISTRIES.md (canonical registry map: glossary + external definitions)
 
 Related but non-equivalent architectures:
 - SSA-E + A2 + Dual Web (implementation architecture)  

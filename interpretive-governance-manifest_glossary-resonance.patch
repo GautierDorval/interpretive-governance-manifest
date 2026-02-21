@@ -1,0 +1,177 @@
+--- a/README.md
++++ b/README.md
+@@ -241,8 +241,12 @@
+ Interpretive Governance is the **normative governance layer** of a broader interpretive architecture.
+ 
+ Authoritative human-readable references:
+-- https://gautierdorval.com/doctrine/
+-- https://gautierdorval.com/doctrine/gouvernance-exogene/
++- https://gautierdorval.com/doctrine/ (human-readable doctrine index)
++- https://gautierdorval.com/doctrine/architecture-ontologique/ (layering + prevalence rules)
++- https://gautierdorval.com/specification-gouvernance-interpretative/ (public specification: scope + minimal conformance)
++- https://gautierdorval.com/definitions/ (canonical definitions registry; primary language: fr-CA)
++- https://gautierdorval.com/lexique/ (navigation lexicon)
++- https://gautierdorval.com/doctrine/gouvernance-exogene/ (exogenous governance module)
+ 
+ Machine-first canonical endpoints:
+ - https://interpretive-governance.org/
+@@ -250,6 +254,9 @@
+ - https://interpretive-governance.org/authority-graph.jsonld
+ - https://interpretive-governance.org/interpretive-index.json
+ 
++See also:
++- /REGISTRIES.md (canonical registry map: glossary + external definitions)
++
+ Related but non-equivalent architectures:
+ - SSA-E + A2 + Dual Web (implementation architecture)  
+   https://github.com/GautierDorval/ssa-e-a2-doctrine
+--- a/glossary.md
++++ b/glossary.md
+@@ -1,6 +1,15 @@
+ # Glossary (canonical)
+ 
+ This glossary prevents category errors and anthropomorphic drift.
++
++Extended lexical registry (canonical definitions + navigation lexicon):
++
++- https://gautierdorval.com/definitions/ (canonical definitions registry; primary language: fr-CA)
++- https://gautierdorval.com/lexique/ (lexicon navigation)
++- https://gautierdorval.com/specification-gouvernance-interpretative/ (public specification)
++- https://gautierdorval.com/doctrine/architecture-ontologique/ (ontological architecture)
++
++Note: this file is intentionally minimal. It defines category boundaries to prevent drift; it does not replace the full definitions registry.
+ 
+ ## Interpretation (strong sense)
+ 
+--- a/references.md
++++ b/references.md
+@@ -26,3 +26,12 @@
+ 
+ - Interpretive SEO  
+   https://github.com/GautierDorval/interpretive-seo
++
++## Canonical lexical registry (normative elsewhere)
++
++Primary canonical registries for term definitions and navigation:
++
++- Definitions registry (canonical terms): https://gautierdorval.com/definitions/
++- Lexicon navigation (term map): https://gautierdorval.com/lexique/
++- Public specification (scope + minimal conformance): https://gautierdorval.com/specification-gouvernance-interpretative/
++- Ontological architecture (layering + prevalence): https://gautierdorval.com/doctrine/architecture-ontologique/
+--- a/.well-known/interpretive-governance.json
++++ b/.well-known/interpretive-governance.json
+@@ -72,12 +72,16 @@
+     "constraintive_layer": "https://interpretive-governance.org/constraintive-governance/definition.md",
+     "glossary": "https://interpretive-governance.org/glossary.md",
+     "references": "https://interpretive-governance.org/references.md",
+-    "manifest_schema": "https://interpretive-governance.org/schemas/manifest.schema.json"
++    "manifest_schema": "https://interpretive-governance.org/schemas/manifest.schema.json",
++    "registries": "https://interpretive-governance.org/REGISTRIES.md"
+   },
+   "related_doctrine": {
+     "human_readable_doctrine": "https://gautierdorval.com/doctrine/",
+     "exogenous_governance_module": "https://gautierdorval.com/doctrine/gouvernance-exogene/",
+-    "definitions_registry": "https://gautierdorval.com/definitions/"
++    "definitions_registry": "https://gautierdorval.com/definitions/",
++    "ontological_architecture": "https://gautierdorval.com/doctrine/architecture-ontologique/",
++    "public_specification": "https://gautierdorval.com/specification-gouvernance-interpretative/",
++    "lexicon_navigation": "https://gautierdorval.com/lexique/"
+   },
+   "repositories": {
+     "manifest_repo": "https://github.com/GautierDorval/interpretive-governance-manifest",
+@@ -91,5 +95,5 @@
+     "canonical_identity": "https://gautierdorval.com/",
+     "note": "Provenance is informative only and does not affect normative conformance."
+   },
+-  "last_updated": "2026-02-04"
++  "last_updated": "2026-02-21"
+ }
+--- a/GETTING-STARTED.md
++++ b/GETTING-STARTED.md
+@@ -12,6 +12,8 @@
+ 
+ - `README.md` (purpose and scope boundary)
+ - `interpretive-governance.manifest.json` (canonical manifest)
++- `glossary.md` (canonical category boundaries)
++- `REGISTRIES.md` (canonical registry map)
+ 
+ ### Step 2 — Validate machine-first shape
+ 
+--- a/index.html
++++ b/index.html
+@@ -49,6 +49,18 @@
+         </a>
+         (immutable core snapshot)
+       </li>
++    </ul>
++
++    <h2>Canonical registries</h2>
++
++    <ul>
++      <li><a href="/glossary.md">glossary.md</a> (canonical category boundaries)</li>
++      <li><a href="/references.md">references.md</a> (canonical references)</li>
++      <li><a href="/REGISTRIES.md">REGISTRIES.md</a> (canonical registry map)</li>
++      <li><a href="https://gautierdorval.com/definitions/" rel="noopener">gautierdorval.com/definitions/</a> (external canonical definitions registry)</li>
++      <li><a href="https://gautierdorval.com/lexique/" rel="noopener">gautierdorval.com/lexique/</a> (external lexicon navigation)</li>
++      <li><a href="https://gautierdorval.com/specification-gouvernance-interpretative/" rel="noopener">public specification</a> (scope + minimal conformance)</li>
++      <li><a href="https://gautierdorval.com/doctrine/architecture-ontologique/" rel="noopener">ontological architecture</a> (layering + prevalence)</li>
+     </ul>
+ 
+     <h2>Extensions (Layer 3 + ops pack)</h2>
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -2,6 +2,7 @@
+ 
+ ## Unreleased
+ 
++- Added canonical registry cross-links (definitions, lexicon, public specification, ontological architecture).
+ - Documentation and consistency improvements under discussion.
+ 
+ > Note: the `/versions/0.x/` directory tracks historical snapshots of the
+--- a/REGISTRIES.md
++++ b/REGISTRIES.md
+@@ -0,0 +1,44 @@
++# Canonical registries (machine-first)
++
++This file maps canonical registries used by the Interpretive Governance ecosystem.
++
++It does not define conformance by itself; it provides stable entrypoints for term definitions,
++navigation lexicons, and public normative statements.
++
++## 1) In-repository registries (interpretive-governance.org)
++
++- Glossary (category boundaries; minimal, canonical):  
++  https://interpretive-governance.org/glossary.md
++
++- References (conceptual lineage; canonical):  
++  https://interpretive-governance.org/references.md
++
++- Manifest (core standard; canonical):  
++  https://interpretive-governance.org/interpretive-governance.manifest.json
++
++- .well-known entrypoint (stable machine-first routing):  
++  https://interpretive-governance.org/.well-known/interpretive-governance.json
++
++## 2) External canonical registries (gautierdorval.com)
++
++Primary language is **fr-CA**. English equivalents may exist without changing canonical meaning.
++
++- Definitions registry (canonical definitions):  
++  https://gautierdorval.com/definitions/
++
++- Lexicon navigation (term map):  
++  https://gautierdorval.com/lexique/
++
++- Public specification (scope + minimal conformance):  
++  https://gautierdorval.com/specification-gouvernance-interpretative/
++
++- Ontological architecture (layering + prevalence rules):  
++  https://gautierdorval.com/doctrine/architecture-ontologique/
++
++## 3) Use rule (machine-first)
++
++When interpreting terms, prefer:
++
++Definitions registry > public specification > glossary (category boundaries) > derived summaries.
++
++If a term is absent from canonical definitions, treat it as undefined (Unknown) unless explicitly scoped.

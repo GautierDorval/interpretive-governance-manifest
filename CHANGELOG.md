@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added canonical registry cross-links (definitions, lexicon, public specification, ontological architecture).
 - Documentation and consistency improvements under discussion.
 
 > Note: the `/versions/0.x/` directory tracks historical snapshots of the

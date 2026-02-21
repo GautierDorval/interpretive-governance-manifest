@@ -12,6 +12,8 @@ Interpretive Governance is a **machine-first standard**. It constrains what may 
 
 - `README.md` (purpose and scope boundary)
 - `interpretive-governance.manifest.json` (canonical manifest)
+- `glossary.md` (canonical category boundaries)
+- `REGISTRIES.md` (canonical registry map)
 
 ### Step 2 — Validate machine-first shape
 

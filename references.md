@@ -26,3 +26,12 @@ Status in this repository:
 
 - Interpretive SEO  
   https://github.com/GautierDorval/interpretive-seo
+
+## Canonical lexical registry (normative elsewhere)
+
+Primary canonical registries for term definitions and navigation:
+
+- Definitions registry (canonical terms): https://gautierdorval.com/definitions/
+- Lexicon navigation (term map): https://gautierdorval.com/lexique/
+- Public specification (scope + minimal conformance): https://gautierdorval.com/specification-gouvernance-interpretative/
+- Ontological architecture (layering + prevalence): https://gautierdorval.com/doctrine/architecture-ontologique/
