@@ -183,6 +183,8 @@ Core + companion artifacts:
 - `/schemas/manifest.schema.json` — JSON Schema (manifest)  
 - `/versions/` — immutable version snapshots (core manifest series)  
 - `/authority-graph.jsonld` — authority graph (terms, works, dependencies)  
+- `/entity-graph.jsonld` — entity graph (LLM-first reference implementation)  
+- `/entity-graph.yaml` — entity graph (YAML fallback)  
 - `/interpretive-index.json` — machine-first index (rules + protocols)  
 - `/schemas/interpretive-index.schema.json` — JSON Schema (interpretive index)  
 

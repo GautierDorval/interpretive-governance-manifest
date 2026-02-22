@@ -4,6 +4,9 @@
 
 - Added canonical registry cross-links (definitions, lexicon, public specification, ontological architecture).
 - Documentation and consistency improvements under discussion.
+- Added LLM-first publishing Schema-layer module (guidance + templates).
+- Added Git source-of-truth entity graph registry + generator (YAML source → JSON-LD + YAML fallback).
+- Added CI check to prevent entity graph artifacts from drifting out of sync (generator diff).
 
 > Note: the `/versions/0.x/` directory tracks historical snapshots of the
 > Interpretive Governance manifest (core standard).

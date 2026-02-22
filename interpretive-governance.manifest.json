@@ -215,7 +215,10 @@
     "manifest": "https://interpretive-governance.org/interpretive-governance.manifest.json",
     "well_known_entrypoint": "https://interpretive-governance.org/.well-known/interpretive-governance.json",
     "versions_path": "https://interpretive-governance.org/versions/",
-    "schema": "https://interpretive-governance.org/schemas/manifest.schema.json"
+    "schema": "https://interpretive-governance.org/schemas/manifest.schema.json",
+    "entity_graph": "entity-graph.jsonld",
+    "entity_graph_fallback": "entity-graph.yaml",
+    "entity_graph_source": "registries/entity-graph/entity-graph.source.yaml"
   },
   "provenance": {
     "initiator": "Gautier Dorval",

@@ -1,0 +1,125 @@
+schemaVersion: '1.0'
+type: yaml-fallback
+canonical: https://gautierdorval.com/entity-graph.jsonld
+source_repo: https://github.com/GautierDorval/interpretive-governance-manifest
+source_path: registries/entity-graph/entity-graph.source.yaml
+generated_from: registries/entity-graph/entity-graph.source.yaml
+generated_at: '2026-02-22 15:49:52Z'
+person:
+  id: https://gautierdorval.com/entite/#person
+  name: Gautier Dorval
+  url: https://gautierdorval.com/entite/
+  sameAs:
+  - https://www.linkedin.com/in/gautier-dorval/
+website:
+  id: https://gautierdorval.com/#website
+  url: https://gautierdorval.com/
+  name: Gautier Dorval
+  inLanguage: fr-CA
+definedTermSets:
+- id: https://gautierdorval.com/defined-terms/authority-governance
+  type: DefinedTermSet
+  name: Authority governance terms
+  description: null
+  term_ids:
+  - https://gautierdorval.com/defined-terms/inference-vs-authority
+  - https://gautierdorval.com/defined-terms/authority-governance-layer-3
+  - https://gautierdorval.com/defined-terms/action-taxonomy
+  - https://gautierdorval.com/defined-terms/proof-model
+  - https://gautierdorval.com/defined-terms/authority-policy
+  - https://gautierdorval.com/defined-terms/authority-ledger
+  - https://gautierdorval.com/defined-terms/role-topology
+  - https://gautierdorval.com/defined-terms/incentive-integrity
+  - https://gautierdorval.com/defined-terms/h-layer-human-oversight
+  - https://gautierdorval.com/defined-terms/p-layer-privacy-lineage
+  - https://gautierdorval.com/defined-terms/s-layer-security-abuse
+  - https://gautierdorval.com/defined-terms/ir-layer-incident-response
+  term_urls:
+  - https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/inference-vs-authority.md
+  - https://interpretive-governance.org/
+  - https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/action-taxonomy.json
+  - https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/proof-model.md
+  - https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/authority-policy.json
+  - https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/authority-ledger-spec.md
+  - https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/role-topology.md
+  - https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/incentive-integrity.md
+  - https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/H-layer/human-oversight-protocol.md
+  - https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/P-layer/privacy-data-lineage.md
+  - https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/S-layer/security-abuse-resistance.md
+  - https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/IR-layer/incident-response.md
+- id: https://gautierdorval.com/defined-terms/ctic
+  type: DefinedTermSet
+  name: CTIC terms
+  description: 'Defined terms for CTIC (cohérence transactionnelle inter-couches): dynamic attribute discipline, volatility
+    signaling, and refresh invalidation between interpretive and transactional layers.'
+  term_ids:
+  - https://gautierdorval.com/frameworks/ctic/#definedterm
+  - https://gautierdorval.com/defined-terms/ctic/dynamic-attribute
+  - https://gautierdorval.com/defined-terms/ctic/volatility-signal
+  - https://gautierdorval.com/defined-terms/ctic/refresh-invalidation
+  term_urls:
+  - https://gautierdorval.com/frameworks/ctic/
+- id: https://gautierdorval.com/defined-terms/interpretive-debt
+  type: DefinedTermSet
+  name: Interpretive debt terms
+  description: 'Defined terms for interpretive debt (dette interprétative): anchoring by repetition, accumulated drift, and
+    defensive bounding as a governance concern.'
+  term_ids:
+  - https://gautierdorval.com/definitions/interpretive-debt/#definedterm
+  term_urls:
+  - https://gautierdorval.com/definitions/interpretive-debt/
+- id: https://gautierdorval.com/defined-terms/interpretive-governance
+  type: DefinedTermSet
+  name: Interpretive governance terms
+  description: 'Defined terms for interpretive governance: exposure regimes, influence vs operational governance, and response
+    legitimacy activation (Q-Layer).'
+  term_ids:
+  - https://gautierdorval.com/definitions/gouvernance-interpretative/#definedterm
+  - https://gautierdorval.com/defined-terms/interpretive-governance/exposure-regimes
+  - https://gautierdorval.com/defined-terms/interpretive-governance/effect-direct
+  - https://gautierdorval.com/defined-terms/interpretive-governance/effect-indirect
+  - https://gautierdorval.com/defined-terms/interpretive-governance/effect-contextual
+  - https://gautierdorval.com/defined-terms/interpretive-governance/effect-deferred
+  - https://gautierdorval.com/defined-terms/interpretive-governance/influence
+  - https://gautierdorval.com/defined-terms/interpretive-governance/operational-governance
+  term_urls:
+  - https://gautierdorval.com/definitions/gouvernance-interpretative/
+  - https://gautierdorval.com/doctrine/q-layer/
+- id: https://gautierdorval.com/defined-terms/memory-governance
+  type: DefinedTermSet
+  name: Memory governance terms
+  description: 'Defined terms for memory governance (M-layer): memory objects, consolidation, controlled forgetting, temporal
+    integrity, and memory drift in stateful systems.'
+  term_ids:
+  - https://gautierdorval.com/doctrine/gouvernance-memoire/#definedterm
+  - https://gautierdorval.com/defined-terms/memory-object
+  - https://gautierdorval.com/defined-terms/consolidation-gouvernee
+  - https://gautierdorval.com/defined-terms/oubli-controle
+  - https://gautierdorval.com/defined-terms/derive-memoire
+  term_urls:
+  - https://gautierdorval.com/doctrine/gouvernance-memoire/
+- id: https://gautierdorval.com/defined-terms/ssa-e-r
+  type: DefinedTermSet
+  name: SSA-E-R terms
+  description: Defined terms for SSA-E-R (restitution proportionality) as a doctrinal RFC module subservient to Q-Layer and
+    bounded by A2.
+  term_ids:
+  - https://gautierdorval.com/doctrine/ssa-e-r/#definedterm
+  - https://gautierdorval.com/defined-terms/ssa-e-r/profile-canonical
+  - https://gautierdorval.com/defined-terms/ssa-e-r/profile-structured
+  - https://gautierdorval.com/defined-terms/ssa-e-r/profile-contextual
+  - https://gautierdorval.com/defined-terms/ssa-e-r/profile-analytical
+  term_urls:
+  - https://gautierdorval.com/doctrine/ssa-e-r/
+- id: https://gautierdorval.com/defined-terms/v-layer
+  type: DefinedTermSet
+  name: V-Layer terms
+  description: Defined terms for V-Layer (versioning, drift, change control) and optional integrity locking (artifact hashing).
+  term_ids:
+  - https://gautierdorval.com/defined-terms/v-layer/versioning-drift-change-control
+  - https://gautierdorval.com/defined-terms/v-layer/integrity-locking
+  term_urls:
+  - https://github.com/GautierDorval/interpretive-governance-manifest/blob/main/ops-pack/V-layer/versioning-drift-change-control.md
+  - https://github.com/GautierDorval/interpretive-governance-manifest/blob/main/ops-pack/V-layer/integrity-locks.md
+source_sha256: 98d21a26943908500bce46bc330999864c4500746956c0a0ce2e7071ba53b234
+

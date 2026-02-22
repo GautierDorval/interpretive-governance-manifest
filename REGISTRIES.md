@@ -23,6 +23,13 @@ navigation lexicons, and public normative statements.
 
 Primary language is **fr-CA**. English equivalents may exist without changing canonical meaning.
 
+- Entity graph (canonical entity map; JSON-LD):  
+  https://gautierdorval.com/entity-graph.jsonld
+
+- Entity graph (fallback; YAML):  
+  https://gautierdorval.com/entity-graph.yaml
+
+
 - Definitions registry (canonical definitions):  
   https://gautierdorval.com/definitions/
 
