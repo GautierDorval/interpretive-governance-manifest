@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://gautierdorval.com/#website",
+      "url": "https://gautierdorval.com/",
+      "name": "gautierdorval.com",
+      "inLanguage": "fr-CA",
+      "publisher": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://gautierdorval.com/entite/#person",
+      "name": "Gautier Dorval",
+      "url": "https://gautierdorval.com/entite/"
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "${TERMSET_URL}#definedtermset",
+      "name": "${TERMSET_NAME}",
+      "url": "${TERMSET_URL}",
+      "inLanguage": "fr-CA",
+      "isPartOf": {
+        "@id": "https://gautierdorval.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "${TERM_URL}#definedterm",
+      "name": "${TERM_NAME}",
+      "alternateName": [
+        "${ALT_NAME_1}",
+        "${ALT_NAME_2}"
+      ],
+      "description": "${TERM_DESCRIPTION}",
+      "url": "${TERM_URL}",
+      "inDefinedTermSet": {
+        "@id": "${TERMSET_URL}#definedtermset"
+      },
+      "isRelatedTo": [
+        {
+          "@id": "${RELATED_TERM_ID}"
+        }
+      ],
+      "inLanguage": "fr-CA"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "${TERM_URL}#webpage",
+      "url": "${TERM_URL}",
+      "name": "${TITLE}",
+      "headline": "${TITLE}",
+      "description": "${DESCRIPTION}",
+      "inLanguage": "fr-CA",
+      "isPartOf": {
+        "@id": "https://gautierdorval.com/#website"
+      },
+      "author": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      },
+      "publisher": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      },
+      "mainEntity": {
+        "@id": "${TERM_URL}#definedterm"
+      },
+      "about": {
+        "@id": "${TERM_URL}#definedterm"
+      }
+    }
+  ]
+}

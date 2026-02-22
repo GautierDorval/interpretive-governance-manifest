@@ -1,5 +1,9 @@
+CHANGELOG.md
 interpretive-governance.manifest.json
 interpretive-index.json
 authority-graph.jsonld
 site.schema.jsonld
 conformance-levels.json
+entity-graph.jsonld
+entity-graph.yaml
+registries/entity-graph/entity-graph.source.yaml

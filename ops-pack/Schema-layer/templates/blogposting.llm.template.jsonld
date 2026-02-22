@@ -1,0 +1,73 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://gautierdorval.com/#website",
+      "url": "https://gautierdorval.com/",
+      "name": "gautierdorval.com",
+      "inLanguage": "fr-CA",
+      "publisher": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://gautierdorval.com/entite/#person",
+      "name": "Gautier Dorval",
+      "url": "https://gautierdorval.com/entite/"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "${IMAGE_URL}#primaryimage",
+      "url": "${IMAGE_URL}",
+      "inLanguage": "fr-CA"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "${URL}#webpage",
+      "url": "${URL}",
+      "name": "${TITLE}",
+      "inLanguage": "fr-CA",
+      "isPartOf": {
+        "@id": "https://gautierdorval.com/#website"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "${URL}#blogposting",
+      "mainEntityOfPage": {
+        "@id": "${URL}#webpage"
+      },
+      "headline": "${TITLE}",
+      "description": "${DESCRIPTION}",
+      "inLanguage": "fr-CA",
+      "author": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      },
+      "publisher": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      },
+      "image": {
+        "@id": "${IMAGE_URL}#primaryimage"
+      },
+      "articleSection": "${SECTION}",
+      "keywords": [
+        "${KEYWORD_1}",
+        "${KEYWORD_2}"
+      ],
+      "datePublished": "${DATE_PUBLISHED}",
+      "dateModified": "${DATE_MODIFIED}",
+      "about": [
+        {
+          "@id": "${TERM_1_ID}"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "${TERM_2_ID}"
+        }
+      ]
+    }
+  ]
+}

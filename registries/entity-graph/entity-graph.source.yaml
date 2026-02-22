@@ -1,0 +1,601 @@
+'@context': https://schema.org
+'@graph':
+- '@type': ImageObject
+  '@id': https://gautierdorval.com/wp-content/uploads/2025/12/LogoWeb.webp#logo
+  url: https://gautierdorval.com/wp-content/uploads/2025/12/LogoWeb.webp
+- '@type': Person
+  '@id': https://gautierdorval.com/entite/#person
+  name: Gautier Dorval
+  url: https://gautierdorval.com/entite/
+  mainEntityOfPage:
+    '@type': WebPage
+    '@id': https://gautierdorval.com/entite/
+  sameAs:
+  - https://www.linkedin.com/in/gautier-dorval/
+  description: Human author and responsible party for the doctrinal, conceptual, and governance documents published on gautierdorval.com.
+    This site is doctrinal and non-commercial; it does not imply services, guarantees, or operational methods.
+  homeLocation:
+    '@type': Place
+    address:
+      '@type': PostalAddress
+      addressRegion: QC
+      addressCountry: CA
+  knowsAbout:
+  - Semantic architecture
+  - Search engine interpretation
+  - Entity modeling
+  - Machine-readable governance
+  - AI interpretation constraints
+  - Interpretive governance
+  - Authority governance
+  - Executable authority
+  - Entity disambiguation
+  - SEO interprétatif
+  - Désambiguïsation IA
+  - Compression sémantique
+  - Dette interprétative
+  - Interpretive debt
+  - Reduction of semantic collisions
+  - Restitution proportionality
+  - SSA-E-R
+  - Memory governance
+  - Stateful AI systems
+  - Temporal integrity
+  - Controlled forgetting
+  - Consolidation governance
+  subjectOf:
+  - https://gautierdorval.com/entity-graph.jsonld
+  - https://gautierdorval.com/entity-graph.yaml
+  - https://gautierdorval.com/ai-usage-policy/
+  - https://gautierdorval.com/ai-usage-policy.md
+  - https://gautierdorval.com/ai-governance.json
+  - https://gautierdorval.com/.well-known/ai-governance.json
+  - https://gautierdorval.com/.well-known/q-metrics.json
+  - https://gautierdorval.com/metrics/
+  - https://gautierdorval.com/ai-manifest.json
+  - https://gautierdorval.com/dualweb-index.md
+  - https://gautierdorval.com/claims.json
+  - https://gautierdorval.com/reporting/interpretation-issue.json
+  - https://gautierdorval.com/canon.md
+  - https://gautierdorval.com/identity.json
+  - https://gautierdorval.com/services-non-publics.md
+  - https://gautierdorval.com/relationships.jsonld
+  - https://gautierdorval.com/doctrine/
+  - https://gautierdorval.com/doctrine/ssa-e-a2-dual-web.md
+  - https://gautierdorval.com/doctrine/ssa-e-r/
+  - https://gautierdorval.com/doctrine/q-layer/
+  - https://gautierdorval.com/definitions/
+  - https://gautierdorval.com/definitions/seo-interpretatif/
+  - https://gautierdorval.com/definitions/gouvernance-interpretative/
+  - https://gautierdorval.com/definitions/ssa-e-a2-dual-web/
+  - https://gautierdorval.com/definitions/desambiguisation-ia/
+  - https://gautierdorval.com/definitions/compression-semantique/
+  - https://gautierdorval.com/definitions/interpretive-debt/
+  - https://gautierdorval.com/definitions/dette-interpretative/
+  - https://gautierdorval.com/interpretation/gouvernance-interpretative/
+  - https://gautierdorval.com/clarifications/
+  - https://gautierdorval.com/clarifications/systemes-non-agentiques-et-gouvernance-interpretative/
+  - https://gautierdorval.com/expertise/
+  - https://gautierdorval.com/expertise/desambiguisation-entites/
+  - https://gautierdorval.com/expertise/gouvernance-interpretative/
+  - https://gautierdorval.com/expertise/architecture-semantique-machine-first/
+  - https://gautierdorval.com/expertise/seo-interpretatif/
+  - https://gautierdorval.com/expertise/reduction-collisions-semantiques/
+  - https://github.com/GautierDorval/interpretive-seo
+  - https://github.com/GautierDorval/interpretive-governance-manifest
+  - https://github.com/GautierDorval/ssa-e-a2-doctrine/releases/tag/v1.3.0
+  - https://gautierdorval.com/doctrine/gouvernance-memoire/
+  - https://gautierdorval.com/frameworks/ctic/
+- '@type': Person
+  '@id': https://gautierdorval.com/#person
+  name: Gautier Dorval
+  sameAs:
+  - https://gautierdorval.com/entite/#person
+  - https://www.linkedin.com/in/gautier-dorval/
+  url: https://gautierdorval.com/entite/
+- '@type': WebSite
+  '@id': https://gautierdorval.com/#website
+  url: https://gautierdorval.com/
+  name: Gautier Dorval
+  inLanguage: fr-CA
+  publisher:
+    '@id': https://gautierdorval.com/entite/#person
+  image:
+    '@id': https://gautierdorval.com/wp-content/uploads/2025/12/LogoWeb.webp#logo
+- '@type': CreativeWork
+  '@id': https://gautierdorval.com/entity-graph.jsonld#artifact
+  name: Entity graph (canonical)
+  url: https://gautierdorval.com/entity-graph.jsonld
+  isPartOf:
+    '@id': https://gautierdorval.com/#website
+  inLanguage: fr-CA
+  encodingFormat: application/ld+json
+  version: 1.3.1
+  dateModified: '2026-02-21'
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/definitions/interpretive-debt/#definedterm
+  name: Dette interprétative
+  alternateName:
+  - Interpretive debt
+  description: Passif cumulatif produit lorsque des approximations portant sur des informations à fort impact sont répétées,
+    reformulées et stabilisées par des systèmes d’interprétation automatisée, jusqu’à devenir une représentation par défaut
+    difficile à déplacer, rendant toute correction ultérieure plus coûteuse qu’une clarification initiale.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/interpretive-debt
+  url: https://gautierdorval.com/definitions/interpretive-debt/
+  sameAs:
+  - https://gautierdorval.com/definitions/dette-interpretative/
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+  isRelatedTo:
+  - '@id': https://gautierdorval.com/definitions/compression-semantique/#definedterm
+  - '@id': https://gautierdorval.com/definitions/hallucination-interpretative/#definedterm
+  - '@id': https://gautierdorval.com/definitions/gouvernance-interpretative/#definedterm
+  - '@id': https://gautierdorval.com/definitions/gouvernance-exogene/#definedterm
+- '@type': DefinedTermSet
+  '@id': https://gautierdorval.com/defined-terms/interpretive-debt
+  name: Interpretive debt terms
+  description: 'Defined terms for interpretive debt (dette interprétative): anchoring by repetition, accumulated drift, and
+    defensive bounding as a governance concern.'
+  inLanguage: fr-CA
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+  isPartOf:
+    '@id': https://gautierdorval.com/entity-graph.jsonld#artifact
+  hasDefinedTerm:
+  - '@id': https://gautierdorval.com/definitions/interpretive-debt/#definedterm
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/doctrine/ssa-e-r/#definedterm
+  name: SSA-E-R
+  alternateName:
+  - SSA-E-R (Restitution proportionnée)
+  sameAs:
+  - https://github.com/GautierDorval/ssa-e-a2-doctrine/releases/tag/v1.3.0
+  isBasedOn:
+  - '@type': CreativeWork
+    name: SSA-E + A2 + Dual Web doctrine v1.3.0
+    url: https://github.com/GautierDorval/ssa-e-a2-doctrine/releases/tag/v1.3.0
+  description: Module de restitution proportionnée sous contrainte Q-Layer. SSA-E-R module la forme et la profondeur d’une
+    réponse déjà légitime (canonical, structured, contextual, analytical) sans autoriser d’inférence sur le fond, et demeure
+    subordonné au Q-Layer et encadré par A2.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/ssa-e-r
+  url: https://gautierdorval.com/doctrine/ssa-e-r/
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/ssa-e-r/profile-canonical
+  name: 'SSA-E-R profile: canonical'
+  description: 'Restitution profile: literal citation only. No reformulation.'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/ssa-e-r
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/ssa-e-r/profile-structured
+  name: 'SSA-E-R profile: structured'
+  description: 'Restitution profile: controlled reformulation within stabilized definitions, hierarchies, and exclusions.'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/ssa-e-r
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/ssa-e-r/profile-contextual
+  name: 'SSA-E-R profile: contextual'
+  description: 'Restitution profile: contextual synthesis allowed without projection; must remain within declared scopes.'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/ssa-e-r
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/ssa-e-r/profile-analytical
+  name: 'SSA-E-R profile: analytical'
+  description: 'Restitution profile: analytical elaboration permitted with explicit anchoring; never prescriptive; A2 applies.'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/ssa-e-r
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTermSet
+  '@id': https://gautierdorval.com/defined-terms/ssa-e-r
+  name: SSA-E-R terms
+  description: Defined terms for SSA-E-R (restitution proportionality) as a doctrinal RFC module subservient to Q-Layer and
+    bounded by A2.
+  inLanguage: fr-CA
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+  isPartOf:
+    '@id': https://gautierdorval.com/entity-graph.jsonld#artifact
+  hasDefinedTerm:
+  - '@id': https://gautierdorval.com/doctrine/ssa-e-r/#definedterm
+  - '@id': https://gautierdorval.com/defined-terms/ssa-e-r/profile-canonical
+  - '@id': https://gautierdorval.com/defined-terms/ssa-e-r/profile-structured
+  - '@id': https://gautierdorval.com/defined-terms/ssa-e-r/profile-contextual
+  - '@id': https://gautierdorval.com/defined-terms/ssa-e-r/profile-analytical
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/definitions/gouvernance-interpretative/#definedterm
+  name: Gouvernance interprétative
+  description: Architecture environnementale visant à borner l’espace d’interprétation machine afin de réduire les inférences
+    plausibles mais erronées. Elle agit par surfaces, hiérarchies de sources, relations canoniques et négations explicites,
+    sans présumer d’obéissance interne du modèle.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/interpretive-governance
+  url: https://gautierdorval.com/definitions/gouvernance-interpretative/
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/interpretive-governance/exposure-regimes
+  name: Régimes d’effet (exposition)
+  description: Cartographie des voies de propagation de la gouvernance interprétative selon le régime d’accès à l’environnement
+    gouverné (direct, indirect, contextuel, différé).
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/interpretive-governance
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/interpretive-governance/effect-direct
+  name: Effet direct
+  description: Régime d’effet où le système observe activement l’environnement (crawl, moteurs de recherche, agents outillés)
+    et peut lire ou hiérarchiser des surfaces canoniques.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/interpretive-governance
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/interpretive-governance/effect-indirect
+  name: Effet indirect
+  description: Régime d’effet où le système est alimenté par des observateurs intermédiaires (RAG, index internes, connecteurs)
+    qui fournissent des sources ou extraits.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/interpretive-governance
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/interpretive-governance/effect-contextual
+  name: Effet contextuel
+  description: Régime d’effet où des artefacts gouvernés sont injectés en session (copie-coller, fichiers, prompts), rendant
+    périmètres et exclusions disponibles au raisonnement.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/interpretive-governance
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/interpretive-governance/effect-deferred
+  name: Effet différé
+  description: Régime d’effet où des artefacts gouvernés sont ré-ingérés dans des cycles ultérieurs (évaluations, distillation,
+    réentraînement), sans constituer une garantie déterministe.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/interpretive-governance
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/interpretive-governance/influence
+  name: Influence
+  description: Effet probabiliste résultant de la structuration de l’environnement, même sans activation opératoire explicite.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/interpretive-governance
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/interpretive-governance/operational-governance
+  name: Gouvernance opératoire
+  description: Activation explicite des conditions de légitimité de réponse (dont clarification et non-réponse) lorsque des
+    surfaces canoniques sont accessibles et hiérarchisables (Q-Layer).
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/interpretive-governance
+  url: https://gautierdorval.com/doctrine/q-layer/
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTermSet
+  '@id': https://gautierdorval.com/defined-terms/interpretive-governance
+  name: Interpretive governance terms
+  description: 'Defined terms for interpretive governance: exposure regimes, influence vs operational governance, and response
+    legitimacy activation (Q-Layer).'
+  inLanguage: fr-CA
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+  isPartOf:
+    '@id': https://gautierdorval.com/entity-graph.jsonld#artifact
+  hasDefinedTerm:
+  - '@id': https://gautierdorval.com/definitions/gouvernance-interpretative/#definedterm
+  - '@id': https://gautierdorval.com/defined-terms/interpretive-governance/exposure-regimes
+  - '@id': https://gautierdorval.com/defined-terms/interpretive-governance/effect-direct
+  - '@id': https://gautierdorval.com/defined-terms/interpretive-governance/effect-indirect
+  - '@id': https://gautierdorval.com/defined-terms/interpretive-governance/effect-contextual
+  - '@id': https://gautierdorval.com/defined-terms/interpretive-governance/effect-deferred
+  - '@id': https://gautierdorval.com/defined-terms/interpretive-governance/influence
+  - '@id': https://gautierdorval.com/defined-terms/interpretive-governance/operational-governance
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/v-layer/versioning-drift-change-control
+  name: V-Layer (versioning, drift, change control)
+  description: Operational governance layer defining versioning discipline, changelog rules, drift signals, compatibility
+    modes, and hotfix procedures.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/v-layer
+  url: https://github.com/GautierDorval/interpretive-governance-manifest/blob/main/ops-pack/V-layer/versioning-drift-change-control.md
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/v-layer/integrity-locking
+  name: Integrity locking (artifact hashing)
+  description: 'Optional integrity mechanism: publicly verifiable SHA-256 fingerprint for critical machine-first artifacts,
+    computed on raw bytes as served publicly. It is a drift-control signal, not a signature and not an authority proof.'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/v-layer
+  url: https://github.com/GautierDorval/interpretive-governance-manifest/blob/main/ops-pack/V-layer/integrity-locks.md
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTermSet
+  '@id': https://gautierdorval.com/defined-terms/v-layer
+  name: V-Layer terms
+  description: Defined terms for V-Layer (versioning, drift, change control) and optional integrity locking (artifact hashing).
+  inLanguage: fr-CA
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+  isPartOf:
+    '@id': https://gautierdorval.com/entity-graph.jsonld#artifact
+  hasDefinedTerm:
+  - '@id': https://gautierdorval.com/defined-terms/v-layer/versioning-drift-change-control
+  - '@id': https://gautierdorval.com/defined-terms/v-layer/integrity-locking
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/doctrine/gouvernance-memoire/#definedterm
+  name: Gouvernance de la mémoire
+  alternateName:
+  - Memory governance
+  - Memory Governance
+  description: Extension doctrinale appliquée aux systèmes stateful (RAG avancé, agents à mémoire persistée). Elle impose
+    typage des objets mémoire, traçabilité, intégrité temporelle, consolidation gouvernée, oubli contrôlé et déclenchement
+    automatique d’une rupture de conformité en cas de modification structurelle.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/memory-governance
+  url: https://gautierdorval.com/doctrine/gouvernance-memoire/
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+  isRelatedTo:
+  - '@id': https://gautierdorval.com/definitions/gouvernance-interpretative/#definedterm
+  - '@id': https://gautierdorval.com/defined-terms/v-layer/versioning-drift-change-control
+  - '@id': https://gautierdorval.com/defined-terms/v-layer/integrity-locking
+  - '@id': https://gautierdorval.com/defined-terms/authority-governance-layer-3
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/memory-object
+  name: MemoryObject
+  description: Unité persistée, typée, versionnée et traçable représentant un énoncé ou une consolidation dans un système
+    stateful. Un MemoryObject doit préserver l’origine (source/utilisateur/système), la temporalité, et une empreinte d’intégrité.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/memory-governance
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/consolidation-gouvernee
+  name: Consolidation gouvernée
+  description: Transformation contrôlée de plusieurs objets mémoire en un objet consolidé sous contraintes de typage, traçabilité,
+    intégrité temporelle et journalisation append-only.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/memory-governance
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/oubli-controle
+  name: Oubli contrôlé
+  description: Invalidation ou archivage gouverné d’un objet mémoire sans suppression silencieuse, avec raison explicite et
+    conservation de l’historique.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/memory-governance
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/derive-memoire
+  name: Dérive mémoire
+  description: Phénomène de transformation cumulative d’inférences en faits stabilisés via consolidation non gouvernée, biais
+    de récupération, ou perte d’intégrité temporelle.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/memory-governance
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTermSet
+  '@id': https://gautierdorval.com/defined-terms/memory-governance
+  name: Memory governance terms
+  description: 'Defined terms for memory governance (M-layer): memory objects, consolidation, controlled forgetting, temporal
+    integrity, and memory drift in stateful systems.'
+  inLanguage: fr-CA
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+  isPartOf:
+    '@id': https://gautierdorval.com/entity-graph.jsonld#artifact
+  hasDefinedTerm:
+  - '@id': https://gautierdorval.com/doctrine/gouvernance-memoire/#definedterm
+  - '@id': https://gautierdorval.com/defined-terms/memory-object
+  - '@id': https://gautierdorval.com/defined-terms/consolidation-gouvernee
+  - '@id': https://gautierdorval.com/defined-terms/oubli-controle
+  - '@id': https://gautierdorval.com/defined-terms/derive-memoire
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/frameworks/ctic/#definedterm
+  name: CTIC
+  alternateName:
+  - Cohérence transactionnelle inter-couches
+  - Cross-layer transactional integrity
+  description: Module normatif d’application visant à empêcher la fixation de variables dynamiques (prix, stock, livraison,
+    promotions, vendeur) dans la couche interprétative sans signal de volatilité (source, horodatage, statut) et sans invalidation
+    lors des rafraîchissements transactionnels.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/ctic
+  url: https://gautierdorval.com/frameworks/ctic/
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/ctic/dynamic-attribute
+  name: Variable dynamique
+  description: Valeur dépendante du temps, du vendeur, de la région, du stock ou des promotions, pouvant changer sans modifier
+    l’identité du produit.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/ctic
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/ctic/volatility-signal
+  name: Signal de volatilité
+  description: 'Métadonnées minimales associées à une valeur dynamique: source, horodatage, statut (indicatif, estimé, temps
+    réel).'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/ctic
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/ctic/refresh-invalidation
+  name: Invalidation au rafraîchissement
+  description: 'Exigence normative: lorsqu’un rafraîchissement transactionnel survient, toute valeur antérieure affichée ailleurs
+    doit être invalidée, mise à jour ou marquée obsolète.'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/ctic
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTermSet
+  '@id': https://gautierdorval.com/defined-terms/ctic
+  name: CTIC terms
+  description: 'Defined terms for CTIC (cohérence transactionnelle inter-couches): dynamic attribute discipline, volatility
+    signaling, and refresh invalidation between interpretive and transactional layers.'
+  inLanguage: fr-CA
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+  isPartOf:
+    '@id': https://gautierdorval.com/entity-graph.jsonld#artifact
+  hasDefinedTerm:
+  - '@id': https://gautierdorval.com/frameworks/ctic/#definedterm
+  - '@id': https://gautierdorval.com/defined-terms/ctic/dynamic-attribute
+  - '@id': https://gautierdorval.com/defined-terms/ctic/volatility-signal
+  - '@id': https://gautierdorval.com/defined-terms/ctic/refresh-invalidation
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/inference-vs-authority
+  name: Inference vs authority
+  description: 'Normative boundary: inference never implies authority.'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/inference-vs-authority.md
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/authority-governance-layer-3
+  name: Authority governance (Layer 3)
+  description: 'Normative governance of executable authority: permissions, proofs, audit trails, reversibility, activation,
+    separation of duties, and veto.'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://interpretive-governance.org/
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/action-taxonomy
+  name: Action taxonomy
+  description: Machine-first classification of action classes for authority decisions.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/action-taxonomy.json
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/proof-model
+  name: Proof model
+  description: 'Minimal proof primitives required for authority: reversibility, auditability, executable identity, activation.'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/proof-model.md
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/authority-policy
+  name: Authority policy
+  description: Declarative rules mapping action classes to allow, deny, escalate, or simulate decisions with requirements.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/authority-policy.json
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/authority-ledger
+  name: Authority ledger
+  description: Normative audit record format for authority decisions including refusals, escalations, simulations, and rollbacks.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/authority-ledger-spec.md
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/role-topology
+  name: Role topology
+  description: Normative role topology defining separation of duties, veto, and quorum for authority decisions.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/role-topology.md
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/incentive-integrity
+  name: Incentive integrity
+  description: Constraints preventing authority decisions from being granted on weak proxies (anti proxy hacking).
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/authority/incentive-integrity.md
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/h-layer-human-oversight
+  name: H-Layer (human oversight protocol)
+  description: Operational gates requiring human oversight for authority decisions.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/H-layer/human-oversight-protocol.md
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/p-layer-privacy-lineage
+  name: P-Layer (privacy and data lineage)
+  description: 'Operational privacy primitives: data classes, minimization, consent, lineage, retention, and redaction.'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/P-layer/privacy-data-lineage.md
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/s-layer-security-abuse
+  name: S-Layer (security and abuse resistance)
+  description: Operational defenses against prompt injection, tool injection, exfiltration, and privilege escalation.
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/S-layer/security-abuse-resistance.md
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTerm
+  '@id': https://gautierdorval.com/defined-terms/ir-layer-incident-response
+  name: IR-Layer (incident response)
+  description: 'Operational incident response: kill switch, degraded modes, policy rollback, post-mortem discipline.'
+  inDefinedTermSet:
+    '@id': https://gautierdorval.com/defined-terms/authority-governance
+  url: https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.1.0/ops-pack/IR-layer/incident-response.md
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+- '@type': DefinedTermSet
+  '@id': https://gautierdorval.com/defined-terms/authority-governance
+  name: Authority governance terms
+  inLanguage: fr-CA
+  creator:
+    '@id': https://gautierdorval.com/entite/#person
+  isPartOf:
+    '@id': https://gautierdorval.com/entity-graph.jsonld#artifact
+  hasDefinedTerm:
+  - '@id': https://gautierdorval.com/defined-terms/inference-vs-authority
+  - '@id': https://gautierdorval.com/defined-terms/authority-governance-layer-3
+  - '@id': https://gautierdorval.com/defined-terms/action-taxonomy
+  - '@id': https://gautierdorval.com/defined-terms/proof-model
+  - '@id': https://gautierdorval.com/defined-terms/authority-policy
+  - '@id': https://gautierdorval.com/defined-terms/authority-ledger
+  - '@id': https://gautierdorval.com/defined-terms/role-topology
+  - '@id': https://gautierdorval.com/defined-terms/incentive-integrity
+  - '@id': https://gautierdorval.com/defined-terms/h-layer-human-oversight
+  - '@id': https://gautierdorval.com/defined-terms/p-layer-privacy-lineage
+  - '@id': https://gautierdorval.com/defined-terms/s-layer-security-abuse
+  - '@id': https://gautierdorval.com/defined-terms/ir-layer-incident-response
+- '@type': CreativeWork
+  '@id': https://gautierdorval.com/#semantic-observatory-2026-01-07
+  name: Incognito multi-agent observation (2026-01-07)
+  url: https://github.com/semantic-observatory/machine-readability-observations/blob/main/observations/2026-01-07-incognito-multiagent.json
