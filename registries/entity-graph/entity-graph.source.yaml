@@ -111,7 +111,7 @@
   inLanguage: fr-CA
   encodingFormat: application/ld+json
   version: 1.3.1
-  dateModified: '2026-02-21'
+  dateModified: '2026-02-23'
   creator:
     '@id': https://gautierdorval.com/entite/#person
 - '@type': DefinedTerm
