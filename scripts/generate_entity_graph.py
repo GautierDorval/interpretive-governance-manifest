@@ -17,7 +17,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
@@ -128,7 +127,6 @@ def _extract_index(doc: Dict[str, Any], source_path: Path) -> Dict[str, Any]:
         "source_repo": "https://github.com/GautierDorval/interpretive-governance-manifest",
         "source_path": str(source_path).replace("\\", "/"),
         "generated_from": str(source_path).replace("\\", "/"),
-        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ"),
     }
 
     if person:

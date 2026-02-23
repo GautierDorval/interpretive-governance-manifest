@@ -1,0 +1,6 @@
+name = "worker-ai-tomarkdown"
+main = "src/index.js"
+compatibility_date = "2026-02-22"
+
+# Deployment is intentionally left to Cloudflare Dashboard or `wrangler deploy`.
+# If you deploy via Wrangler with routes, add them here or use the Dashboard “Routes” UI.

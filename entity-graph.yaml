@@ -4,7 +4,6 @@ canonical: https://gautierdorval.com/entity-graph.jsonld
 source_repo: https://github.com/GautierDorval/interpretive-governance-manifest
 source_path: registries/entity-graph/entity-graph.source.yaml
 generated_from: registries/entity-graph/entity-graph.source.yaml
-generated_at: '2026-02-22 15:49:52Z'
 person:
   id: https://gautierdorval.com/entite/#person
   name: Gautier Dorval
