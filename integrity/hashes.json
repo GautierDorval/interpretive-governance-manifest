@@ -2,10 +2,10 @@
   "CHANGELOG.md": "23a35977b130734d92d91f358d8ed652fd9b677c4635b25e948021e5ad0dd3a7",
   "authority-graph.jsonld": "5e91422c1fa0bfe93fd7943f75ec65df0c6f513921ce80d61b6c3054e4859390",
   "conformance-levels.json": "f6532e48b4869ae7ffbf8ba223a4ace54348f52e336c29cf2403ee3b23fb099a",
-  "entity-graph.jsonld": "98d21a26943908500bce46bc330999864c4500746956c0a0ce2e7071ba53b234",
-  "entity-graph.yaml": "ff75e2c952ee5b65aefe246b1dfccefe3dc37f9ff00b1040108cc3192dde880b",
+  "entity-graph.jsonld": "8ee647a6aebd5722b0d0ba1c902c92735b482705211e02a249e98970bab8e3ef",
+  "entity-graph.yaml": "31114492b5f0148b7a6e2fca10f1f71799c4b9814e921f3424de2cdb23dad46c",
   "interpretive-governance.manifest.json": "49c797753ec5dcff0b5b4f6e00dfdc1497fe2d7252308a4941325443d77ccef4",
   "interpretive-index.json": "a27c7534c48e3f51dcd912b2dcd296d964d789d257eb49d71b90e6164d5fe1b0",
-  "registries/entity-graph/entity-graph.source.yaml": "d92a9bea094b0b44115590261c8b1455cecc652d83bf5eef887f52f5c3116ca8",
+  "registries/entity-graph/entity-graph.source.yaml": "88a22d1f329c3813c19daf9330f6900648fd9b295035594b6e232fdd9b6e4767",
   "site.schema.jsonld": "e5bf7c303e321263455147239302c906c276e9597ef3fa4479115a398f61b91d"
 }
