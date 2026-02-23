@@ -1,0 +1,32 @@
+name: Entity graph build & integrity check
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install script dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r scripts/requirements.txt
+
+      - name: Verify entity-graph artifacts are up to date
+        run: |
+          python scripts/generate_entity_graph.py --check
+
+      - name: Verify integrity hashes are up to date
+        run: |
+          python scripts/recompute_integrity_hashes.py --check
