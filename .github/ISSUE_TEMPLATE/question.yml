@@ -1,0 +1,22 @@
+name: Question / clarification
+description: Ask a question about scope, change control, or how to use the artifacts.
+title: "[question]: "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Include links/paths to the relevant artifacts when possible.
+      placeholder: "Ask your question and provide context."
+    validations:
+      required: true
+
+  - type: input
+    id: relevant_paths
+    attributes:
+      label: Relevant path(s) (optional)
+      description: Paths to the artifacts involved.
+      placeholder: "interpretive-governance.manifest.json, GOVERNANCE.md, ..."
+    validations:
+      required: false
