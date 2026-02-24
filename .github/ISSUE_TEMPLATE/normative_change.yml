@@ -1,0 +1,64 @@
+name: Normative change proposal
+description: Propose a change that modifies meaning or enforceable constraints.
+title: "[normative]: "
+labels: ["proposal", "normative"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Normative changes modify meaning. No change is normative until explicitly ratified and released.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem does this address (ambiguity, drift risk, missing constraint, etc.)?
+      placeholder: "Describe the problem and why it matters."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the proposed change precisely. Prefer concrete edits and explicit semantics.
+      placeholder: "What would change, exactly?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope boundary check
+      description: Explain why this stays within the repository's scope (and does not expand into policy / institutional governance).
+      placeholder: "Explain scope and non-equivalence considerations."
+    validations:
+      required: true
+
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility / migration
+      description: Is this backwards compatible? If not, what is the migration plan (including versioning / snapshots)?
+      placeholder: "Describe compatibility guarantees and required migrations."
+    validations:
+      required: true
+
+  - type: input
+    id: affected_paths
+    attributes:
+      label: Affected artifact paths
+      description: List the file paths you expect to touch.
+      placeholder: "interpretive-governance.manifest.json, interpretive-index.json, schemas/..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: integrity
+    attributes:
+      label: Integrity discipline acknowledgement
+      options:
+        - label: I understand that changes to critical artifacts require updates to CHANGELOG.md and integrity/hashes.json.
+          required: true
+        - label: I will not introduce raw URLs pinned to main/master (pin to tags).
+          required: true
