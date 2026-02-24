@@ -1,11 +1,12 @@
 name: Integrity Check
 
 on:
-    push:
+  push:
     branches: [main]
   pull_request:
-  contents: read
 
+permissions:
+  contents: read      
 jobs:
   integrity:
     runs-on: ubuntu-latest
