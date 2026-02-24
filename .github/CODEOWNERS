@@ -1,0 +1,13 @@
+# Default: repository owner is the normative maintainer.
+* @GautierDorval
+
+# Extra explicit coverage for critical / governance surfaces (redundant but intentional)
+/integrity/ @GautierDorval
+/scripts/ @GautierDorval
+/.github/workflows/ @GautierDorval
+
+/interpretive-governance.manifest.json @GautierDorval
+/interpretive-index.json @GautierDorval
+/authority-graph.jsonld @GautierDorval
+/site.schema.jsonld @GautierDorval
+/conformance-levels.json @GautierDorval

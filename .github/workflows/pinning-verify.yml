@@ -1,0 +1,22 @@
+name: Verify pinned raw URL discipline
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-pinning:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify pinned_version/raw_base parity and ban raw URLs to main/master
+        run: python scripts/verify_pinned_raw_parity.py
