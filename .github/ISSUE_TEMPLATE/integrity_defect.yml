@@ -1,0 +1,64 @@
+name: Integrity defect
+description: Report a schema mismatch, hash mismatch, broken canonical URL, or pinning discipline defect.
+title: "[integrity]: "
+labels: ["integrity"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository is a stability surface. Integrity defects are treated as blocking when they affect canonical artifacts.
+
+  - type: input
+    id: affected_paths
+    attributes:
+      label: Affected path(s)
+      description: List the file paths involved (comma-separated).
+      placeholder: "interpretive-governance.manifest.json, integrity/hashes.json, schemas/manifest.schema.json"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: defect_type
+    attributes:
+      label: Defect type
+      options:
+        - Hash mismatch (integrity/hashes.json does not match critical artifacts)
+        - JSON syntax invalid
+        - JSON Schema validation failure
+        - Broken canonical URL / redirect / pinned endpoint
+        - Pinning discipline defect (raw URL points to main/master)
+        - Other integrity defect
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: What did you observe (error message, failing check, broken link, etc.)?
+      placeholder: |
+        Example:
+        - CI failing on JSON Schema validation with:
+          "Required mapping failed: ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+      placeholder: "Example: JSON Schema validation should pass; hashes.json should match recomputation."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps (if applicable)
+      description: Provide steps to reproduce locally, including commands.
+      placeholder: |
+        python scripts/validate_json_schema.py
+        python scripts/verify_integrity_hashes.py
+    validations:
+      required: false
