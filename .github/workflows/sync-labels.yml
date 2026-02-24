@@ -1,0 +1,41 @@
+name: Sync repository labels
+
+on:
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ensure governance labels exist
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const desired = [
+              { name: "integrity",    color: "B60205", description: "Integrity defect (hash, schema, canonical URLs, pinning discipline)" },
+              { name: "proposal",     color: "0E8A16", description: "Change proposal (normative or non-normative)" },
+              { name: "normative",    color: "5319E7", description: "Normative (meaning-changing) proposal or change" },
+              { name: "non-normative",color: "1D76DB", description: "Non-normative improvement (docs, examples, usability)" },
+            ];
+
+            for (const l of desired) {
+              try {
+                await github.rest.issues.getLabel({ owner, repo, name: l.name });
+                // Update to keep description/color drift-free
+                await github.rest.issues.updateLabel({ owner, repo, name: l.name, new_name: l.name, color: l.color, description: l.description });
+                core.info(`Updated label: ${l.name}`);
+              } catch (e) {
+                if (e.status === 404) {
+                  await github.rest.issues.createLabel({ owner, repo, name: l.name, color: l.color, description: l.description });
+                  core.info(`Created label: ${l.name}`);
+                } else {
+                  throw e;
+                }
+              }
+            }
