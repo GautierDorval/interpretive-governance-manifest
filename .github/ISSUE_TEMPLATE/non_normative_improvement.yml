@@ -1,0 +1,41 @@
+name: Non-normative improvement
+description: Improve usability without changing meaning (examples, projections, onboarding, docs).
+title: "[non-normative]: "
+labels: ["proposal", "non-normative"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Improvement goal
+      description: What usability problem are you trying to solve?
+      placeholder: "Example: clarify onboarding, add a minimal example, improve navigation."
+    validations:
+      required: true
+
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change
+      description: Describe what would be added or improved, and why it does not change meaning.
+      placeholder: "Describe what you propose to add/change."
+    validations:
+      required: true
+
+  - type: input
+    id: affected_paths
+    attributes:
+      label: Affected artifact paths
+      description: List the file paths you expect to touch.
+      placeholder: "GETTING-STARTED.md, examples/..., protocols/..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Constraints
+      options:
+        - label: I confirm the intent is non-normative (no semantic changes).
+          required: true
+        - label: I will not rename/move/delete existing artifacts unless explicitly required and documented.
+          required: true
