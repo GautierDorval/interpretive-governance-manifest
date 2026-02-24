@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Governance process
+    url: https://github.com/GautierDorval/interpretive-governance-manifest/blob/main/GOVERNANCE.md
+    about: Read how proposals are reviewed and ratified (normative vs non-normative vs editorial).
+  - name: Contributing guide
+    url: https://github.com/GautierDorval/interpretive-governance-manifest/blob/main/CONTRIBUTING.md
+    about: Contribution entrypoint and minimal rules.
