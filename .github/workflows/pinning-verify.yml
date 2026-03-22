@@ -1,6 +1,8 @@
 name: Verify pinned raw URL discipline
 
 on:
+  push:
+    branches: [main]
   pull_request:
 
 permissions:

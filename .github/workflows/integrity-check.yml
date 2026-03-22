@@ -1,6 +1,8 @@
 name: Integrity Check
 
 on:
+  push:
+    branches: [main]
   pull_request:
 
 permissions:
@@ -18,8 +20,8 @@ jobs:
       - name: Enforce trace updates on critical changes
         shell: bash
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || '' }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           set -euo pipefail
 
@@ -28,9 +30,14 @@ jobs:
             exit 1
           fi
 
+          # On push events, compare against the previous commit
+          if [ -z "$BASE_SHA" ]; then
+            BASE_SHA="$(git rev-parse HEAD~1 2>/dev/null || git rev-list --max-parents=0 HEAD)"
+          fi
+
           changed_files="$(git diff --name-only "$BASE_SHA" "$HEAD_SHA" || true)"
 
-          echo "Changed files in PR:"
+          echo "Changed files:"
           echo "$changed_files"
 
           critical_changed=0

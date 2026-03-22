@@ -8,6 +8,9 @@ from pathlib import Path
 CRITICAL_LIST = Path("integrity/critical-files.txt")
 
 
+JSON_EXTENSIONS = {".json", ".jsonld"}
+
+
 def read_critical_list() -> set[str]:
     if not CRITICAL_LIST.exists():
         raise SystemExit("ERROR: integrity/critical-files.txt is missing.")
@@ -16,7 +19,10 @@ def read_critical_list() -> set[str]:
         line = line.strip()
         if not line or line.startswith("#"):
             continue
-        critical.add(line)
+        # Only include JSON/JSON-LD files in the required set
+        ext = Path(line).suffix.lower()
+        if ext in JSON_EXTENSIONS:
+            critical.add(line)
     return critical
 
 

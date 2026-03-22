@@ -87,6 +87,33 @@ def main() -> int:
             if not raw_base.endswith("/"):
                 errors.append(f"{doc_name}: raw_base should end with '/': {raw_base} (at {jpath})")
 
+    # 3) artifact URL discipline: individual artifact URLs must match their block's pinned_version
+    for doc_name, doc in [("manifest", manifest), ("well_known", well_known)]:
+        blocks = find_pinned_blocks(doc)
+        for jpath, pinned_version, raw_base in blocks:
+            # Walk the same node to find the artifacts dict
+            node = doc
+            try:
+                for key in (jpath.split(".") if jpath != "$" else []):
+                    node = node[key]
+            except (KeyError, TypeError):
+                continue
+            artifacts = node.get("artifacts")
+            if not isinstance(artifacts, dict):
+                continue
+            for url in iter_string_values(artifacts):
+                if "raw.githubusercontent.com" not in url:
+                    continue
+                m = RAW_GH_RE.match(url)
+                if not m:
+                    continue
+                url_version = m.group(1)
+                if url_version != pinned_version:
+                    errors.append(
+                        f"{doc_name}: artifact URL version mismatch at {jpath}: "
+                        f"pinned_version={pinned_version}, artifact URL uses {url_version}: {url}"
+                    )
+
     if errors:
         print("Pinned raw URL discipline verification failed:")
         for e in errors:

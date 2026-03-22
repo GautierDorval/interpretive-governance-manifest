@@ -129,7 +129,7 @@
     "versioning": {
       "core_manifest_version": "0.1.2",
       "extensions_series": "1.x",
-      "pinned_reference": "v1.1.0",
+      "pinned_reference": "v1.4.1",
       "pinning_rule": "Prefer pinned raw URLs for extensions to prevent drift."
     },
     "authority_governance_layer_3": {
@@ -139,19 +139,19 @@
       "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
       "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/",
       "artifacts": {
-        "boundary": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/authority/inference-vs-authority.md",
-        "taxonomy": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/authority/action-taxonomy.json",
-        "proof_model": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/authority/proof-model.md",
-        "policy": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/authority/authority-policy.json",
-        "ledger_spec": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/authority/authority-ledger-spec.md",
-        "role_topology": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/authority/role-topology.md",
-        "incentive_integrity": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/authority/incentive-integrity.md",
-        "non_objectives": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/authority/non-objectives.md",
+        "boundary": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/authority/inference-vs-authority.md",
+        "taxonomy": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/authority/action-taxonomy.json",
+        "proof_model": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/authority/proof-model.md",
+        "policy": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/authority/authority-policy.json",
+        "ledger_spec": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/authority/authority-ledger-spec.md",
+        "role_topology": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/authority/role-topology.md",
+        "incentive_integrity": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/authority/incentive-integrity.md",
+        "non_objectives": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/authority/non-objectives.md",
         "schemas": {
-          "readme": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/schemas/authority/README.md",
-          "action_taxonomy_schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/schemas/authority/action-taxonomy.schema.json",
-          "authority_policy_schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/schemas/authority/authority-policy.schema.json",
-          "authority_ledger_entry_schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/schemas/authority/authority-ledger-entry.schema.json"
+          "readme": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/schemas/authority/README.md",
+          "action_taxonomy_schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/schemas/authority/action-taxonomy.schema.json",
+          "authority_policy_schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/schemas/authority/authority-policy.schema.json",
+          "authority_ledger_entry_schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/schemas/authority/authority-ledger-entry.schema.json"
         }
       }
     },
@@ -164,11 +164,11 @@
         "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
         "raw_base": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/",
         "artifacts": {
-          "H_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/ops-pack/H-layer/human-oversight-protocol.md",
-          "P_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/ops-pack/P-layer/privacy-data-lineage.md",
-          "V_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/ops-pack/V-layer/versioning-drift-change-control.md",
-          "S_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/ops-pack/S-layer/security-abuse-resistance.md",
-          "IR_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.2.0/ops-pack/IR-layer/incident-response.md"
+          "H_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/ops-pack/H-layer/human-oversight-protocol.md",
+          "P_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/ops-pack/P-layer/privacy-data-lineage.md",
+          "V_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/ops-pack/V-layer/versioning-drift-change-control.md",
+          "S_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/ops-pack/S-layer/security-abuse-resistance.md",
+          "IR_layer": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.4.1/ops-pack/IR-layer/incident-response.md"
         }
       },
       "available_layers": {
