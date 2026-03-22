@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+- Security and integrity audit: aligned all pinned artifact URLs with declared `pinned_version` (v1.2.0 → v1.4.1 for authority/ops-pack).
+- Aligned `.well-known/interpretive-governance.json` with manifest versions (v1.1.0 → v1.4.1) and added CTIC extension entry.
+- Updated `index.html` extension links to v1.4.1 and fixed broken link (`.m` → `.md`).
+- Added `push: branches: [main]` trigger to 5 CI workflows to prevent bypass on direct push.
+- Extended `verify_pinned_raw_parity.py` to verify individual artifact URLs match their block's `pinned_version`.
+- Replaced inline CI Python in `ci-validate.yml` with call to `scripts/validate_json_syntax.py`.
+- Fixed `validate_json_syntax.py` to filter JSON-only files from critical list.
+- Pinned `requirements.txt` versions (`pyyaml==6.0.2`, `jsonschema==4.23.0`).
+- Added Content-Security-Policy meta tags to `index.html` and `context.html`.
+- Added `.gitignore` and removed `.patch` development artifact from tracking.
+- Recomputed `integrity/hashes.json`.
 - Added canonical registry cross-links (definitions, lexicon, public specification, ontological architecture).
 - Documentation and consistency improvements under discussion.
 - Added LLM-first publishing Schema-layer module (guidance + templates).
