@@ -124,6 +124,22 @@ Implementations may publish “field specimens” or observability surfaces, but
 
 ---
 
+## 6.1 Multisite boundary
+
+This repository is a **normative standard surface**.
+It MAY reference doctrine, identity, or implementation surfaces for provenance and adoption, but it MUST NOT be treated as:
+
+- a portfolio hub,
+- a product catalog,
+- a commercial routing surface,
+- or the canonical allocator of authority across the broader multisite ecosystem.
+
+When a consumer needs to determine which public surface is doctrinal, commercial, institutional, product-specific, or merely derivative, the canonical arbitration layer is the distributed authority map published at:
+
+- `https://gautierdorval.com/distributed-authority-map.json`
+
+This repository remains authoritative for the **Interpretive Governance standard itself**, its normative semantics, and its companion artifacts only.
+
 ## 7. Contact and integrity reporting
 
 For integrity defects (broken canonical URLs, schema mismatch, hash mismatch), open an issue with the label “integrity”.

@@ -73,3 +73,15 @@ The standard is non-executable by design.
 Validation scripts and schemas are provided as **convenience tooling** and do not constitute certification or compliance claims.
 
 If you need a runnable policy engine, treat it as a separate, non-normative implementation layer.
+
+
+---
+
+## Boundary note
+
+This repository is the machine-first normative source for the Interpretive Governance standard. It is **not** the portfolio front or the multisite arbitration layer for the broader ecosystem.
+
+For inter-site role allocation or ecosystem-wide precedence outside the standard itself, consult:
+
+- `https://gautierdorval.com/distributed-authority-map.json`
+- `ECOSYSTEM.md`

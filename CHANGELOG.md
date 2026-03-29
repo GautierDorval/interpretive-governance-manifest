@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5.1 — Multisite boundary clarification
+
+- Clarified that this repository is the normative source for the Interpretive Governance standard, not a portfolio hub, product catalog, or commercial routing surface.
+- Added explicit references to the distributed authority map for cross-site role arbitration outside the standard itself.
+- Added `ECOSYSTEM.md` and updated onboarding and governance docs to preserve the standard/repository boundary.
+- Updated `.well-known/interpretive-governance.json` with ecosystem-boundary metadata.
+- Recomputed `integrity/hashes.json`.
+
 ## Unreleased
 
 - Security and integrity audit: aligned all pinned artifact URLs with declared `pinned_version` (v1.2.0 → v1.4.1 for authority/ops-pack).

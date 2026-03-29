@@ -107,5 +107,16 @@
     "canonical_identity": "https://gautierdorval.com/",
     "note": "Provenance is informative only and does not affect normative conformance."
   },
-  "last_updated": "2026-02-21"
+  "last_updated": "2026-03-29",
+  "ecosystem_boundary": {
+    "role": "Normative standard surface for Interpretive Governance and companion artifacts.",
+    "not_a": [
+      "portfolio hub",
+      "product catalog",
+      "commercial routing surface",
+      "multisite authority allocator"
+    ],
+    "inter_site_arbitration": "https://gautierdorval.com/distributed-authority-map.json",
+    "portfolio_discovery": "https://pagup.com/properties/"
+  }
 }

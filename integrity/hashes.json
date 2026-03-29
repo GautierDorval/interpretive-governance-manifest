@@ -1,11 +1,11 @@
 {
-  "CHANGELOG.md": "6de7424887645620a44a286a318c7f3b19ab298c0952b7b50b1cb4f426b74d3f",
-  "authority-graph.jsonld": "db0545feae4138cfde52ca95cfdb9481d49703b5fcdc3bb4dc1eba77510418b6",
-  "conformance-levels.json": "02e131b6a128f0fd9a6c82a21c7897eeddd6c679a9d5907a42e70219f0d6d11e",
-  "entity-graph.jsonld": "5f6a4ba51083ceb14fd2d86b7e83bf5d0c9dd6685d462b917b161059d43fbcb4",
-  "entity-graph.yaml": "b349ee5fbbb4a2cdeb731d6f90023d240f2d10d665253ed350c5007d1f856064",
-  "interpretive-governance.manifest.json": "0b1512ebe23064d9dec6cd56355610a6050437a08bb9f2338d6d446adba19acc",
-  "interpretive-index.json": "eacdcfb5d14ea9acb85fb99d5eb0baeb79d9999828a78c1697b848b85c421d62",
-  "registries/entity-graph/entity-graph.source.yaml": "1ad37ef6f16a9236308514a1c24b361012197bb3d1d30936af3c094f5f1db220",
-  "site.schema.jsonld": "63ca4c1173454d5431f2f350e1d938bb4015094f7e5c22d24e17de4cd99630f2"
+  "CHANGELOG.md": "38ecbfb85f3f4ed355ea5b8ab96d2c11f67a24a78c762b1e8da09c324cf760b0",
+  "authority-graph.jsonld": "5e91422c1fa0bfe93fd7943f75ec65df0c6f513921ce80d61b6c3054e4859390",
+  "conformance-levels.json": "f6532e48b4869ae7ffbf8ba223a4ace54348f52e336c29cf2403ee3b23fb099a",
+  "entity-graph.jsonld": "8ee647a6aebd5722b0d0ba1c902c92735b482705211e02a249e98970bab8e3ef",
+  "entity-graph.yaml": "31114492b5f0148b7a6e2fca10f1f71799c4b9814e921f3424de2cdb23dad46c",
+  "interpretive-governance.manifest.json": "4791a7f9226787d4cc164886ebf0b20c69abc35334c480ef5dce6ac045e53b7f",
+  "interpretive-index.json": "a27c7534c48e3f51dcd912b2dcd296d964d789d257eb49d71b90e6164d5fe1b0",
+  "registries/entity-graph/entity-graph.source.yaml": "88a22d1f329c3813c19daf9330f6900648fd9b295035594b6e232fdd9b6e4767",
+  "site.schema.jsonld": "e5bf7c303e321263455147239302c906c276e9597ef3fa4479115a398f61b91d"
 }

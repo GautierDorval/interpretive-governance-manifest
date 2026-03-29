@@ -116,3 +116,8 @@ This repository is a **stability surface**, not a feature surface.
 
 The goal is not to optimize code.
 The goal is to preserve interpretive determinism and canonical traceability.
+
+
+## Multisite boundary
+
+Do not turn this repository into a portfolio index, product hub, or commercial surface. Keep it scoped to the Interpretive Governance standard and its companion artifacts. For inter-site authority arbitration, point to `https://gautierdorval.com/distributed-authority-map.json`.

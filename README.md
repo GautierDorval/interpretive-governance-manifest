@@ -19,6 +19,9 @@ decision, and agentic outputs in probabilistic systems.
 
 The validator defined in this repository is **conceptual and non-executable by design**.
 
+> **Multisite boundary notice**  
+> This repository defines the **normative standard** and its companion artifacts. It does **not** allocate authority between public sites, product sites, identity repositories, or commercial surfaces across the broader ecosystem. For inter-site role arbitration, consult the canonical distributed authority map published at `https://gautierdorval.com/distributed-authority-map.json`.
+
 ---
 
 ## Purpose
@@ -46,6 +49,7 @@ If you are new to this repository, start with:
 - `/interpretive-index.json` — machine-first rule/protocol index
 
 Governance process (change control): `GOVERNANCE.md`.
+Boundary and ecosystem positioning: `ECOSYSTEM.md`.
 
 ---
 
