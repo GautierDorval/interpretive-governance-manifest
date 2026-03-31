@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Validate JSON and JSON-LD syntax (tracked files only)
         run: python scripts/validate_json_syntax.py
