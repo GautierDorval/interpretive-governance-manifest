@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/judge-panel-declaration.schema.json",
+  "title": "Judge panel declaration schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "type",
+    "version",
+    "judges"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "https://interpretive-governance.org/schemas/judge-panel-declaration.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "const": "judge-panel-declaration"
+    },
+    "version": {
+      "type": "string"
+    },
+    "judges": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "criteria"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "human",
+              "model",
+              "hybrid"
+            ]
+          },
+          "criteria": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

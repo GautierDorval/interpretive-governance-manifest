@@ -37,6 +37,18 @@
         },
         {
           "@id": "https://interpretive-governance.org/context.html#context"
+        },
+        {
+          "@id": "https://interpretive-governance.org/extensions/ccl/ccl.md#spec"
+        },
+        {
+          "@id": "https://interpretive-governance.org/extensions/semantic-boundary/semantic-boundary.md#spec"
+        },
+        {
+          "@id": "https://interpretive-governance.org/schemas/false-neighbors.schema.json#schema"
+        },
+        {
+          "@id": "https://interpretive-governance.org/schemas/governance-package-manifest.schema.json#schema"
         }
       ]
     },
@@ -62,7 +74,7 @@
       "name": "Interpretive Governance Standard",
       "url": "https://interpretive-governance.org/",
       "inLanguage": "en",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "creativeWorkStatus": "Draft",
       "about": [
         {
@@ -91,7 +103,7 @@
       "name": "Interpretive Governance Manifest",
       "url": "https://interpretive-governance.org/interpretive-governance.manifest.json",
       "inLanguage": "en",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "creativeWorkStatus": "Draft",
       "isPartOf": {
         "@id": "https://interpretive-governance.org/#standard"
@@ -148,6 +160,26 @@
       "name": "Interpretive Governance",
       "url": "https://interpretive-governance.org/",
       "description": "Normative authority representing the Interpretive Governance standard itself. This is not an academic, governmental, or institutional body."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/extensions/ccl/ccl.md#spec",
+      "name": "CCL specification",
+      "url": "https://interpretive-governance.org/extensions/ccl/ccl.md",
+      "creativeWorkStatus": "proposed",
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/extensions/semantic-boundary/semantic-boundary.md#spec",
+      "name": "Semantic-boundary specification",
+      "url": "https://interpretive-governance.org/extensions/semantic-boundary/semantic-boundary.md",
+      "creativeWorkStatus": "proposed",
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      }
     }
   ]
 }

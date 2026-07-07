@@ -5,3 +5,14 @@ The layered separation and regime boundary (web-open vs agentic-closed) are cons
 Future revisions may extend the model but must not redefine these baseline distinctions.
 This repository is normative in definition and non-executable by design.
 Reference implementations are non-normative and do not imply conformance.
+
+
+Extension maturity status:
+
+- CCL: proposed.
+- Semantic-boundary: proposed.
+- False-neighbor profile: proposed.
+- Maximalist governance package: proposed.
+- Behavioral measurement profiles: experimental.
+
+These extensions are additive and must not redefine the baseline layered model. Proposed and experimental artifacts are not behavioral proof unless measured evidence records are published.

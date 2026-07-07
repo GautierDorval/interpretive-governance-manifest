@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/causal-internal-mesh.schema.json",
+  "title": "Causal internal mesh schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "type",
+    "version",
+    "status",
+    "edges"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "https://interpretive-governance.org/schemas/causal-internal-mesh.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "const": "causal-internal-mesh"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "proposed",
+        "experimental",
+        "stable",
+        "deprecated"
+      ]
+    },
+    "edges": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "from",
+          "to",
+          "role",
+          "meshScope",
+          "reviewStatus"
+        ],
+        "properties": {
+          "from": {
+            "type": "string",
+            "minLength": 3
+          },
+          "to": {
+            "type": "string",
+            "minLength": 3
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "trigger",
+              "risk",
+              "latentNeed",
+              "canonicalSurface",
+              "intendedConsequence",
+              "boundary",
+              "proof",
+              "clarification"
+            ]
+          },
+          "meshScope": {
+            "type": "string",
+            "enum": [
+              "doctrinal-core",
+              "cluster",
+              "surface",
+              "candidate"
+            ]
+          },
+          "reviewStatus": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

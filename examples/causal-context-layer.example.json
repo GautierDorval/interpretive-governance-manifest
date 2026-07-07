@@ -1,0 +1,24 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/causal-context-layer.schema.json",
+  "type": "causal-context-layer",
+  "version": "0.1.0-proposed",
+  "status": "proposed",
+  "purpose": "Declare context of necessity for content surfaces without converting relevance into guarantee.",
+  "nonGoals": [
+    "No ranking guarantee.",
+    "No citation guarantee.",
+    "No semantic proximity measurement."
+  ],
+  "rules": [
+    {
+      "id": "CCL-1",
+      "title": "Apparent topic is not causal utility",
+      "requirement": "The apparent subject of a surface is not sufficient evidence of its causal role."
+    },
+    {
+      "id": "CCL-9",
+      "title": "CCL does not measure semantic proximity",
+      "requirement": "CCL must not be used as a vector similarity or semantic-proximity metric."
+    }
+  ]
+}

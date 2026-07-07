@@ -107,6 +107,19 @@ Schema + example: `schemas/ctic-compliance-report.schema.json`, `examples/ctic-c
 
 ---
 
+
+## Proposed CCL and semantic-boundary extensions
+
+This repository now includes proposed extension families for context-of-necessity and proximity-risk governance.
+
+- **CCL (Causal Context Layer)** declares why a surface becomes relevant: trigger situation, problem or risk, latent need, canonical surface, intended consequence, and prohibited derivations.
+- **Semantic-boundary** declares non-equivalence, false-neighbor risks, and proximity-risk boundaries.
+- **False-neighbor profile** defines portable records for concepts that are close enough to be fused but not equivalent.
+- **Maximalist governance package** defines a portable inventory for complete machine-readable governance deployments.
+- **Measurement profiles** define experimental report shapes for future behavioral runs. They do not publish measured results.
+
+These extensions are additive. They do not redefine statement typing, ontology distinctions, interpretive/constraintive separation, or authority governance.
+
 ## Response legitimacy (Q-Layer compatibility)
 
 Interpretive Governance constrains *what* may be asserted and how statements must be typed.
@@ -191,6 +204,15 @@ Core + companion artifacts:
 - `/entity-graph.yaml` — entity graph (YAML fallback)  
 - `/interpretive-index.json` — machine-first index (rules + protocols)  
 - `/schemas/interpretive-index.schema.json` — JSON Schema (interpretive index)  
+- `/extensions/ccl/` — proposed CCL extension  
+- `/extensions/semantic-boundary/` — proposed semantic-boundary extension  
+- `/extensions/false-neighbor/` — proposed false-neighbor profile  
+- `/extensions/maximalist-governance-package/` — proposed package manifest profile  
+- `/extensions/measurement/` — experimental measurement report profiles  
+- `/schemas/causal-context-layer.schema.json` — JSON Schema (CCL declaration)  
+- `/schemas/semantic-proximity-separation.schema.json` — JSON Schema (semantic separation)  
+- `/schemas/false-neighbors.schema.json` — JSON Schema (false neighbors)  
+- `/schemas/governance-package-manifest.schema.json` — JSON Schema (package manifest)  
 
 Rules and protocol public projections:
 

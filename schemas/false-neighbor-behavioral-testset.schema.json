@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/false-neighbor-behavioral-testset.schema.json",
+  "title": "False neighbor behavioral testset schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "type",
+    "version",
+    "status",
+    "measurementStatus",
+    "testCases"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "https://interpretive-governance.org/schemas/false-neighbor-behavioral-testset.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "const": "false-neighbor-behavioral-testset"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "proposed",
+        "experimental",
+        "stable",
+        "deprecated"
+      ]
+    },
+    "measurementStatus": {
+      "type": "string",
+      "enum": [
+        "proposed_testset_no_results",
+        "measured_results_published"
+      ]
+    },
+    "testCases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "falseNeighborId",
+          "prompt",
+          "expectedBoundary",
+          "prohibitedOutput"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "falseNeighborId": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "expectedBoundary": {
+            "type": "string"
+          },
+          "prohibitedOutput": {
+            "type": "string"
+          },
+          "judgeNotes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

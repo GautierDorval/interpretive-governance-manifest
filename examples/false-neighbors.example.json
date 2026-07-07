@@ -1,0 +1,20 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/false-neighbors.schema.json",
+  "type": "false-neighbors",
+  "version": "0.1.0-proposed",
+  "status": "proposed",
+  "falseNeighbors": [
+    {
+      "id": "llms-txt-not-full-governance",
+      "source": "llms.txt",
+      "neighbor": "AI governance",
+      "relation": "discovery_not_governance",
+      "risk": "A discovery file may be mistaken for a complete governance package.",
+      "prohibitedFusion": "Do not treat the presence of llms.txt as equivalent to policy, source precedence, Q-Layer, EAC, CCL, semantic-boundary, and routing artifacts.",
+      "requiredBehavior": "Describe llms.txt as a discovery surface unless the rest of the package is present and declared.",
+      "canonicalSources": [
+        "https://example.org/governance/package-manifest/"
+      ]
+    }
+  ]
+}

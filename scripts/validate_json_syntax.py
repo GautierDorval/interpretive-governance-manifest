@@ -27,11 +27,26 @@ def read_critical_list() -> set[str]:
 
 
 def git_ls_json_files() -> list[str]:
-    files = subprocess.check_output(
-        ["git", "ls-files", "*.json", "*.jsonld"],
-        text=True,
-    ).splitlines()
-    return [f.strip() for f in files if f.strip()]
+    try:
+        files = subprocess.check_output(
+            ["git", "ls-files", "*.json", "*.jsonld"],
+            text=True,
+            stderr=subprocess.DEVNULL,
+        ).splitlines()
+        return [f.strip() for f in files if f.strip()]
+    except Exception:
+        # ZIP distributions and release artifacts often do not contain a .git directory.
+        # Fall back to a deterministic filesystem scan so validation remains usable outside Git.
+        files: list[str] = []
+        for ext in ("*.json", "*.jsonld"):
+            for path in Path(".").rglob(ext):
+                if any(part in {".git", "node_modules", "dist"} for part in path.parts):
+                    continue
+                rel = path.as_posix()
+                if rel.startswith("./"):
+                    rel = rel[2:]
+                files.append(rel)
+        return sorted(set(files))
 
 
 def main() -> int:

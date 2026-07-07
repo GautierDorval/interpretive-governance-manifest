@@ -2,7 +2,7 @@
   "standard": "Interpretive Governance Manifest",
   "canonical_manifest": "https://interpretive-governance.org/interpretive-governance.manifest.json",
   "validator": "https://interpretive-governance.org/VALIDATOR.md",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "conformance_levels": [
     {
       "id": "informative",
@@ -35,5 +35,28 @@
         "transparent_non_actions"
       ]
     }
-  ]
+  ],
+  "maturity_statuses": [
+    {
+      "id": "draft",
+      "description": "Under active definition. Shape and wording may change."
+    },
+    {
+      "id": "proposed",
+      "description": "Coherent enough for early implementation and review; not yet stabilized."
+    },
+    {
+      "id": "experimental",
+      "description": "Instrumentation or measurement shape intended for trials; no behavioral proof implied."
+    },
+    {
+      "id": "stable",
+      "description": "Stabilized after implementation feedback and validation."
+    },
+    {
+      "id": "deprecated",
+      "description": "Retained for compatibility but no longer recommended for new deployments."
+    }
+  ],
+  "extension_conformance_note": "Extensions may declare their own artifact-level requirements. Extension conformance does not imply behavioral measurement unless an evidence record is published."
 }

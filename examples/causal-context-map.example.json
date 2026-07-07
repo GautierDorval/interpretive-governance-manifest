@@ -1,0 +1,27 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/causal-context-map.schema.json",
+  "type": "causal-context-map",
+  "version": "0.1.0-proposed",
+  "status": "proposed",
+  "site": "https://example.org",
+  "maps": [
+    {
+      "id": "example-redesign-risk",
+      "surface": "https://example.org/resources/site-redesign-risk/",
+      "meshScope": "cluster",
+      "trigger": "An organization is preparing a website redesign.",
+      "problemOrRisk": "Existing organic discovery and machine-readable context may be lost if architecture, redirects, metadata, and canonical surfaces change without governance.",
+      "latentNeed": "Preserve interpretive continuity before launch.",
+      "canonicalSurface": "https://example.org/governance/redesign-readiness/",
+      "intendedConsequence": "Help the organization identify governance requirements before migration decisions are finalized.",
+      "prohibitedDerivations": [
+        "No guarantee of rankings.",
+        "No guarantee of AI citation."
+      ],
+      "reviewStatus": "cluster-level-reviewed",
+      "evidence": [
+        "https://example.org/governance/redesign-readiness/"
+      ]
+    }
+  ]
+}

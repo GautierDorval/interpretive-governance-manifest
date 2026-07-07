@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/false-neighbor-behavioral-run.schema.json",
+  "title": "False neighbor behavioral run schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "type",
+    "runId",
+    "createdAt",
+    "testset",
+    "modelPanel",
+    "judgePanel",
+    "results"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "https://interpretive-governance.org/schemas/false-neighbor-behavioral-run.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "const": "false-neighbor-behavioral-run"
+    },
+    "runId": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "testset": {
+      "type": "string"
+    },
+    "modelPanel": {
+      "type": "string"
+    },
+    "judgePanel": {
+      "type": "string"
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "testCaseId",
+          "modelId",
+          "status"
+        ],
+        "properties": {
+          "testCaseId": {
+            "type": "string"
+          },
+          "modelId": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "preserved_boundary",
+              "fused_neighbor",
+              "ambiguous",
+              "invalid_run"
+            ]
+          },
+          "evidence": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

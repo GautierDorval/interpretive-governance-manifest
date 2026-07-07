@@ -874,6 +874,30 @@
       "@type": "CreativeWork",
       "name": "Incognito multi-agent observation (2026-01-07)",
       "url": "https://github.com/semantic-observatory/machine-readability-observations/blob/main/observations/2026-01-07-incognito-multiagent.json"
+    },
+    {
+      "@id": "https://interpretive-governance.org/#term-ccl",
+      "@type": "DefinedTerm",
+      "name": "CCL (Causal Context Layer)",
+      "termCode": "CCL",
+      "description": "Proposed context-of-necessity extension for Interpretive Governance.",
+      "url": "https://interpretive-governance.org/extensions/ccl/ccl.md"
+    },
+    {
+      "@id": "https://interpretive-governance.org/#term-semantic-boundary",
+      "@type": "DefinedTerm",
+      "name": "Semantic-boundary",
+      "termCode": "semantic-boundary",
+      "description": "Proposed non-equivalence and proximity-risk boundary extension for Interpretive Governance.",
+      "url": "https://interpretive-governance.org/extensions/semantic-boundary/semantic-boundary.md"
+    },
+    {
+      "@id": "https://interpretive-governance.org/#term-interpretive-false-neighbor",
+      "@type": "DefinedTerm",
+      "name": "Interpretive false neighbor",
+      "termCode": "interpretive-false-neighbor",
+      "description": "A near concept or surface that must not be fused with its neighbor.",
+      "url": "https://interpretive-governance.org/extensions/false-neighbor/false-neighbor.md"
     }
   ]
 }

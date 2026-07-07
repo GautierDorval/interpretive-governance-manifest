@@ -1,0 +1,35 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/governance-package-manifest.schema.json",
+  "type": "governance-package-manifest",
+  "version": "0.1.0-proposed",
+  "status": "proposed",
+  "site": "https://example.org",
+  "artifactInventory": [
+    {
+      "id": "ai-policy",
+      "path": "/ai-usage-policy/",
+      "category": "policy",
+      "status": "required"
+    },
+    {
+      "id": "ai-governance",
+      "path": "/ai-governance.json",
+      "category": "machine-readable-governance",
+      "status": "required"
+    },
+    {
+      "id": "semantic-boundary",
+      "path": "/semantic-proximity-separation.json",
+      "category": "semantic-boundary",
+      "status": "recommended",
+      "notes": "Required only if the implementation declares semantic-boundary support."
+    }
+  ],
+  "discovery": {
+    "root": true,
+    "wellKnown": true,
+    "htmlHead": true,
+    "httpLinkHeaders": true,
+    "notes": "Discovery hints declare inventory only; they do not prove behavior."
+  }
+}

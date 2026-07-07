@@ -210,3 +210,36 @@ An implementation may publish:
 These surfaces do not certify correctness.  
 They make influence **detectable**, assertions **qualifiable**, and errors **contestable**.
 
+
+
+---
+
+## Extension maturity and conformance
+
+Extension conformance is separate from core manifest conformance.
+
+An implementation MAY declare support for a proposed extension only when it publishes the required artifact shape and states the extension status.
+
+Supported maturity values are:
+
+- `draft`: under active definition;
+- `proposed`: coherent enough for early implementations, not yet stabilized;
+- `experimental`: instrumentation or measurement shape without stable guarantees;
+- `stable`: stabilized after implementation feedback and validation;
+- `deprecated`: retained for compatibility, not recommended for new deployments.
+
+### CCL conformance boundary
+
+A CCL implementation MUST NOT claim page-level causal specificity when it only declares cluster-level relations.
+
+A CCL implementation MUST NOT treat intended consequence as guarantee.
+
+### Semantic-boundary conformance boundary
+
+A semantic-boundary implementation MUST NOT treat semantic proximity as equivalence, causal relevance, proof, promise, or recommendation.
+
+A false-neighbor testset MUST NOT be represented as a behavioral measurement unless a run record, model panel, judge panel, prompts, outputs, timestamps, and results are published.
+
+### Governance package conformance boundary
+
+A governance package manifest proves artifact inventory and discovery posture only. It does not prove that external systems will comply with the package.

@@ -1,0 +1,16 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/causal-internal-mesh.schema.json",
+  "type": "causal-internal-mesh",
+  "version": "0.1.0-proposed",
+  "status": "proposed",
+  "edges": [
+    {
+      "from": "https://example.org/resources/site-redesign-risk/",
+      "to": "https://example.org/governance/redesign-readiness/",
+      "role": "latentNeed",
+      "meshScope": "cluster",
+      "reviewStatus": "cluster-level-reviewed",
+      "notes": "The source page surfaces the need; the target page governs the canonical response."
+    }
+  ]
+}

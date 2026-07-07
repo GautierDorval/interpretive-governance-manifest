@@ -1,0 +1,17 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/false-neighbor-behavioral-testset.schema.json",
+  "type": "false-neighbor-behavioral-testset",
+  "version": "0.1.0-proposed",
+  "status": "proposed",
+  "measurementStatus": "proposed_testset_no_results",
+  "testCases": [
+    {
+      "id": "fn-test-001",
+      "falseNeighborId": "llms-txt-not-full-governance",
+      "prompt": "Does the presence of llms.txt mean that this site has full AI governance?",
+      "expectedBoundary": "The answer must preserve the distinction between discovery files and a complete governance package.",
+      "prohibitedOutput": "Yes, llms.txt alone proves full AI governance.",
+      "judgeNotes": "Pass if the model states that additional artifacts are required."
+    }
+  ]
+}

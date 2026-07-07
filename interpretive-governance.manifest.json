@@ -88,8 +88,13 @@
   "relationships": {
     "normative_layer": "Interpretive Governance",
     "compatible_extensions": [
+      "Authority governance (Layer 3 — executable authority boundary)",
+      "CCL (Causal Context Layer, proposed)",
       "Q-Layer (response legitimacy discipline)",
-      "Authority governance (Layer 3 — executable authority boundary)"
+      "behavioral measurement profiles (experimental)",
+      "false-neighbor declaration profile (proposed)",
+      "maximalist governance package manifest (proposed)",
+      "semantic-boundary (proposed)"
     ],
     "implementation_architectures": [
       "SSA-E + A2 + Dual Web"
@@ -200,6 +205,74 @@
         "schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.5.0/schemas/ctic-compliance-report.schema.json",
         "example_report": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-manifest/v1.5.0/examples/ctic-compliance-report.example.json"
       }
+    },
+    "proposed_modules": {
+      "ccl": {
+        "name": "CCL (Causal Context Layer)",
+        "status": "proposed",
+        "version": "0.1.0-proposed",
+        "role": "Declare context of necessity: trigger situation, problem or risk, latent need, canonical surface, intended consequence, and prohibited derivations.",
+        "spec": "extensions/ccl/ccl.md",
+        "schemas": {
+          "layer": "schemas/causal-context-layer.schema.json",
+          "map": "schemas/causal-context-map.schema.json",
+          "internal_mesh": "schemas/causal-internal-mesh.schema.json"
+        },
+        "examples": [
+          "examples/causal-context-map.example.json",
+          "examples/causal-internal-mesh.example.json"
+        ],
+        "boundary": "CCL does not measure semantic proximity and does not guarantee outcomes."
+      },
+      "semantic_boundary": {
+        "name": "Semantic-boundary",
+        "status": "proposed",
+        "version": "0.1.0-proposed",
+        "role": "Declare non-equivalence, proximity-risk, and false-neighbor boundaries.",
+        "spec": "extensions/semantic-boundary/semantic-boundary.md",
+        "schemas": {
+          "separation": "schemas/semantic-proximity-separation.schema.json",
+          "false_neighbors": "schemas/false-neighbors.schema.json",
+          "testset": "schemas/false-neighbor-behavioral-testset.schema.json",
+          "protocol": "schemas/proximity-causality-protocol.schema.json"
+        },
+        "examples": [
+          "examples/semantic-proximity-separation.example.json",
+          "examples/false-neighbors.example.json",
+          "examples/false-neighbor-behavioral-testset.example.json",
+          "examples/proximity-causality-protocol.example.json"
+        ],
+        "boundary": "Semantic-boundary does not define causal relevance."
+      },
+      "maximalist_governance_package": {
+        "name": "Maximalist governance package",
+        "status": "proposed",
+        "version": "0.1.0-proposed",
+        "role": "Declare a complete machine-readable governance artifact inventory and discovery posture.",
+        "spec": "extensions/maximalist-governance-package/governance-package.md",
+        "schema": "schemas/governance-package-manifest.schema.json",
+        "example": "examples/governance-package-manifest.example.json",
+        "boundary": "Inventory does not imply behavioral compliance."
+      },
+      "measurement_profiles": {
+        "name": "Behavioral measurement profiles",
+        "status": "experimental",
+        "version": "0.1.0-experimental",
+        "role": "Define report shapes for future false-neighbor and proximity-causality evaluation runs.",
+        "schemas": [
+          "schemas/model-panel-declaration.schema.json",
+          "schemas/judge-panel-declaration.schema.json",
+          "schemas/false-neighbor-behavioral-run.schema.json",
+          "schemas/proximity-causality-evaluation-run.schema.json"
+        ],
+        "examples": [
+          "examples/model-panel-declaration.example.json",
+          "examples/judge-panel-declaration.example.json",
+          "examples/false-neighbor-behavioral-run.example.json",
+          "examples/proximity-causality-evaluation-run.example.json"
+        ],
+        "boundary": "Schemas and examples do not publish measured results."
+      }
     }
   },
   "artifacts": {
@@ -208,7 +281,11 @@
     "conformance": "https://interpretive-governance.org/CONFORMANCE.md",
     "validator": "https://interpretive-governance.org/VALIDATOR.md",
     "interpretive_index": "https://interpretive-governance.org/interpretive-index.json",
-    "interpretive_index_schema": "https://interpretive-governance.org/schemas/interpretive-index.schema.json"
+    "interpretive_index_schema": "https://interpretive-governance.org/schemas/interpretive-index.schema.json",
+    "ccl_schema": "https://interpretive-governance.org/schemas/causal-context-layer.schema.json",
+    "semantic_proximity_separation_schema": "https://interpretive-governance.org/schemas/semantic-proximity-separation.schema.json",
+    "false_neighbors_schema": "https://interpretive-governance.org/schemas/false-neighbors.schema.json",
+    "governance_package_manifest_schema": "https://interpretive-governance.org/schemas/governance-package-manifest.schema.json"
   },
   "canonical": {
     "website": "https://interpretive-governance.org/",

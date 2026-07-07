@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/governance-package-manifest.schema.json",
+  "title": "Governance package manifest schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "type",
+    "version",
+    "status",
+    "site",
+    "artifactInventory",
+    "discovery"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "https://interpretive-governance.org/schemas/governance-package-manifest.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "const": "governance-package-manifest"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "proposed",
+        "experimental",
+        "stable",
+        "deprecated"
+      ]
+    },
+    "site": {
+      "type": "string"
+    },
+    "artifactInventory": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "path",
+          "category",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "required",
+              "recommended",
+              "optional",
+              "not_applicable"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "discovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "root",
+        "wellKnown",
+        "htmlHead",
+        "httpLinkHeaders"
+      ],
+      "properties": {
+        "root": {
+          "type": "boolean"
+        },
+        "wellKnown": {
+          "type": "boolean"
+        },
+        "htmlHead": {
+          "type": "boolean"
+        },
+        "httpLinkHeaders": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

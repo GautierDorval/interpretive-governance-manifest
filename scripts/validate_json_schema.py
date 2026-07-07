@@ -9,6 +9,18 @@ REQUIRED_MAPPINGS = [
     ("interpretive-index.json", "schemas/interpretive-index.schema.json"),
     ("authority/authority-policy.json", "schemas/authority/authority-policy.schema.json"),
     ("examples/ctic-compliance-report.example.json", "schemas/ctic-compliance-report.schema.json"),
+    ("examples/causal-context-layer.example.json", "schemas/causal-context-layer.schema.json"),
+    ("examples/causal-context-map.example.json", "schemas/causal-context-map.schema.json"),
+    ("examples/causal-internal-mesh.example.json", "schemas/causal-internal-mesh.schema.json"),
+    ("examples/semantic-proximity-separation.example.json", "schemas/semantic-proximity-separation.schema.json"),
+    ("examples/false-neighbors.example.json", "schemas/false-neighbors.schema.json"),
+    ("examples/false-neighbor-behavioral-testset.example.json", "schemas/false-neighbor-behavioral-testset.schema.json"),
+    ("examples/proximity-causality-protocol.example.json", "schemas/proximity-causality-protocol.schema.json"),
+    ("examples/governance-package-manifest.example.json", "schemas/governance-package-manifest.schema.json"),
+    ("examples/model-panel-declaration.example.json", "schemas/model-panel-declaration.schema.json"),
+    ("examples/judge-panel-declaration.example.json", "schemas/judge-panel-declaration.schema.json"),
+    ("examples/false-neighbor-behavioral-run.example.json", "schemas/false-neighbor-behavioral-run.schema.json"),
+    ("examples/proximity-causality-evaluation-run.example.json", "schemas/proximity-causality-evaluation-run.schema.json"),
 ]
 
 def load_json(path: Path):

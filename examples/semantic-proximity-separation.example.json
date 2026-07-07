@@ -1,0 +1,18 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/semantic-proximity-separation.schema.json",
+  "type": "semantic-proximity-separation",
+  "version": "0.1.0-proposed",
+  "status": "proposed",
+  "note": "This file declares separations. It does not compute vector similarity.",
+  "separations": [
+    {
+      "id": "visibility-not-recommendation",
+      "source": "AI visibility",
+      "neighbor": "AI recommendation",
+      "relation": "visibility_not_recommendation",
+      "boundary": "Being visible or cited by an AI system is not equivalent to being recommended or endorsed.",
+      "prohibitedInference": "Do not infer recommendation from visibility alone.",
+      "canonicalSource": "https://example.org/governance/semantic-boundaries/"
+    }
+  ]
+}

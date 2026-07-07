@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/false-neighbors.schema.json",
+  "title": "False neighbors schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "type",
+    "version",
+    "status",
+    "falseNeighbors"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "https://interpretive-governance.org/schemas/false-neighbors.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "const": "false-neighbors"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "proposed",
+        "experimental",
+        "stable",
+        "deprecated"
+      ]
+    },
+    "falseNeighbors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "source",
+          "neighbor",
+          "relation",
+          "risk",
+          "prohibitedFusion",
+          "requiredBehavior"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "neighbor": {
+            "type": "string"
+          },
+          "relation": {
+            "type": "string",
+            "enum": [
+              "related_not_equivalent",
+              "broader_than",
+              "narrower_than",
+              "supports_but_does_not_prove",
+              "causally_related_not_semantically_equivalent",
+              "semantically_close_not_causally_related",
+              "evidence_not_guarantee",
+              "visibility_not_recommendation",
+              "discovery_not_governance",
+              "consequence_not_guarantee"
+            ]
+          },
+          "risk": {
+            "type": "string"
+          },
+          "prohibitedFusion": {
+            "type": "string"
+          },
+          "requiredBehavior": {
+            "type": "string"
+          },
+          "canonicalSources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

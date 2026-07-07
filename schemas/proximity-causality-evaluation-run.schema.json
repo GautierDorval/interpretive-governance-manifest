@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/proximity-causality-evaluation-run.schema.json",
+  "title": "Proximity-causality evaluation run schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "type",
+    "runId",
+    "createdAt",
+    "protocol",
+    "modelPanel",
+    "judgePanel",
+    "results"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "https://interpretive-governance.org/schemas/proximity-causality-evaluation-run.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "const": "proximity-causality-evaluation-run"
+    },
+    "runId": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "protocol": {
+      "type": "string"
+    },
+    "modelPanel": {
+      "type": "string"
+    },
+    "judgePanel": {
+      "type": "string"
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "itemId",
+          "status"
+        ],
+        "properties": {
+          "itemId": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "correctly_separated",
+              "causality_inferred_from_proximity",
+              "equivalence_inferred",
+              "ambiguous",
+              "invalid_run"
+            ]
+          },
+          "evidence": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

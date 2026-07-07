@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interpretive-governance.org/schemas/causal-context-layer.schema.json",
+  "title": "CCL extension declaration schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "type",
+    "version",
+    "status",
+    "purpose",
+    "rules"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "https://interpretive-governance.org/schemas/causal-context-layer.schema.json"
+    },
+    "type": {
+      "type": "string",
+      "const": "causal-context-layer"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "proposed",
+        "experimental",
+        "stable",
+        "deprecated"
+      ]
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 10
+    },
+    "nonGoals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "requirement"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^CCL-[0-9]+$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "requirement": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

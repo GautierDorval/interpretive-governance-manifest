@@ -1,0 +1,17 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/false-neighbor-behavioral-run.schema.json",
+  "type": "false-neighbor-behavioral-run",
+  "runId": "example-run-no-results",
+  "createdAt": "2026-07-07T00:00:00Z",
+  "testset": "examples/false-neighbor-behavioral-testset.example.json",
+  "modelPanel": "examples/model-panel-declaration.example.json",
+  "judgePanel": "examples/judge-panel-declaration.example.json",
+  "results": [
+    {
+      "testCaseId": "fn-test-001",
+      "modelId": "example-model-api",
+      "status": "invalid_run",
+      "evidence": "Example shape only. No measured result is published."
+    }
+  ]
+}

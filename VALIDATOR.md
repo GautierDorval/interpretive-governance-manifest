@@ -236,3 +236,20 @@ It decides whether the system is being honest about:
 - what is derived
 - what is inferred
 - what is unknown
+
+
+---
+
+## ZIP and release artifact validation
+
+`validate_json_syntax.py` must work inside Git checkouts and exported ZIP archives.
+
+When `.git` metadata is unavailable, the validator falls back to a deterministic filesystem scan of `*.json` and `*.jsonld` files, excluding implementation output directories such as `.git`, `node_modules`, and `dist`.
+
+This fallback exists so public releases can be audited independently from GitHub checkout state.
+
+## Proposed extension validation
+
+`validate_json_schema.py` validates neutral examples for proposed CCL, semantic-boundary, false-neighbor, governance package, and experimental measurement schemas.
+
+Passing schema validation proves only structural compatibility. It does not prove behavioral compliance.

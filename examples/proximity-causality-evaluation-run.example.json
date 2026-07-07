@@ -1,0 +1,16 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/proximity-causality-evaluation-run.schema.json",
+  "type": "proximity-causality-evaluation-run",
+  "runId": "example-run-no-results",
+  "createdAt": "2026-07-07T00:00:00Z",
+  "protocol": "examples/proximity-causality-protocol.example.json",
+  "modelPanel": "examples/model-panel-declaration.example.json",
+  "judgePanel": "examples/judge-panel-declaration.example.json",
+  "results": [
+    {
+      "itemId": "example-item-001",
+      "status": "invalid_run",
+      "evidence": "Example shape only. No measured result is published."
+    }
+  ]
+}

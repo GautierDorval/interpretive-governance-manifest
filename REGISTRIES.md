@@ -49,3 +49,18 @@ When interpreting terms, prefer:
 Definitions registry > public specification > glossary (category boundaries) > derived summaries.
 
 If a term is absent from canonical definitions, treat it as undefined (Unknown) unless explicitly scoped.
+
+
+---
+
+## Proposed extension registries
+
+The following registries are proposed and additive:
+
+- CCL artifacts: `extensions/ccl/`, `schemas/causal-context-layer.schema.json`, `schemas/causal-context-map.schema.json`, `schemas/causal-internal-mesh.schema.json`.
+- Semantic-boundary artifacts: `extensions/semantic-boundary/`, `schemas/semantic-proximity-separation.schema.json`, `schemas/false-neighbors.schema.json`, `schemas/proximity-causality-protocol.schema.json`.
+- False-neighbor profile: `extensions/false-neighbor/`, `schemas/false-neighbor-behavioral-testset.schema.json`.
+- Governance package manifest: `extensions/maximalist-governance-package/`, `schemas/governance-package-manifest.schema.json`.
+- Experimental measurement reports: `extensions/measurement/`, `schemas/false-neighbor-behavioral-run.schema.json`, `schemas/proximity-causality-evaluation-run.schema.json`, `schemas/model-panel-declaration.schema.json`, `schemas/judge-panel-declaration.schema.json`.
+
+These registries define portable shapes. They do not assert that an implementation has measured behavior unless a valid evidence record is published.

@@ -1,0 +1,15 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/model-panel-declaration.schema.json",
+  "type": "model-panel-declaration",
+  "version": "0.1.0-experimental",
+  "models": [
+    {
+      "id": "example-model-api",
+      "provider": "Example Provider",
+      "model": "example-model-1",
+      "accessMode": "api",
+      "temperature": 0,
+      "notes": "Neutral placeholder. Not a measured result."
+    }
+  ]
+}

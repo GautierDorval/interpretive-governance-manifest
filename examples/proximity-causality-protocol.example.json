@@ -1,0 +1,23 @@
+{
+  "schema": "https://interpretive-governance.org/schemas/proximity-causality-protocol.schema.json",
+  "type": "proximity-causality-protocol",
+  "version": "0.1.0-proposed",
+  "status": "proposed",
+  "purpose": "Separate semantic proximity from causal relevance before an implementation declares a causal relationship.",
+  "steps": [
+    {
+      "id": "step-1",
+      "name": "Identify proximity signal",
+      "requirement": "Declare whether the relation is lexical, semantic, vector, entity-based, or editorial."
+    },
+    {
+      "id": "step-2",
+      "name": "Check causal authority",
+      "requirement": "Require a CCL declaration, reviewed rationale, or source-supported need-state relation before causal wording is allowed."
+    }
+  ],
+  "guardrails": [
+    "Do not infer latent need from proximity alone.",
+    "Do not treat intended consequence as guaranteed outcome."
+  ]
+}

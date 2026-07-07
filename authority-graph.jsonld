@@ -78,6 +78,18 @@
         },
         {
           "@id": "https://interpretive-governance.org/conformance-levels.json#levels"
+        },
+        {
+          "@id": "https://interpretive-governance.org/extensions/ccl/ccl.md#spec"
+        },
+        {
+          "@id": "https://interpretive-governance.org/extensions/semantic-boundary/semantic-boundary.md#spec"
+        },
+        {
+          "@id": "https://interpretive-governance.org/extensions/false-neighbor/false-neighbor.md#spec"
+        },
+        {
+          "@id": "https://interpretive-governance.org/extensions/maximalist-governance-package/governance-package.md#spec"
         }
       ],
       "additionalProperty": [
@@ -147,7 +159,6 @@
         }
       ]
     },
-
     {
       "@type": "CreativeWork",
       "@id": "https://interpretive-governance.org/interpretive-index.json#index",
@@ -183,7 +194,6 @@
         "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
       }
     },
-
     {
       "@type": "DefinedTerm",
       "@id": "https://interpretive-governance.org/interpretive-rules/r3/#term",
@@ -237,7 +247,6 @@
         "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
       }
     },
-
     {
       "@type": "DefinedTerm",
       "@id": "https://interpretive-governance.org/interpretive-rules/anti-faux-audit/#term",
@@ -283,7 +292,6 @@
         "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
       }
     },
-
     {
       "@type": "DefinedTerm",
       "@id": "https://interpretive-governance.org/interpretive-rules/anti-identity-inference/#term",
@@ -329,7 +337,6 @@
         "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
       }
     },
-
     {
       "@type": "CreativeWork",
       "@id": "https://interpretive-governance.org/protocols/interpretive-stress-test/#protocol",
@@ -368,7 +375,6 @@
         }
       ]
     },
-
     {
       "@type": "CreativeWork",
       "@id": "https://interpretive-governance.org/protocols/interpretation-integrity-audit/#protocol",
@@ -407,8 +413,6 @@
         }
       ]
     },
-
-
     {
       "@type": "CreativeWork",
       "@id": "https://interpretive-governance.org/protocols/integrity-checklist/#protocol",
@@ -439,7 +443,6 @@
         "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
       }
     },
-
     {
       "@type": "CreativeWork",
       "@id": "https://interpretive-governance.org/CONFORMANCE.md#conformance",
@@ -491,6 +494,106 @@
       },
       "governedBy": {
         "@id": "https://interpretive-governance.org/interpretive-governance.manifest.json#manifest"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://interpretive-governance.org/#term-ccl",
+      "name": "CCL (Causal Context Layer)",
+      "inLanguage": "en",
+      "description": "Proposed extension for declaring context of necessity: trigger situation, problem or risk, latent need, canonical surface, intended consequence, and prohibited derivations.",
+      "url": "https://interpretive-governance.org/extensions/ccl/ccl.md",
+      "creator": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://interpretive-governance.org/#term-semantic-boundary",
+      "name": "Semantic-boundary",
+      "inLanguage": "en",
+      "description": "Proposed extension for declaring non-equivalence, false-neighbor risks, and proximity-risk boundaries.",
+      "url": "https://interpretive-governance.org/extensions/semantic-boundary/semantic-boundary.md",
+      "creator": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://interpretive-governance.org/#term-interpretive-false-neighbor",
+      "name": "Interpretive false neighbor",
+      "inLanguage": "en",
+      "description": "A concept, claim, entity, or surface close enough to another element to be plausibly fused by a machine system, while remaining non-equivalent.",
+      "url": "https://interpretive-governance.org/extensions/false-neighbor/false-neighbor.md",
+      "creator": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://interpretive-governance.org/#term-maximalist-governance-package",
+      "name": "Maximalist governance package",
+      "inLanguage": "en",
+      "description": "Proposed inventory profile for complete machine-readable governance deployments.",
+      "url": "https://interpretive-governance.org/extensions/maximalist-governance-package/governance-package.md",
+      "creator": {
+        "@id": "https://gautierdorval.com/entite/#person"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/extensions/ccl/ccl.md#spec",
+      "name": "CCL specification",
+      "url": "https://interpretive-governance.org/extensions/ccl/ccl.md",
+      "inLanguage": "en",
+      "creativeWorkStatus": "proposed",
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "about": {
+        "@id": "https://interpretive-governance.org/#term-ccl"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/extensions/semantic-boundary/semantic-boundary.md#spec",
+      "name": "Semantic-boundary specification",
+      "url": "https://interpretive-governance.org/extensions/semantic-boundary/semantic-boundary.md",
+      "inLanguage": "en",
+      "creativeWorkStatus": "proposed",
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "about": {
+        "@id": "https://interpretive-governance.org/#term-semantic-boundary"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/extensions/false-neighbor/false-neighbor.md#spec",
+      "name": "False-neighbor profile",
+      "url": "https://interpretive-governance.org/extensions/false-neighbor/false-neighbor.md",
+      "inLanguage": "en",
+      "creativeWorkStatus": "proposed",
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "about": {
+        "@id": "https://interpretive-governance.org/#term-interpretive-false-neighbor"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://interpretive-governance.org/extensions/maximalist-governance-package/governance-package.md#spec",
+      "name": "Maximalist governance package profile",
+      "url": "https://interpretive-governance.org/extensions/maximalist-governance-package/governance-package.md",
+      "inLanguage": "en",
+      "creativeWorkStatus": "proposed",
+      "isPartOf": {
+        "@id": "https://interpretive-governance.org/#standard"
+      },
+      "about": {
+        "@id": "https://interpretive-governance.org/#term-maximalist-governance-package"
       }
     }
   ]

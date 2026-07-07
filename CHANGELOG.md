@@ -10,6 +10,13 @@
 
 ## Unreleased
 
+- Added proposed CCL (Causal Context Layer) extension with schemas and neutral examples.
+- Added proposed semantic-boundary extension, false-neighbor profile, and proximity-causality protocol schema.
+- Added proposed maximalist governance package manifest schema and example.
+- Added experimental measurement report shapes for future false-neighbor and proximity-causality evaluation runs.
+- Added maturity statuses for draft/proposed/experimental/stable/deprecated extension lifecycle.
+- Added ZIP-safe fallback to JSON syntax validation when `.git` is not available.
+
 - Security and integrity audit: aligned all pinned artifact URLs with declared `pinned_version` (v1.2.0 → v1.4.1 for authority/ops-pack).
 - Aligned `.well-known/interpretive-governance.json` with manifest versions (v1.1.0 → v1.4.1) and added CTIC extension entry.
 - Updated `index.html` extension links to v1.4.1 and fixed broken link (`.m` → `.md`).
