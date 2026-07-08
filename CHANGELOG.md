@@ -16,6 +16,7 @@
 - Added experimental measurement report shapes for future false-neighbor and proximity-causality evaluation runs.
 - Added maturity statuses for draft/proposed/experimental/stable/deprecated extension lifecycle.
 - Added ZIP-safe fallback to JSON syntax validation when `.git` is not available.
+- Regenerated entity graph source artifacts for proposed CCL, semantic-boundary, and false-neighbor terms, with updated integrity hashes.
 
 - Security and integrity audit: aligned all pinned artifact URLs with declared `pinned_version` (v1.2.0 → v1.4.1 for authority/ops-pack).
 - Aligned `.well-known/interpretive-governance.json` with manifest versions (v1.1.0 → v1.4.1) and added CTIC extension entry.
