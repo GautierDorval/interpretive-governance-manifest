@@ -120,5 +120,5 @@ definedTermSets:
   term_urls:
   - https://github.com/GautierDorval/interpretive-governance-manifest/blob/main/ops-pack/V-layer/versioning-drift-change-control.md
   - https://github.com/GautierDorval/interpretive-governance-manifest/blob/main/ops-pack/V-layer/integrity-locks.md
-source_sha256: 8ee647a6aebd5722b0d0ba1c902c92735b482705211e02a249e98970bab8e3ef
+source_sha256: f6076d872e408ed4f94532fb2f014c0aa82b7cea9bd060cc3d80b2290cf766f9
 
