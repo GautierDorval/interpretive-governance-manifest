@@ -10,6 +10,10 @@
 
 ## Unreleased
 
+- Clarified the boundary between the normative standard, its conceptual
+  conformance-assessment procedure, repository artifact checks, and external
+  executable test instruments. No conformance criterion or manifest semantic
+  changed, and no certification authority was introduced.
 - Added proposed CCL (Causal Context Layer) extension with schemas and neutral examples.
 - Added proposed semantic-boundary extension, false-neighbor profile, and proximity-causality protocol schema.
 - Added proposed maximalist governance package manifest schema and example.

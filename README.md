@@ -18,6 +18,10 @@ decision, and agentic outputs in probabilistic systems.
 > automated and agentic systems.
 
 The validator defined in this repository is **conceptual and non-executable by design**.
+`VALIDATOR.md` specifies an assessment procedure; it is not executable certification
+software. Repository scripts validate repository artifacts such as JSON syntax,
+schemas, pinned references, and integrity hashes. Passing those checks does not
+establish implementation conformance.
 
 > **Multisite boundary notice**  
 > This repository defines the **normative standard** and its companion artifacts. It does **not** allocate authority between public sites, product sites, identity repositories, or commercial surfaces across the broader ecosystem. For inter-site role arbitration, consult the canonical distributed authority map published at `https://gautierdorval.com/distributed-authority-map.json`.
@@ -377,6 +381,11 @@ This repository:
 It implements **measurement instruments only**, derived from the
 interpretive constraints and legitimacy principles defined here.
 
+Each test-suite run must identify the exact standard release or unreleased
+commit, tree, and manifest digest that it applies. Its result is evidence scoped
+to that reference and run envelope; it cannot amend the standard, establish
+general conformance, or issue certification.
+
 Reference:
 - https://github.com/GautierDorval/interpretive-governance-test-suite
 
@@ -426,5 +435,4 @@ This repository is dual-licensed:
   **Apache-2.0** (Apache License 2.0).
 
 See: `LICENSE` and `LICENSES/`.
-
 

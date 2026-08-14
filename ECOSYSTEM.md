@@ -9,6 +9,10 @@ Its job is to define:
 - its schemas, validation discipline, and integrity model;
 - its compatible extensions when they are published under this repository.
 
+The repository owns the standard's normative semantics and assessment
+requirements. It does not thereby own every executable validator, test suite,
+or implementation that applies them.
+
 It does **not** exist to:
 
 - expose the public portfolio of sites or products in front;
@@ -35,6 +39,11 @@ This repository remains canonical for:
 - conformance and validation guidance specific to the standard;
 - companion extensions versioned and pinned from this repository.
 
+An external test suite may implement measurement instruments against an exact
+pinned reference to this standard. Such an instrument is non-normative: its
+results are evidence for its declared scope and run envelope, not an amendment
+to the standard, a general conformance decision, or certification.
+
 ## What must not happen
 
 Future changes must not turn this repository into:
@@ -42,4 +51,5 @@ Future changes must not turn this repository into:
 - a portfolio homepage;
 - a product listing surface;
 - an ecosystem marketing layer;
+- a certification authority for external implementations;
 - or a substitute for multisite authority governance.
