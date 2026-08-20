@@ -2,8 +2,15 @@
 
 This document defines a conceptual validator for checking conformance with the Interpretive Governance Manifest.
 
+The term "validator" names the assessment role and procedure described below.
+This repository does not provide an executable implementation of that procedure.
+Its repository scripts check artifact syntax, schemas, pinned references, and
+integrity; they do not execute this conformance assessment.
+
 It is not a certification system.
 It is a minimal, auditable procedure for determining whether a system may truthfully claim a conformance level.
+Any executable instrument applying it must pin the exact standard reference and
+report its assessed scope, inputs, evidence, and limitations.
 
 Canonical standard:
 https://interpretive-governance.org/
@@ -211,7 +218,7 @@ Required:
 
 ---
 
-## 5. Output of the validator
+## 5. Output of an implementation of the procedure
 
 The validator MUST output:
 
@@ -247,6 +254,10 @@ It decides whether the system is being honest about:
 When `.git` metadata is unavailable, the validator falls back to a deterministic filesystem scan of `*.json` and `*.jsonld` files, excluding implementation output directories such as `.git`, `node_modules`, and `dist`.
 
 This fallback exists so public releases can be audited independently from GitHub checkout state.
+
+These repository checks validate artifact integrity and structure only. They do
+not execute Checks A through H, establish implementation conformance, or produce
+a certification verdict.
 
 ## Proposed extension validation
 

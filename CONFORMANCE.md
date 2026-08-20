@@ -6,6 +6,8 @@ Conformance is **voluntary**, **explicit**, and **self-declared**, but must be *
 
 This standard does not provide certification.  
 It defines conditions under which a system, process, or implementation may truthfully claim alignment.
+The declaration remains the responsibility of the declaring party; neither this
+repository nor an external test instrument approves the implementation.
 
 ---
 
@@ -126,10 +128,11 @@ In case of ambiguity, the **Interpretive Governance Manifest** takes precedence.
 
 ---
 
-## 6. Conceptual validator
+## 6. Conceptual assessment procedure
 
-Conformance assessment is expected to be performed using the
-**Interpretive Governance conceptual validator**.
+`VALIDATOR.md` specifies the **Interpretive Governance conceptual assessment
+procedure**. The word "validator" names the assessment role and required logic;
+this repository does not ship an executable conformance engine.
 
 The validator defines:
 
@@ -141,8 +144,12 @@ The validator defines:
 Canonical reference:  
 https://interpretive-governance.org/VALIDATOR.md
 
-The validator is normative for conformance assessment
-but does not constitute certification.
+The procedure's requirements are normative for conformance assessment, but an
+executable validator or test suite is a separate, non-normative instrument. It
+must identify the exact standard reference, assessed scope, inputs, and evidence.
+A passing instrument result is bounded assessment evidence. It does not replace
+the truthful self-declaration and does not constitute certification, endorsement,
+or approval.
 
 ---
 
