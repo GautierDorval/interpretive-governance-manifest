@@ -19,6 +19,7 @@
       "url": "https://gautierdorval.com/",
       "mainEntityOfPage": "https://gautierdorval.com/entite/",
       "sameAs": [
+        "https://gautierdorval.com/en/entity/#person",
         "https://github.com/GautierDorval/gautierdorval-identity"
       ]
     },

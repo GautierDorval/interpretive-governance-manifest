@@ -1,15 +1,19 @@
-# Entity graph registry (Git source of truth)
+# Entity graph registry (historical snapshot)
 
-This directory contains the **source of truth** for the canonical entity graph served on:
+This directory and the generated root files `entity-graph.jsonld` and `entity-graph.yaml` are a **historical snapshot** of the entity graph of gautierdorval.com (last content change: 2026-07-07). They are kept for traceability and are **not** the source of the graph served today on:
 
 - `https://gautierdorval.com/entity-graph.jsonld`
 - `https://gautierdorval.com/entity-graph.yaml` (fallback)
 
+The served graph is maintained with the gautierdorval.com governance overlay and prevails for those URLs. Its canonical person identifier is `https://gautierdorval.com/en/entity/#person`; `https://gautierdorval.com/entite/#person`, used in this snapshot, is a legacy alias.
+
+Do not resynchronize this snapshot from the served graph, and do not read it as current identity data.
+
 ## Files
 
 - `entity-graph.source.yaml`
-  - Editable YAML representation of the JSON-LD graph.
-  - This is the only file you should edit.
+  - YAML representation of the snapshot graph.
+  - Edit only to maintain the snapshot tooling; identity changes belong to the served graph.
 - Generated artifacts (repo root):
   - `entity-graph.jsonld`
   - `entity-graph.yaml`

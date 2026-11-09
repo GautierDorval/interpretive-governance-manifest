@@ -56,7 +56,7 @@ These are not guarantees, but operational targets:
 ## ID conventions
 
 - Website: `https://gautierdorval.com/#website`
-- Canonical person: `https://gautierdorval.com/entite/#person`
+- Canonical person: `https://gautierdorval.com/en/entity/#person` (legacy alias: `https://gautierdorval.com/entite/#person`)
 - Person alias (legacy compatibility): `https://gautierdorval.com/#person` with `sameAs` → canonical person
 - Page anchors:
   - WebPage: `{url}#webpage`

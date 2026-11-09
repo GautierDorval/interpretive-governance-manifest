@@ -1,6 +1,6 @@
 {
-  "CHANGELOG.md": "743b08fa3717a37cc8240213c733d237bb35e9fcd3b5aa2cc4b83b67eb768735",
-  "authority-graph.jsonld": "9715d73e5b5ab07c1855f2eb891f05a9245088b000daf644d10cd3942e3903b6",
+  "CHANGELOG.md": "70f8335fe109db1fd02e1e0678fffef6858aad28736b3a14cfcdfa1ebdd6a0ee",
+  "authority-graph.jsonld": "cdcc3faa26581dd5577b35aed8e64d5edf9ddf064461c9cd276cec1a6132818f",
   "conformance-levels.json": "0a89e0a1648e94d523fd67eebe1fb0ebd067195f9c2af7544f28b36b58561a8f",
   "entity-graph.jsonld": "f6076d872e408ed4f94532fb2f014c0aa82b7cea9bd060cc3d80b2290cf766f9",
   "entity-graph.yaml": "e8bdc9f72781af90189035e04dc6cd1043308bc3d6abd3b31e673491d140c2c2",
