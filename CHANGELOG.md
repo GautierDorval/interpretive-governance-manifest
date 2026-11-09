@@ -10,6 +10,13 @@
 
 ## Unreleased
 
+- Requalified `registries/entity-graph/` and the root `entity-graph.jsonld` and
+  `entity-graph.yaml` as a historical snapshot: the graph served on
+  gautierdorval.com is maintained with its governance overlay. Snapshot content
+  unchanged.
+- Declared `https://gautierdorval.com/en/entity/#person` as `sameAs` of the
+  person node in `authority-graph.jsonld`, and used it in the Schema-layer
+  profile and templates (legacy alias kept). Recomputed `integrity/hashes.json`.
 - Clarified the boundary between the normative standard, its conceptual
   conformance-assessment procedure, repository artifact checks, and external
   executable test instruments. No conformance criterion or manifest semantic

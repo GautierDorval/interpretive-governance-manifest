@@ -8,12 +8,12 @@
       "name": "gautierdorval.com",
       "inLanguage": "fr-CA",
       "publisher": {
-        "@id": "https://gautierdorval.com/entite/#person"
+        "@id": "https://gautierdorval.com/en/entity/#person"
       }
     },
     {
       "@type": "Person",
-      "@id": "https://gautierdorval.com/entite/#person",
+      "@id": "https://gautierdorval.com/en/entity/#person",
       "name": "Gautier Dorval",
       "url": "https://gautierdorval.com/entite/"
     },
@@ -59,10 +59,10 @@
         "@id": "https://gautierdorval.com/#website"
       },
       "author": {
-        "@id": "https://gautierdorval.com/entite/#person"
+        "@id": "https://gautierdorval.com/en/entity/#person"
       },
       "publisher": {
-        "@id": "https://gautierdorval.com/entite/#person"
+        "@id": "https://gautierdorval.com/en/entity/#person"
       },
       "mainEntity": {
         "@id": "${TERM_URL}#definedterm"
