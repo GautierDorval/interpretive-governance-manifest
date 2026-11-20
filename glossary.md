@@ -65,3 +65,15 @@ Governance of claim legitimacy and typing:
 - legitimate non-response when conditions are missing.
 
 Applicable in both web-open and agentic-closed environments, but with different levers.
+
+### Informative terminology note
+
+Within Gautier Dorval's corpus, “inferential governance” (French: “gouvernance
+inférentielle”) is a contextual designation of interpretive governance, emphasizing
+what sources, evidence, and context justify concluding. The author's clarification
+in [English](https://gautierdorval.com/en/clarifications/inferential-governance/) and
+[French](https://gautierdorval.com/clarifications/gouvernance-inferentielle/)
+explains the relationship and distinguishes other uses of the expression. Interpretive
+Governance remains the reference framework. This note introduces no new layer,
+conformance requirement, permission, or execution mechanism and makes no claim that
+Gautier Dorval invented the expression.
