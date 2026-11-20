@@ -5,12 +5,12 @@
 **Author:** Gautier Dorval  
 **Version française :** [Carte des termes de fidélité](carte-des-termes-fidelite.md)
 
-The fidelity vocabulary covers a concept, its applications, evidence and measurement fields. Reading a claim accurately requires identifying **what is assessed, against which reference, for which task and through which method**.
+Within this corpus, the fidelity vocabulary covers a concept, its applications, evidence and measurement fields. Reading a claim accurately requires identifying **what is assessed, against which reference, for which task and through which method**.
 
 | Term | Object | Intended reading |
 |---|---|---|
 | **Interpretive fidelity** | Relationship between a reconstruction and its reference | Preservation of the meaning and boundaries relevant to the task: facts, conditions, exclusions, authority, evidence and claim status. |
-| **Reconstruction fidelity** | The same concept, in the context of this corpus's AI-generated answers | A contextual entry term for interpretive fidelity, with the same conceptual scope. |
+| **Reconstruction fidelity** | The same concept, in the context of this corpus's AI-generated answers | Within this corpus, a contextual entry term for interpretive fidelity, with the same conceptual scope. The expression has other published uses outside this corpus. |
 | **Applicability fidelity** | Conditions under which information, an offer or a recommendation applies | Preservation of the prerequisites, exclusions and limits that determine applicability to a situation. |
 | **Proof of fidelity** | Artifacts supporting examination of the relationship between an output and its reference | A documented set interpreted under a task and protocol: reference, output, criteria, observations and limits. |
 | **`sequence_fidelity`** | Access sequences inferred from access logs, under the Q-Metrics contract | A ratio of inferred sessions whose sequence matches an expected pattern, within a declared window. It does not measure an answer's meaning. |
@@ -19,8 +19,8 @@ The fidelity vocabulary covers a concept, its applications, evidence and measure
 ## Reference points
 
 - The [interpretive fidelity definition](https://gautierdorval.com/en/definitions/interpretive-fidelity/) is the author reference for the concept.
-- The [terminology note](reconstruction-fidelity.md) declares the relationship between reconstruction fidelity and interpretive fidelity.
-- The [applicability fidelity test protocol](https://pagup.com/en/method/applicability-fidelity-test-protocol/), published by Pagup as a proposed protocol, specifies the object of applicability fidelity. This protocol is not a measurement result.
+- The [terminology note](reconstruction-fidelity.md) declares the relationship between reconstruction fidelity and interpretive fidelity within this corpus.
+- The [applicability fidelity definition](https://gautierdorval.com/en/definitions/applicability-fidelity/) specifies the object of applicability fidelity. It describes it as a future external measurement, not as an established result.
 - The [proof of fidelity definition](https://gautierdorval.com/en/definitions/proof-of-fidelity/) specifies the object of proof of fidelity.
 
 ## Read `sequence_fidelity` without changing its object

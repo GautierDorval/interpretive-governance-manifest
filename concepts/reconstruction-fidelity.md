@@ -27,12 +27,12 @@ This note makes the terminological relationship explicit within the corpus. The 
 
 ## Use in documents and data
 
-Use reconstruction fidelity when discussing how an AI-generated answer reconstructs a source's meaning. Refer to the interpretive fidelity definition for the concept, then identify the protocol or rubric actually used when presenting an assessment, for example the [interpretation integrity audit protocol](../interpretive-governance/protocols/interpretation-integrity-audit.md) of this repository or the fidelity rubric cited above.
+Within this corpus, use reconstruction fidelity when discussing how an AI-generated answer reconstructs a source's meaning. Refer to the interpretive fidelity definition for the concept, then identify the protocol or rubric actually used when presenting an assessment, for example the [interpretation integrity audit protocol](../interpretive-governance/protocols/interpretation-integrity-audit.md) of this repository or the fidelity rubric cited above.
 
 A measurement should identify its observed object, task, reference, unit, evaluation method and qualification status. A bounded reproduction result, a qualitative review, a sequence metric and a fidelity score have different scopes.
 
 The [fidelity term map](fidelity-term-map.md) documents these relationships. The public [T3 case](https://github.com/GautierDorval/governed-context-runtime/blob/2dc585688bc904f3a423e1fc6fd8abdb6ac11cfd/evidence/mcp-apps-t3-2026-10-27/README.md) provides an illustration of bounded reproduction with its evidence and limits: five lists and eleven entries compared with criteria derived from an archived pack, with a complementary producer-side reading. This case establishes neither a reliability rate nor general fidelity.
 
-## Other use of the expression
+## Other uses of the expression
 
-The English expression reconstruction fidelity also has an established use in sparse autoencoder research, where it concerns the reconstruction of a model's activations. The [JumpReLU paper](https://arxiv.org/abs/2407.14435) illustrates that use. The relationship declared here concerns meaning in generated answers.
+Outside this corpus, the expression has other published uses. In English, reconstruction fidelity notably refers to the reconstruction of a model's activations in sparse autoencoder research. The expression is also used in connection with semantic caching systems. The relationship declared here concerns only meaning in generated answers, within this corpus; it makes no claim to the expression.

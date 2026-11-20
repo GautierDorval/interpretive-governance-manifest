@@ -27,12 +27,12 @@ La présente note rend explicite la relation terminologique dans le corpus. Le [
 
 ## Usage dans les documents et les données
 
-Employer « fidélité de reconstruction » lorsque l’objet traité est la manière dont une réponse IA reconstitue le sens d’une source. Renvoyer à la définition de fidélité interprétative pour le concept, puis au protocole ou à la grille effectivement utilisés lorsqu’une évaluation est présentée, par exemple le [protocole d’audit d’intégrité interprétative](../interpretive-governance/protocols/interpretation-integrity-audit.md) de ce dépôt ou la grille de fidélité citée plus haut.
+Dans ce corpus, employer « fidélité de reconstruction » lorsque l’objet traité est la manière dont une réponse IA reconstitue le sens d’une source. Renvoyer à la définition de fidélité interprétative pour le concept, puis au protocole ou à la grille effectivement utilisés lorsqu’une évaluation est présentée, par exemple le [protocole d’audit d’intégrité interprétative](../interpretive-governance/protocols/interpretation-integrity-audit.md) de ce dépôt ou la grille de fidélité citée plus haut.
 
 Pour une mesure, préciser l’objet observé, la tâche, la référence, l’unité, la méthode d’évaluation et son statut de qualification. Un résultat de restitution bornée, une appréciation qualitative, une métrique de séquence et un score de fidélité n’ont pas la même portée.
 
 La [carte des termes de fidélité](carte-des-termes-fidelite.md) documente ces relations. Le [cas public T3](https://github.com/GautierDorval/governed-context-runtime/blob/2dc585688bc904f3a423e1fc6fd8abdb6ac11cfd/evidence/mcp-apps-t3-2026-10-27/README.md) fournit une illustration de restitution bornée avec ses pièces et ses limites : cinq listes et onze entrées comparées à des critères dérivés d’un pack archivé, avec une lecture complémentaire faite côté producteur. Ce cas n’établit ni taux de fiabilité ni fidélité générale.
 
-## Autre emploi de l’expression
+## Autres emplois de l’expression
 
-En anglais, l’expression « reconstruction fidelity » a aussi un emploi établi dans la recherche sur les autoencodeurs clairsemés, où elle porte sur la reconstruction des activations d’un modèle. L’[article JumpReLU](https://arxiv.org/abs/2407.14435) illustre cet emploi. La relation déclarée ici concerne le sens dans les réponses générées.
+Hors de ce corpus, l’expression a d’autres emplois publiés. En anglais, « reconstruction fidelity » désigne notamment la reconstruction des activations d’un modèle dans la recherche sur les autoencodeurs clairsemés. L’expression est aussi employée à propos de systèmes de cache sémantique. La relation déclarée ici concerne seulement le sens dans les réponses générées, dans ce corpus ; elle ne revendique pas l’expression.

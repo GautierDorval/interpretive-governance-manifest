@@ -5,12 +5,12 @@
 **Auteur :** Gautier Dorval  
 **English version:** [Fidelity term map](fidelity-term-map.md)
 
-La famille de termes de fidélité couvre un concept, des applications, des pièces de preuve et des champs de mesure. Pour lire une affirmation correctement, il faut savoir **quel objet est évalué, par rapport à quelle référence, pour quelle tâche et selon quelle méthode**.
+Dans ce corpus, la famille de termes de fidélité couvre un concept, des applications, des pièces de preuve et des champs de mesure. Pour lire une affirmation correctement, il faut savoir **quel objet est évalué, par rapport à quelle référence, pour quelle tâche et selon quelle méthode**.
 
 | Terme | Objet | Lecture attendue |
 |---|---|---|
 | **Fidélité interprétative** | Relation entre une reconstruction et sa référence | Préservation du sens et des limites pertinentes pour la tâche : faits, conditions, exclusions, autorité, preuves et statut des affirmations. |
-| **Fidélité de reconstruction** | Même concept, dans le contexte des réponses IA de ce corpus | Expression d’accès à la fidélité interprétative, avec le même périmètre conceptuel. |
+| **Fidélité de reconstruction** | Même concept, dans le contexte des réponses IA de ce corpus | Dans ce corpus, expression d’accès à la fidélité interprétative, avec le même périmètre conceptuel. L’expression a d’autres emplois publiés hors de ce corpus. |
 | **Fidélité d’applicabilité** | Conditions dans lesquelles une information, une offre ou une recommandation s’applique | Conservation des préalables, exclusions et limites qui déterminent l’application à une situation. |
 | **Preuve de fidélité** | Artefacts permettant d’examiner la correspondance entre une sortie et sa référence | Ensemble documenté à lire selon la tâche et le protocole : référence, sortie, critères, observations et limites. |
 | **`sequence_fidelity`** | Séquences de consultation inférées à partir de journaux d’accès, selon le contrat Q-Metrics | Ratio de sessions inférées dont la séquence correspond à un schéma attendu, dans une fenêtre déclarée. Il ne mesure pas le sens d’une réponse. |
@@ -19,8 +19,8 @@ La famille de termes de fidélité couvre un concept, des applications, des piè
 ## Points de référence
 
 - La [définition de fidélité interprétative](https://gautierdorval.com/definitions/fidelite-interpretative/) est la référence d’auteur du concept.
-- La [note terminologique](fidelite-de-reconstruction.md) déclare la relation entre « fidélité de reconstruction » et « fidélité interprétative ».
-- Le [protocole de test de fidélité d’applicabilité](https://pagup.com/methode/protocole-test-fidelite-applicabilite/), publié par Pagup comme protocole proposé, précise l’objet de la fidélité d’applicabilité. Ce protocole n’est pas un résultat de mesure.
+- La [note terminologique](fidelite-de-reconstruction.md) déclare la relation entre « fidélité de reconstruction » et « fidélité interprétative » dans ce corpus.
+- La [définition de fidélité d’applicabilité](https://gautierdorval.com/definitions/fidelite-applicabilite/) précise l’objet de la fidélité d’applicabilité. Elle la décrit comme une mesure externe future, pas comme un résultat établi.
 - La [définition de preuve de fidélité](https://gautierdorval.com/definitions/preuve-fidelite/) précise l’objet de la preuve de fidélité.
 
 ## Lire `sequence_fidelity` sans changer son objet
