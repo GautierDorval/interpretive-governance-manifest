@@ -1,7 +1,7 @@
 # Fidelity term map
 
 **Status:** informative document (non-normative)  
-**Version:** 1.0, 2026-11-20  
+**Version:** 1.1, 2026-11-20  
 **Author:** Gautier Dorval  
 **Version française :** [Carte des termes de fidélité](carte-des-termes-fidelite.md)
 
@@ -19,6 +19,7 @@ Within this corpus, the fidelity vocabulary covers a concept, its applications, 
 ## Reference points
 
 - The [interpretive fidelity definition](https://gautierdorval.com/en/definitions/interpretive-fidelity/) is the author reference for the concept.
+- The [reconstruction fidelity entry page](https://gautierdorval.com/en/reconstruction-fidelity/) presents its application to understanding and assessing generated answers.
 - The [terminology note](reconstruction-fidelity.md) declares the relationship between reconstruction fidelity and interpretive fidelity within this corpus.
 - The [applicability fidelity definition](https://gautierdorval.com/en/definitions/applicability-fidelity/) specifies the object of applicability fidelity. It describes it as a future external measurement, not as an established result.
 - The [proof of fidelity definition](https://gautierdorval.com/en/definitions/proof-of-fidelity/) specifies the object of proof of fidelity.
@@ -45,3 +46,8 @@ A `semantic_fidelity` field needs an instrument, criteria and an evaluation stat
 Retrieval evidence establishes that a resource was received under documented conditions. Integrity verification concerns bytes or their canonical representation. Fidelity assessment concerns the relationship between a source and an answer for a task. Each item of evidence should be connected to the claim it can actually support.
 
 The public [T3 case](https://github.com/GautierDorval/governed-context-runtime/blob/2dc585688bc904f3a423e1fc6fd8abdb6ac11cfd/evidence/mcp-apps-t3-2026-10-27/README.md) illustrates bounded reproduction: five lists and eleven entries. The [fidelity rubric](https://github.com/GautierDorval/interpretive-governance-test-suite/blob/cf61a18ab86d547443d6c0962d4c20ad9ed796f1/scoring-models/fidelity-score.md) describes assessment criteria. The availability of these resources is distinct from the result of a particular assessment.
+
+## History
+
+- 1.1: added the link to the reconstruction fidelity entry page.
+- 1.0: initial version, dated 2026-11-20.
