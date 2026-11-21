@@ -25,14 +25,14 @@ Dans ce corpus, la famille de termes de fidélité couvre un concept, des applic
 
 ## Lire `sequence_fidelity` sans changer son objet
 
-Le [fichier public Q-Metrics](https://gautierdorval.com/.well-known/q-metrics.json) publie des métriques d’observabilité dérivées du Q-Ledger. Il les déclare descriptives et non normatives, et précise qu’elles constituent une preuve faible.
+Le [fichier Q-Metrics](https://gautierdorval.com/.well-known/q-metrics.json) est un document maintenu, dont le contenu évolue. Il publie des métriques d’observabilité dérivées du Q-Ledger, déclarées descriptives et non normatives, et les présente comme une preuve faible. Cette carte n’en cite aucune valeur.
 
 Le champ `sequence_fidelity` s’y lit ainsi :
 
-- **Définition :** part des sessions inférées dont la séquence de consultation correspond au schéma attendu déclaré dans le fichier (`entrypoint`, `constraints`, `ontology`).
-- **Unité :** ratio de sessions, calculé à partir d’un numérateur (`sessions_matching_expected_sequence`) et d’un dénominateur (`sessions_inferred_total`).
-- **Fenêtre :** les dates de début et de fin indiquées dans le fichier, avec une fenêtre de session de 30 minutes. Dans la version du fichier relevée le 20 novembre 2026, la valeur 0.08 porte sur la fenêtre du 5 au 6 février 2026 et correspond à 2 sessions conformes sur 25 sessions inférées.
-- **Portée :** calcul en mode gouvernance seule, sans observation du contenu consulté. Une séquence conforme à un parcours attendu ne prouve pas que le contenu consulté a été utilisé fidèlement dans une réponse. La valeur 0.08 ne signifie pas 8 % de fidélité du sens.
+- **Définition :** part des sessions inférées dont la séquence de consultation correspond au schéma attendu déclaré dans le fichier.
+- **Unité :** ratio des sessions dont la séquence est conforme (`sessions_matching_expected_sequence`) sur les sessions inférées (`sessions_inferred_total`).
+- **Fenêtre :** la période d’observation et la fenêtre de session déclarées dans le fichier. Une valeur ne vaut que pour sa fenêtre et son dénominateur.
+- **Portée :** le fichier déclare un calcul en mode gouvernance seule, sans observation du contenu consulté. Une séquence conforme à un parcours attendu ne prouve pas que le contenu consulté a été utilisé fidèlement dans une réponse. Ce ratio n’est pas un pourcentage de fidélité du sens.
 
 Le nom du champ reste inchangé. Toute modification de ce contrat relève d’une version explicite de son schéma, avec vérification de ses consommateurs.
 

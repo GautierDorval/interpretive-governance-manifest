@@ -23,7 +23,7 @@ Le [glossaire](../glossary.md) définit la reconstruction au sens opérationnel�
 
 La [grille publique de fidélité](https://github.com/GautierDorval/interpretive-governance-test-suite/blob/cf61a18ab86d547443d6c0962d4c20ad9ed796f1/scoring-models/fidelity-score.md) de la suite de tests emploie déjà la reconstruction pour examiner les faits connus et les frontières de l’entité décrite. Elle relie cette lecture à la distinction entre connu et inconnu, à l’absence d’ajouts non étayés et au respect des exclusions.
 
-La présente note rend explicite la relation terminologique dans le corpus. Le [dossier de provenance](https://github.com/GautierDorval/gautierdorval-identity/blob/main/provenance/provenance-fidelite-interpretative.md) distingue les versions documentaires antérieures, la présente déclaration terminologique et les traces de déploiement retrouvées, avec leurs limites.
+La présente note rend explicite la relation terminologique dans le corpus. Sa date est celle de la déclaration terminologique (2026-11-20) ; elle ne date ni les versions documentaires antérieures ni leur mise en ligne.
 
 ## Usage dans les documents et les données
 

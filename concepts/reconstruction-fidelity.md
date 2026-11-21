@@ -3,7 +3,7 @@
 **Status:** informative terminology note (non-normative)  
 **Version:** 1.0, terminological declaration of 2026-11-20  
 **Author:** Gautier Dorval  
-**Version française :** [Fidélité de reconstruction et fidélité interprétative](fidelite-de-reconstruction.md)
+**Version française :** [Fidélité de reconstruction et fidélité interprétative](fidelite-de-reconstruction.md)
 
 ## Terminological relationship within this corpus
 
@@ -23,7 +23,7 @@ The [glossary](../glossary.md) defines reconstruction in its operational sense: 
 
 The public [fidelity rubric](https://github.com/GautierDorval/interpretive-governance-test-suite/blob/cf61a18ab86d547443d6c0962d4c20ad9ed796f1/scoring-models/fidelity-score.md) of the test suite already uses reconstruction to assess known facts and the boundaries of the entity being described. It connects that assessment with the distinction between known and unknown information, the absence of unsupported additions and the preservation of exclusions.
 
-This note makes the terminological relationship explicit within the corpus. The [provenance record](https://github.com/GautierDorval/gautierdorval-identity/blob/main/provenance/interpretive-fidelity-provenance.md) distinguishes earlier documentary versions, this terminological declaration and the deployment traces that were found, with their limits.
+This note makes the terminological relationship explicit within the corpus. Its date is that of the terminological declaration (2026-11-20); it dates neither earlier documentary versions nor their publication online.
 
 ## Use in documents and data
 

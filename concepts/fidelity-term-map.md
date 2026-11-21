@@ -3,7 +3,7 @@
 **Status:** informative document (non-normative)  
 **Version:** 1.0, 2026-11-20  
 **Author:** Gautier Dorval  
-**Version française :** [Carte des termes de fidélité](carte-des-termes-fidelite.md)
+**Version française :** [Carte des termes de fidélité](carte-des-termes-fidelite.md)
 
 Within this corpus, the fidelity vocabulary covers a concept, its applications, evidence and measurement fields. Reading a claim accurately requires identifying **what is assessed, against which reference, for which task and through which method**.
 
@@ -25,14 +25,14 @@ Within this corpus, the fidelity vocabulary covers a concept, its applications, 
 
 ## Read `sequence_fidelity` without changing its object
 
-The public [Q-Metrics file](https://gautierdorval.com/.well-known/q-metrics.json) publishes observability metrics derived from the Q-Ledger. It declares them descriptive and non-normative, and states that they are weak evidence only.
+The [Q-Metrics file](https://gautierdorval.com/.well-known/q-metrics.json) is a maintained document whose content changes over time. It publishes observability metrics derived from the Q-Ledger, declared descriptive and non-normative, and presents them as weak evidence only. This map cites none of its values.
 
 The `sequence_fidelity` field is read as follows:
 
-- **Definition:** the share of inferred sessions whose access sequence matches the expected pattern declared in the file (`entrypoint`, `constraints`, `ontology`).
-- **Unit:** a ratio of sessions, calculated from a numerator (`sessions_matching_expected_sequence`) and a denominator (`sessions_inferred_total`).
-- **Window:** the start and end dates stated in the file, with a 30-minute session window. In the version of the file recorded on 20 November 2026, the value 0.08 covers the window from 5 to 6 February 2026 and corresponds to 2 matching sessions out of 25 inferred sessions.
-- **Scope:** calculated in governance-only mode, without observing the accessed content. A sequence matching an expected access pattern does not establish that the accessed content was used faithfully in an answer. The value 0.08 does not mean 8% fidelity of meaning.
+- **Definition:** the share of inferred sessions whose access sequence matches the expected pattern declared in the file.
+- **Unit:** a ratio of the sessions whose sequence matches (`sessions_matching_expected_sequence`) to the inferred sessions (`sessions_inferred_total`).
+- **Window:** the observation period and the session window declared in the file. A value holds only for its window and its denominator.
+- **Scope:** the file declares a calculation in governance-only mode, without observing the accessed content. A sequence matching an expected access pattern does not establish that the accessed content was used faithfully in an answer. This ratio is not a percentage of fidelity of meaning.
 
 The field name remains unchanged. Any change to this contract requires an explicit version of its schema, with verification of its consumers.
 
