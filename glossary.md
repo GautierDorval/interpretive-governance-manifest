@@ -32,6 +32,12 @@ Observable outputs produced by probabilistic systems when they:
 This is not cognition.
 It is an observable reconstruction effect.
 
+Informative note: [Reconstruction fidelity and interpretive fidelity](concepts/reconstruction-fidelity.md)
+([French](concepts/fidelite-de-reconstruction.md)) explains how this corpus relates the term
+reconstruction fidelity to interpretive fidelity. The [fidelity term map](concepts/fidelity-term-map.md)
+([French](concepts/carte-des-termes-fidelite.md)) separates that concept from evidence and measurement
+fields. Neither document changes the category boundary above.
+
 ## Inference
 
 A probabilistic hypothesis not directly supported by evidence.

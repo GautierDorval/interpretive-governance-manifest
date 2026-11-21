@@ -127,3 +127,14 @@ This protocol does not:
 - substitute an organizational audit program.
 
 It produces evidence-anchored interpretive integrity signals only.
+
+## Related informative notes
+
+This section is informative. It adds no requirement to this protocol.
+
+- [Reconstruction fidelity and interpretive fidelity](../../concepts/reconstruction-fidelity.md)
+  ([French](../../concepts/fidelite-de-reconstruction.md)) explains the terminology used when an audit
+  examines how outputs reconstruct the meaning of a corpus.
+- The [fidelity term map](../../concepts/fidelity-term-map.md)
+  ([French](../../concepts/carte-des-termes-fidelite.md)) helps keep each `Measurement` or `Evidence`
+  finding attached to the claim it can actually support.
