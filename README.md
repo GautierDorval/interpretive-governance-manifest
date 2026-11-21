@@ -333,8 +333,9 @@ These references are:
 
 ### IIP-Scoring Standard (restricted specification surface)
 
-A restricted, non-operational public specification surface exists for **IIP-Scoring™**
-(Interpretive Integrity Protocol measurement layer).
+A restricted, non-operational specification surface exists for **IIP-Scoring™**
+(Interpretive Integrity Protocol measurement layer). It is held in a private
+repository and is not publicly accessible.
 
 This repository is:
 - normative reference only,
@@ -343,7 +344,9 @@ This repository is:
 - excludes calibration, thresholds, weights, heuristics, datasets, and runnable examples.
 
 Reference:
-- https://github.com/GautierDorval/iip-scoring-standard
+- `GautierDorval/iip-scoring-standard` (private repository, cited as an identifier only)
+- Public doctrinal description, without the scoring logic:
+  https://gautierdorval.com/en/iip-scoring-doctrinal-framework/
 
 
 ### Authority governance — simulation-only reference
