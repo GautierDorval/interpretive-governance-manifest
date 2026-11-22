@@ -1,7 +1,7 @@
 # Reconstruction fidelity and interpretive fidelity
 
 **Status:** informative terminology note (non-normative)  
-**Version:** 1.0, terminological declaration of 2026-11-20  
+**Version:** 1.1, terminological declaration of 2026-11-20  
 **Author:** Gautier Dorval  
 **Version française :** [Fidélité de reconstruction et fidélité interprétative](fidelite-de-reconstruction.md)
 
@@ -9,7 +9,7 @@
 
 In Gautier Dorval's corpus, **reconstruction fidelity refers to interpretive fidelity in the reconstruction of meaning by an AI-generated answer**. It is an entry term for the same concept: preserving the meaning, conditions, exclusions, authority boundaries, evidence and claim status that are relevant to a task.
 
-The [interpretive fidelity definition](https://gautierdorval.com/en/definitions/interpretive-fidelity/) remains the author reference.
+The [interpretive fidelity definition](https://gautierdorval.com/en/definitions/interpretive-fidelity/) remains the author reference. The [reconstruction fidelity entry page](https://gautierdorval.com/en/reconstruction-fidelity/) develops its application to understanding and assessing generated answers.
 
 This is a contextual relationship. It does not establish equivalence between every use of these expressions across disciplines. It does not rename Interpretive SEO, Interpretive Governance, a technical implementation or a particular metric.
 
@@ -23,7 +23,7 @@ The [glossary](../glossary.md) defines reconstruction in its operational sense: 
 
 The public [fidelity rubric](https://github.com/GautierDorval/interpretive-governance-test-suite/blob/cf61a18ab86d547443d6c0962d4c20ad9ed796f1/scoring-models/fidelity-score.md) of the test suite already uses reconstruction to assess known facts and the boundaries of the entity being described. It connects that assessment with the distinction between known and unknown information, the absence of unsupported additions and the preservation of exclusions.
 
-This note makes the terminological relationship explicit within the corpus. Its date is that of the terminological declaration (2026-11-20); it dates neither earlier documentary versions nor their publication online.
+This note makes the terminological relationship explicit within the corpus. Its date is that of the terminological declaration (2026-11-20); it dates neither earlier documentary versions nor their publication online. The [provenance record](https://github.com/GautierDorval/gautierdorval-identity/blob/main/provenance/interpretive-fidelity-provenance.md) distinguishes earlier documentary versions, this terminological declaration and the deployment traces that were found, with their limits.
 
 ## Use in documents and data
 
@@ -36,3 +36,8 @@ The [fidelity term map](fidelity-term-map.md) documents these relationships. The
 ## Other uses of the expression
 
 Outside this corpus, the expression has other published uses. In English, reconstruction fidelity notably refers to the reconstruction of a model's activations in sparse autoencoder research. The expression is also used in connection with semantic caching systems. The relationship declared here concerns only meaning in generated answers, within this corpus; it makes no claim to the expression.
+
+## History
+
+- 1.1: added the links to the reconstruction fidelity entry page and to the provenance record.
+- 1.0: initial terminological declaration, dated 2026-11-20.

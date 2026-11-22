@@ -1,7 +1,7 @@
 # Carte des termes de fidélité
 
 **Statut :** document informatif (non normatif)  
-**Version :** 1.0, 2026-11-20  
+**Version :** 1.1, 2026-11-20  
 **Auteur :** Gautier Dorval  
 **English version:** [Fidelity term map](fidelity-term-map.md)
 
@@ -19,6 +19,7 @@ Dans ce corpus, la famille de termes de fidélité couvre un concept, des applic
 ## Points de référence
 
 - La [définition de fidélité interprétative](https://gautierdorval.com/definitions/fidelite-interpretative/) est la référence d’auteur du concept.
+- La [page d’entrée sur la fidélité de reconstruction](https://gautierdorval.com/fidelite-de-reconstruction/) en présente l’application à la compréhension et à l’évaluation des réponses générées.
 - La [note terminologique](fidelite-de-reconstruction.md) déclare la relation entre « fidélité de reconstruction » et « fidélité interprétative » dans ce corpus.
 - La [définition de fidélité d’applicabilité](https://gautierdorval.com/definitions/fidelite-applicabilite/) précise l’objet de la fidélité d’applicabilité. Elle la décrit comme une mesure externe future, pas comme un résultat établi.
 - La [définition de preuve de fidélité](https://gautierdorval.com/definitions/preuve-fidelite/) précise l’objet de la preuve de fidélité.
@@ -45,3 +46,8 @@ Un champ `semantic_fidelity` doit être accompagné de son instrument, de ses cr
 Une preuve de récupération établit qu’une ressource a été reçue dans les conditions documentées. Une vérification d’intégrité porte sur les octets ou leur représentation canonique. Une évaluation de fidélité porte sur le rapport entre la source et la réponse pour une tâche. Chaque pièce doit être associée à l’affirmation qu’elle permet réellement d’examiner.
 
 Le [cas T3](https://github.com/GautierDorval/governed-context-runtime/blob/2dc585688bc904f3a423e1fc6fd8abdb6ac11cfd/evidence/mcp-apps-t3-2026-10-27/README.md) illustre une restitution bornée : cinq listes et onze entrées. La [grille de fidélité](https://github.com/GautierDorval/interpretive-governance-test-suite/blob/cf61a18ab86d547443d6c0962d4c20ad9ed796f1/scoring-models/fidelity-score.md) décrit des critères de lecture. L’existence de ces ressources doit être distinguée du résultat d’une évaluation particulière.
+
+## Historique
+
+- 1.1 : ajout du renvoi vers la page d’entrée sur la fidélité de reconstruction.
+- 1.0 : version initiale, datée du 2026-11-20.
